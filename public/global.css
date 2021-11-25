@@ -1,0 +1,150 @@
+:root {
+  /* VARIABLES: */
+  --gray4: hsl(170, 25%, 35%);
+  --lightgreen1: hsla(138, 65%, 88%, 0.85);
+  --white2: hsl(0, 0%, 90%);
+  --gray1: hsla(0, 0%, 15%, 0.4);
+  --gray2: hsla(0, 0%, 5%, 0.85);
+  --gray3: #333;
+  --font1: hsl(39, 70%, 90%);
+  --font2: salmon;
+  --font3: hsl(0, 59%, 21%);
+  --brown1: hsla(0, 25%, 27%, 1);
+  --brown2: hsla(0, 20%, 27%, 0.8);
+  --sepia1: hsl(60, 50%, 75%);
+  --autumn1: hsla(29, 53%, 71%, 0.85);
+  --coral1: hsl(14, 27%, 64%);
+  --coral2: #ff6d6d;
+  --blue1: #9198e5;
+  --blue2: #d0ecff;
+  --green1: #8ae086;
+  --blue_transp: hsla(235, 62%, 73%, 0.5);
+  --gradient1: linear-gradient(120deg, var(--sepia1), var(--blue1));
+  --gradient2: linear-gradient(30deg, var(--gray1), var(--blue_transp));
+  --gradient3: linear-gradient(30deg, var(--blue1), var(--blue_transp));
+  --gradient4: linear-gradient(30deg, var(--lightgreen1), var(--blue_transp));
+  --gradient5: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 0) 0 10%,
+    var(--gray2) 30% 70%,
+    hsla(0, 0%, 0%, 0) 90% 100%
+  );
+
+  /* REM: */
+  font-size: 16px;
+  background-color: black;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1 {
+  height: 2rem;
+  color: var(--blue2);
+  padding: 0;
+  margin: 0 0.4em;
+  font-weight: 100;
+}
+
+h2 {
+  margin: 0;
+  color: var(--green1);
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+h3 {
+  margin: 0;
+  font-weight: 200;
+  color: var(--green1);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+p {
+  color: var(--font1);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+li {
+  /* list-style-type: none; */
+  text-align: left;
+  margin-top: 0.12em;
+  color: var(--coral1);
+  font-weight: 300;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 0.3em 0.7em;
+  border-width: 2px;
+  box-shadow: 2px 2px var(--brown2);
+  border-style: solid;
+  border-radius: 2px;
+  border-color: var(--gray4);
+  /* border-image: linear-gradient(to right bottom, var(--white1), var(--white2)); */
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: var(--font1);
+  background-color: var(--gray1);
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+button:active {
+  background-color: #333;
+}
+
+button:disabled {
+  color: #ccc;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue1);
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* for devices that can hover: */
+@media (hover: hover) {
+  button:hover {
+    background-color: #333;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
