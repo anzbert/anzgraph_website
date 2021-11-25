@@ -1,6 +1,6 @@
 /// <reference types="svelte" />
 /// <reference types="vite/client" />
 
-// Keep TS quiet about these imports:
+// Mute TS errors on these extension imports:
 declare module "*.md";
 declare module "*.svx";
