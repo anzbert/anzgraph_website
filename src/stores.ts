@@ -31,10 +31,20 @@ interface logo {
 }
 
 export const logos: { [key: string]: logo } = {
+  mdsvex: {
+    name: "mdsvex",
+    path: "img/logos/mdsvex.png",
+    url: "https://mdsvex.com",
+  },
+  vite: {
+    name: "Vite",
+    path: "img/logos/vite.svg",
+    url: "https://vitejs.dev",
+  },
   arduino: {
     name: "Arduino",
     path: "img/logos/arduino.svg",
-    url: "https://www.arduino.cc/",
+    url: "https://www.arduino.cc",
   },
   c: {
     name: "C",

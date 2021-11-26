@@ -50,10 +50,13 @@
               <Logo logo="svelte" name={true} link={true} />
             </li>
             <li>
+              <Logo logo="vite" name={true} link={true} />
+            </li>
+            <li>
               <Logo logo="ts" name={true} link={true} />
             </li>
             <li>
-              <Logo logo="md" name={true} link={true} />
+              <Logo logo="mdsvex" name={true} link={true} />
             </li>
           </ul>
           Images from:
