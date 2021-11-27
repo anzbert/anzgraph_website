@@ -1,0 +1,23 @@
+<script>
+    import MaskedHeading from "../components/maskedheading.svelte";
+</script>
+
+## <MaskedHeading background="var(--gradient3)">Hi!</MaskedHeading>
+
+---
+
+## And welcome to my website!
+
+My name is Andreas and I live in Perth, in the southwest of Australia.
+
+I made this site as a portfolio to showcase some of my building,
+electronics and coding projects. Making it was a coding exercise in
+itself and I hope you like the result.
+
+Professionally, I am a Registered Nurse and former Cabinet Maker. But
+as you can see, I like to dabble in many different areas, such as
+electronics and micro controllers, coding, pc hardware, board games,
+music production and playing the guitar.
+
+I am mostly self-taught and always looking for the next exciting thing
+to learn!

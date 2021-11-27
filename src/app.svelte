@@ -1,9 +1,11 @@
 <script lang="ts">
-  import Background from "../components/Background.svelte";
-  import Nav from "../components/Nav.svelte";
-  import About from "./about.svelte";
-  import Projects from "./projects.svelte";
   import { tick } from "svelte";
+
+  import Background from "./components/background.svelte";
+  import Nav from "./pages/nav.svelte";
+  import About from "./pages/about.svelte";
+  import Projects from "./pages/projects.svelte";
+  import Blog from "./pages/blog.svelte";
 
   let currentPage = "Projects"; // Default start page
 
@@ -19,6 +21,7 @@
 
   <Nav on:page={setPage} />
 
+  {#if currentPage == "Blog"} <Blog />{/if}
   {#if currentPage == "About"} <About />{/if}
   {#if currentPage == "Projects"} <Projects />{/if}
 </div>

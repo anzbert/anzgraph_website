@@ -20,7 +20,7 @@
     text-transform: uppercase;
     padding: 0.5em 0.5em;
     border-width: 5px;
-    box-shadow: 0px 0px 15px hsla(39, 77%, 83%, 0.3);
+    box-shadow: 0px 0px 15px hsla(39, 77%, 83%, 0.2);
     border-style: solid;
     border-image: linear-gradient(
         to left top,

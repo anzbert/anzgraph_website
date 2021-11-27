@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
-  import MaskedHeading from "../components/MaskedHeading.svelte";
+  import MaskedHeading from "../components/maskedheading.svelte";
   import { tick } from "svelte";
 
   import Sidebar from "../components/sidebar1.svelte";
@@ -197,7 +197,7 @@
   @media (min-width: 1150px) {
     .project-page {
       display: grid;
-      grid-template-columns: [left]1fr [center]70% [right]5fr;
+      grid-template-columns: [left]1fr [center]70% [right]2fr;
     }
     .projects {
       grid-area: center;
@@ -210,7 +210,7 @@
     }
     .sidebar-content {
       position: sticky;
-      top: 5rem;
+      top: 20%;
 
       color: white;
     }

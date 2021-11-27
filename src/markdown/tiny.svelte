@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Swipe, SwipeItem } from "svelte-swipe";
-  import Card from "../components/card.svelte";
+  import Card from "../components/card1.svelte";
   import Markdown from "./tiny.svx";
 
   import { fade, fly } from "svelte/transition";
@@ -15,7 +15,7 @@
   };
 
   let paths: Array<string> = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 0; i++) {
     let path = `img/projects/Tiny/tiny${i}.jpg`;
     paths.push(path);
   }

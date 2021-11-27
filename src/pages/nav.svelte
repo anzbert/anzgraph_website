@@ -24,6 +24,10 @@
     >
     <button
       class="menu-item text-button"
+      on:click={() => dispatch("page", "Blog")}>Blog</button
+    >
+    <button
+      class="menu-item text-button"
       on:click={() => dispatch("page", "About")}>About</button
     >
     <a href="https://github.com/anzbert"
@@ -48,35 +52,48 @@
 
 <!-- MENU ON SMALL DISPLAYS: -->
 {#if showMenu === true}
-  <menu in:fly={{ ...flyRight, delay: 0 }} class="popup-menu">
-    <a href="https://github.com/anzbert"
-      ><img
-        class="logo-icon menu-item"
-        src="img/logos/github.png"
-        alt="GitHub Logo"
-      />
-    </a>
-    <button
-      class="menu-item "
-      on:click={() => {
-        showMenu = false;
-        dispatch("page", "Projects");
-      }}>Projects</button
-    >
-    <button
-      class="menu-item "
-      on:click={() => {
-        showMenu = false;
-        dispatch("page", "About");
-      }}>About</button
-    >
-    <div
-      class="menu-icon"
-      on:click={() => {
-        showMenu = false;
-      }}
-    >
-      <div class="close-x" />
+  <menu in:fly={{ ...flyTop, delay: 0 }} class="popup-menu">
+    <div class="row">
+      <!-- <a href="https://github.com/anzbert"
+        ><img
+          class="logo-icon menu-item"
+          src="img/logos/github.png"
+          alt="GitHub Logo"
+        />
+      </a> -->
+      <h1 class="title popup-title">ANZ GRAPH</h1>
+      <div
+        class="menu-icon"
+        on:click={() => {
+          showMenu = false;
+        }}
+      >
+        <div class="close-x" />
+      </div>
+    </div>
+
+    <div class="row row2">
+      <button
+        class="menu-item "
+        on:click={() => {
+          showMenu = false;
+          dispatch("page", "Projects");
+        }}>Projects</button
+      >
+      <button
+        class="menu-item "
+        on:click={() => {
+          showMenu = false;
+          dispatch("page", "Blog");
+        }}>Blog</button
+      >
+      <button
+        class="menu-item "
+        on:click={() => {
+          showMenu = false;
+          dispatch("page", "About");
+        }}>About</button
+      >
     </div>
   </menu>
 {/if}
@@ -129,15 +146,32 @@
       top: 0;
       right: 0;
       z-index: 20;
-      gap: 5vw;
+      gap: 4vw;
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+      /* flex-wrap: wrap; */
+    }
+
+    /* .popup-title {
+      margin: 0 auto;
+      display: block;
+    } */
+
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .row2 {
+      justify-content: end;
+      gap: 3vw;
     }
 
     .text-button {
       display: none;
     }
     .buttons {
-      gap: 5vw;
-      width: 100%;
     }
 
     /* css icons: */

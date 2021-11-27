@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Swipe, SwipeItem } from "svelte-swipe";
-  import Card from "../components/card.svelte";
-  import Markdown from "./Xfader.md";
+  import Card from "../components/card1.svelte";
+  import Markdown from "./xfader.svx";
 
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft } from "../stores";

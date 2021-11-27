@@ -2,7 +2,7 @@
   /* VARIABLES: */
   --gray4: hsl(170, 25%, 35%);
   --lightgreen1: hsla(138, 65%, 88%, 0.85);
-  --white2: hsl(0, 0%, 90%);
+  --white1: hsl(0, 0%, 90%);
   --gray1: hsla(0, 0%, 15%, 0.4);
   --gray2: hsla(0, 0%, 5%, 0.85);
   --gray3: #333;
@@ -72,10 +72,27 @@ h3 {
   font-size: 1.1rem;
   text-transform: uppercase;
 }
+h4 {
+  color: var(--blue2);
+  margin: 0;
+  font-weight: 200;
+}
 p {
   color: var(--font1);
   font-weight: 300;
   font-size: 1.1rem;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: var(--gray1);
+  background-image: linear-gradient(
+    to right,
+    var(--white1),
+    var(--gray3),
+    var(--white1)
+  );
 }
 
 ul {

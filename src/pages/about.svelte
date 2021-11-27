@@ -1,50 +1,25 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
-
-  import Card from "../components/card.svelte";
-  import MaskedHeading from "../components/MaskedHeading.svelte";
-  import Textbox1 from "../components/textbox1.svelte";
-
-  import Logo from "../components/logo.svelte";
-
-  // Constants:
   import { flyLeft } from "../stores";
+
+  import Textbox1 from "../components/textbox1.svelte";
+  import AboutMe from "./about.svx";
+
+  import Card from "../components/card1.svelte";
+  import Logo from "../components/logo.svelte";
 </script>
 
-<div class="wrapper" in:fly={flyLeft}>
-  <div class="content">
+<div class="wrapper">
+  <div class="content" in:fly={flyLeft}>
     <Textbox1>
-      <div class="heading">
-        <MaskedHeading background="var(--gradient3)">Hi!</MaskedHeading>
-      </div>
-      <div class="text-block">
-        <p>And welcome to my website!</p>
-        <p>
-          My name is Andreas and I live in Perth, in the southwest of Australia.
-        </p>
-        <p>
-          I made this site as a portfolio to showcase some of my building,
-          electronics and coding projects. Making it was a coding exercise in
-          itself and I hope you like the result.
-        </p>
-        <p>
-          Professionally, I am a Registered Nurse and former Cabinet Maker. But
-          as you can see, I like to dabble in many different areas, such as
-          electronics and micro controllers, coding, pc hardware, board games,
-          music production and playing the guitar.
-        </p>
-        <p>
-          I am mostly self-taught and always looking for the next exciting thing
-          to learn!
-        </p>
-      </div>
+      <AboutMe />
     </Textbox1>
   </div>
-  <div class="card-wrapper">
+  <div class="card-wrapper" in:fly={flyLeft}>
     <Card width="fit-content"
       ><div class="inside-card">
         <div class="card-elements">
-          Site made with:
+          Site made with
           <ul>
             <li>
               <Logo logo="svelte" name={true} link={true} />
@@ -59,13 +34,13 @@
               <Logo logo="mdsvex" name={true} link={true} />
             </li>
           </ul>
-          Images from:
+          Images from
           <ul>
             <li>
               <Logo logo="unsplash" name={true} link={true} />
             </li>
           </ul>
-          My Repos:
+          My Repos
           <ul>
             <li>
               <Logo logo="github" name={true} link={true} />
@@ -74,7 +49,7 @@
         </div>
 
         <div class="card-elements">
-          Other Tech I Use:
+          Other Tech I Use
           <ul>
             <li>
               <Logo logo="js" name={true} link={true} />
@@ -113,14 +88,6 @@
     padding: 3em 1em;
   }
 
-  .content {
-    max-width: 960px;
-  }
-
-  .heading {
-    text-indent: 5%;
-  }
-
   .card-wrapper {
     margin-top: 3rem;
     max-width: 70%;
@@ -136,6 +103,7 @@
   .card-elements {
     margin: 0em 0.6em;
     white-space: nowrap;
+    width: 9rem;
   }
 
   li {
