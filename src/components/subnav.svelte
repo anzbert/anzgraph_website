@@ -3,7 +3,7 @@
   import { tick } from "svelte";
 
   // constants:
-  import { projects, flyRight } from "./stores";
+  import { projects, flyRight } from "../stores";
 </script>
 
 <!-- <div class="subnav" in:fly={flyRight}>

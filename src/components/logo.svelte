@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { logos } from "./stores";
+  import { logos } from "../stores";
 
   export let logo = "tools";
   let req_logo = logos[logo];

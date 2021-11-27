@@ -1,20 +1,19 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
-  import Card2 from "./Card2.svelte";
-  import MaskedHeading from "./MaskedHeading.svelte";
+  import Card2 from "../components/card2.svelte";
+  import MaskedHeading from "../components/MaskedHeading.svelte";
   import { tick } from "svelte";
 
-  import Sidebar from "./sidebar1.svelte";
+  import Sidebar from "../components/sidebar1.svelte";
 
   // Constants:
-  import { projects, flyRight, flyLeft } from "./stores";
+  import { projects, flyRight, flyLeft } from "../stores";
 
   // Project Files:
-  import Xfader from "./projects/Xfader.svelte";
-  import Clock from "./projects/Clock.svelte";
-  import Pedal from "./projects/Pedal.svelte";
-  import Tiny from "./projects/Tiny.svelte";
-  // import About from "./About.svelte";
+  import Xfader from "../markdown/xfader.svelte";
+  import Clock from "../markdown/clock.svelte";
+  import Pedal from "../markdown/pedal.svelte";
+  import Tiny from "../markdown/tiny.svelte";
 
   async function scrollTo(id: string) {
     currentFocus = "all";
@@ -188,7 +187,7 @@
   .icon {
     height: min(2.8vmin, 1.8rem);
     margin: 0 0.2em;
-    filter: drop-shadow(2px 2px 1px var(--gray2));
+    filter: drop-shadow(1px 1px 1px var(--gray2));
   }
 
   /* Sidebar: */

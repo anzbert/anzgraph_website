@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Swipe, SwipeItem } from "svelte-swipe";
-  import Card from "../card.svelte";
-  import Markdown from "./Pedal.md";
+  import Card from "../components/card.svelte";
+  import Markdown from "./Clock.md";
 
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft } from "../stores";
@@ -15,8 +15,8 @@
   };
 
   let paths: Array<string> = [];
-  for (let i = 0; i < 9; i++) {
-    let path = `img/projects/Pedal/footp${i}.jpg`;
+  for (let i = 0; i < 5; i++) {
+    let path = `img/projects/Clock/clock${i}.jpg`;
     paths.push(path);
   }
 </script>
@@ -45,12 +45,12 @@
   }
   .swipe-holder {
     --width: clamp(200px, 75vmin, 70vmax);
-    height: calc(var(--width) / 4 * 3);
+    height: calc(var(--width) / 5 * 3);
     width: var(--width);
     margin: auto;
   }
   img {
-    height: calc(var(--width) / 4 * 3);
+    height: calc(var(--width) / 5 * 3);
     width: var(--width);
     object-fit: cover;
   }

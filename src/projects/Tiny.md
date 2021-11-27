@@ -1,1 +1,0 @@
-### Tiny House on Wheels

@@ -1,14 +1,14 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
 
-  import Card from "./card.svelte";
-  import MaskedHeading from "./MaskedHeading.svelte";
-  import Textbox1 from "./Textbox1.svelte";
+  import Card from "../components/card.svelte";
+  import MaskedHeading from "../components/MaskedHeading.svelte";
+  import Textbox1 from "../components/textbox1.svelte";
 
-  import Logo from "./logo.svelte";
+  import Logo from "../components/logo.svelte";
 
   // Constants:
-  import { flyLeft } from "./stores";
+  import { flyLeft } from "../stores";
 </script>
 
 <div class="wrapper" in:fly={flyLeft}>

@@ -4,7 +4,7 @@
   const dispatch = createEventDispatcher<{ page: string }>();
 
   // Constants:
-  import { flyRight, flyTop } from "./stores";
+  import { flyRight, flyTop } from "../stores";
 
   let showMenu: boolean;
 

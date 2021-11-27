@@ -1,22 +1,22 @@
 <script lang="ts">
   import { Swipe, SwipeItem } from "svelte-swipe";
-  import Card from "../card.svelte";
-  import Markdown from "./test.svx";
+  import Card from "../components/card.svelte";
+  import Markdown from "./Xfader.md";
 
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft } from "../stores";
 
   const swipeConfig = {
-    defaultIndex: 0,
-    showIndicators: true,
     autoplay: false,
-    delay: 4000,
+    delay: 2000,
+    showIndicators: true,
     transitionDuration: 500,
+    defaultIndex: 0,
   };
 
   let paths: Array<string> = [];
-  for (let i = 0; i < 9; i++) {
-    let path = `img/projects/Tiny/tiny${i}.jpg`;
+  for (let i = 0; i < 3; i++) {
+    let path = `img/projects/Xfader/fader${i}.jpg`;
     paths.push(path);
   }
 </script>
@@ -45,12 +45,12 @@
   }
   .swipe-holder {
     --width: clamp(200px, 75vmin, 70vmax);
-    height: calc(var(--width) / 4 * 3);
+    height: calc(var(--width) / 5 * 3);
     width: var(--width);
     margin: auto;
   }
   img {
-    height: calc(var(--width) / 4 * 3);
+    height: calc(var(--width) / 5 * 3);
     width: var(--width);
     object-fit: cover;
   }

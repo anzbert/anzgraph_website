@@ -2,7 +2,7 @@
   import { fly } from "svelte/transition";
 
   // Constants:
-  import { flyLeft } from "./stores";
+  import { flyLeft } from "../stores";
 </script>
 
 <div class="wrapper" in:fly={flyLeft}>

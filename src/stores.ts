@@ -68,7 +68,7 @@ export const logos: { [key: string]: logo } = {
   },
   node: {
     name: "NodeJS",
-    path: "img/logos/nodejs.svg",
+    path: "img/logos/nodejs_white_bg.svg",
     url: "https://nodejs.org",
   },
   rpi: {
