@@ -28,21 +28,23 @@
 </div>
 
 {#key showTag}
-  <div class="wrapper" in:fly={flyLeft}>
-    {#each allPosts as post (post.title)}
-      {#if post.tags.some((tag) => tag === showTag) || showTag === "all"}
-        <div class="post" in:fly={flyLeft}>
-          <svelte:component
-            this={BlogEntryBox}
-            title={post.title}
-            date={post.date}
-            tags={post.tags}
-          >
-            <svelte:component this={post.post} />
-          </svelte:component>
-        </div>
-      {/if}
-    {/each}
+  <div class="wrapper">
+    <div class="posts" in:fly={flyLeft}>
+      {#each allPosts as post (post.title)}
+        {#if post.tags.some((tag) => tag === showTag) || showTag === "all"}
+          <div class="post" in:fly={flyLeft}>
+            <svelte:component
+              this={BlogEntryBox}
+              title={post.title}
+              date={post.date}
+              tags={post.tags}
+            >
+              <svelte:component this={post.post} />
+            </svelte:component>
+          </div>
+        {/if}
+      {/each}
+    </div>
   </div>
 {/key}
 

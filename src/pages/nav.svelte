@@ -150,15 +150,15 @@
       /* flex-wrap: wrap; */
     }
 
-    .title {
+    .popup-title {
+      color: var(--gray1);
     }
 
     .row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
       width: 100%;
-      /* height: 4rem; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .row2 {
       justify-content: end;
@@ -167,8 +167,6 @@
 
     .text-button {
       display: none;
-    }
-    .buttons {
     }
 
     /* css icons: */
