@@ -1,7 +1,9 @@
 <script lang="ts">
   import Textbox1 from "./textbox1.svelte";
+  import type { tagTypes } from "../blog/postindex";
   export let title: string;
   export let date: Date;
+  export let tags: Array<tagTypes>;
 
   const dateOptions: Intl.DateTimeFormatOptions = {
     weekday: "long",
@@ -16,10 +18,19 @@
   <div class="header">
     <h2 class="title">{title}</h2>
     <h4 class="date">
-      created on {date.toLocaleDateString("en-AU", dateOptions)}
+      {date.toLocaleDateString("en-AU", dateOptions)}
     </h4>
   </div>
+
   <hr />
+
+  <div class="tags">
+    {#each tags as tag}
+      {#if tag !== "#all"}
+        <div class="tag">{tag}</div>
+      {/if}
+    {/each}
+  </div>
 
   <slot>
     <!-- blog content -->
@@ -39,7 +50,19 @@
     align-items: end;
   }
 
+  .tags {
+    display: flex;
+    gap: min(1.5vw, 1rem);
+  }
+  .tag {
+    background-color: var(--gray3);
+    color: var(--blue1);
+    border-radius: 5px;
+    padding: 0.3em 0.6em;
+    font-size: 0.8rem;
+  }
+
   .footer {
-    height: 5rem;
+    height: 3rem;
   }
 </style>

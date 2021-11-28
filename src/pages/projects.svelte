@@ -113,8 +113,13 @@
 
     justify-content: end;
     width: 100%;
-    gap: max(1.4vw, 1rem);
+    gap: min(1.5vw, 1rem);
     margin-right: max(1.4vw, 1rem);
+  }
+
+  .buttons button {
+    font-size: 0.9rem;
+    padding: 0.2em 0.6em;
   }
 
   /* main content: */
@@ -194,7 +199,8 @@
   .sidebar {
     display: none;
   }
-  @media (min-width: 1150px) {
+
+  /* @media (min-width: 1150px) {
     .project-page {
       display: grid;
       grid-template-columns: [left]1fr [center]70% [right]2fr;
@@ -206,7 +212,7 @@
       display: block;
       grid-area: right;
 
-      /* border: 2px solid red; */
+     
     }
     .sidebar-content {
       position: sticky;
@@ -214,5 +220,5 @@
 
       color: white;
     }
-  }
+  } */
 </style>

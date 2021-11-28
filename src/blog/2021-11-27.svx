@@ -1,1 +1,10 @@
-This is my first blog entry!
+<script lang="ts" context="module">
+  export const meta = {
+    title: "Hello World!",
+    date: new Date("2021-11-28"),
+    tags: ["#misc"],
+  };
+
+</script>
+
+This is my first blog entry of my website.

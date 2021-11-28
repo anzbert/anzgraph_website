@@ -3,8 +3,8 @@ import { quintOut } from "svelte/easing";
 // CONSTANTS
 export const flyLeft = {
   easing: quintOut,
-  delay: 250,
-  duration: 500,
+  delay: 150,
+  duration: 350,
   opacity: 0.5,
   x: -window.innerWidth,
   y: 0,

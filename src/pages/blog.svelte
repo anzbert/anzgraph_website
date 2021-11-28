@@ -1,18 +1,79 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
-  import { flyLeft } from "../stores";
+  import { flyLeft, flyRight } from "../stores";
+  import { tagTypes, tags } from "../blog/postindex";
 
   import BlogEntryBox from "../components/blogentrybox.svelte";
+  import allPosts from "../blog/postindex";
 
-  // Import posts:
-  import On2021_11_27 from "../blog/2021-11-27.svx";
+  let showTag: tagTypes = "all";
+
+  function filterTag(tag: tagTypes) {
+    showTag = tag;
+  }
 </script>
 
-<div class="wrapper" in:fly={flyLeft}>
-  <BlogEntryBox title="test" date={new Date("2021-11-27")}>
-    <On2021_11_27 />
-  </BlogEntryBox>
+<div class="tags" in:fly={flyRight}>
+  {#each tags as tag}
+    {#if showTag === tag}
+      <button
+        class={tag === "all" ? "highlight all" : "highlight"}
+        on:click={() => filterTag(tag)}>{tag}</button
+      >
+    {:else}
+      <button class={tag === "all" ? "all" : ""} on:click={() => filterTag(tag)}
+        >{tag}</button
+      >
+    {/if}
+  {/each}
 </div>
 
+{#key showTag}
+  <div class="wrapper" in:fly={flyLeft}>
+    {#each allPosts as post (post.title)}
+      {#if post.tags.some((tag) => tag === showTag || showTag === "all")}
+        <div class="post" in:fly={flyLeft}>
+          <svelte:component
+            this={BlogEntryBox}
+            title={post.title}
+            date={post.date}
+            tags={post.tags}
+          >
+            <svelte:component this={post.post} />
+          </svelte:component>
+        </div>
+      {/if}
+    {/each}
+  </div>
+{/key}
+
 <style>
+  .tags {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: min(1.5vw, 1rem);
+    margin: 0.5rem;
+
+    height: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em;
+
+    z-index: 4;
+
+    background: var(--gradient2);
+    box-shadow: 0px 5px 3px var(--gray2);
+  }
+  .tags > button {
+    font-size: 0.9rem;
+    padding: 0.2em 0.6em;
+  }
+  .all {
+    border-color: var(--gray5);
+  }
+  .highlight {
+    border: 2px solid var(--blue1);
+  }
 </style>

@@ -4,7 +4,7 @@
   const dispatch = createEventDispatcher<{ page: string }>();
 
   // Constants:
-  import { flyRight, flyTop } from "../stores";
+  import { flyTop } from "../stores";
 
   let showMenu: boolean;
 
@@ -52,16 +52,12 @@
 
 <!-- MENU ON SMALL DISPLAYS: -->
 {#if showMenu === true}
-  <menu in:fly={{ ...flyTop, delay: 0 }} class="popup-menu">
+  <menu
+    transition:fly={{ ...flyTop, delay: 0, duration: 100 }}
+    class="popup-menu"
+  >
     <div class="row">
-      <!-- <a href="https://github.com/anzbert"
-        ><img
-          class="logo-icon menu-item"
-          src="img/logos/github.png"
-          alt="GitHub Logo"
-        />
-      </a> -->
-      <h1 class="title popup-title">ANZ GRAPH</h1>
+      <h1 class="title popup-title">Menu</h1>
       <div
         class="menu-icon"
         on:click={() => {
@@ -125,10 +121,11 @@
     white-space: nowrap;
     height: 2rem;
     color: var(--brown);
+    z-index: 100;
   }
 
   .buttons {
-    gap: max(1.4vw, 1rem);
+    gap: min(1.5vw, 1rem);
 
     display: flex;
     align-items: center;
@@ -153,15 +150,15 @@
       /* flex-wrap: wrap; */
     }
 
-    /* .popup-title {
-      margin: 0 auto;
-      display: block;
-    } */
+    .title {
+    }
 
     .row {
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
       width: 100%;
+      /* height: 4rem; */
     }
     .row2 {
       justify-content: end;
