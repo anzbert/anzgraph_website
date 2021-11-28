@@ -22,6 +22,9 @@
           Site made with
           <ul>
             <li>
+              <Logo logo="vscode" name={true} link={true} />
+            </li>
+            <li>
               <Logo logo="svelte" name={true} link={true} />
             </li>
             <li>

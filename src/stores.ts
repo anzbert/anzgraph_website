@@ -30,6 +30,11 @@ export const logos: { [key: string]: logo } = {
     path: "img/logos/mdsvex.png",
     url: "https://mdsvex.com",
   },
+  vscode: {
+    name: "VSCode",
+    path: "img/logos/vscode.svg",
+    url: "https://code.visualstudio.com",
+  },
   vite: {
     name: "Vite",
     path: "img/logos/vite.svg",
