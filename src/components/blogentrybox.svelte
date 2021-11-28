@@ -1,9 +1,8 @@
 <script lang="ts">
   import Textbox1 from "./textbox1.svelte";
-  import type { tagTypes } from "../blog/postindex";
-  export let title: string;
   export let date: Date;
-  export let tags: Array<tagTypes>;
+  export let tags: Array<string>;
+  export let title: string;
 
   const dateOptions: Intl.DateTimeFormatOptions = {
     weekday: "long",

@@ -10,16 +10,16 @@
   --gray5: hsl(169, 25%, 60%);
   --font1: hsl(39, 70%, 90%);
   --font2: salmon;
-  --font3: hsl(0, 59%, 21%);
+  --font3: hsl(169, 5%, 55%);
   --brown1: hsla(0, 25%, 27%, 1);
   --brown2: hsla(0, 20%, 27%, 0.8);
   --sepia1: hsl(60, 50%, 75%);
   --autumn1: hsla(29, 53%, 71%, 0.85);
-  --coral1: hsl(14, 27%, 64%);
+  --coral1: hsl(180, 25%, 54%);
   --coral2: #ff6d6d;
-  --blue1: #9198e5;
+  --blue1: hsl(235, 62%, 73%);
   --blue2: #d0ecff;
-  --green1: #8ae086;
+  --green1: hsl(117, 59%, 70%);
   --blue_transp: hsla(235, 62%, 73%, 0.5);
   --gradient1: linear-gradient(120deg, var(--sepia1), var(--blue1));
   --gradient2: linear-gradient(30deg, var(--gray1), var(--blue_transp));
@@ -80,7 +80,8 @@ h4 {
   font-weight: 200;
 }
 p {
-  color: var(--font1);
+  color: var(--font3);
+  /* color: grey; */
   font-weight: 300;
   font-size: 1.1rem;
 }

@@ -7,13 +7,15 @@
   import Sidebar from "../components/sidebar1.svelte";
 
   // Constants:
-  import { projects, flyRight, flyLeft } from "../stores";
+  import { flyRight, flyLeft } from "../stores";
 
   // Project Files:
-  import Xfader from "../markdown/xfader.svelte";
-  import Clock from "../markdown/clock.svelte";
-  import Pedal from "../markdown/pedal.svelte";
-  import Tiny from "../markdown/tiny.svelte";
+  import { projects } from "../projects/!projectindex";
+
+  import Xfader from "../projects/xfader.svelte";
+  import Clock from "../projects/clock.svelte";
+  import Pedal from "../projects/pedal.svelte";
+  import Tiny from "../projects/tiny.svelte";
 
   async function scrollTo(id: string) {
     currentFocus = "all";

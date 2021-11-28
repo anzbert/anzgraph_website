@@ -122,6 +122,8 @@
     height: 2rem;
     color: var(--brown);
     z-index: 100;
+    /* weight not working on mobile? */
+    font-weight: 100;
   }
 
   .buttons {

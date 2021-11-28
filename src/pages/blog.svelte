@@ -3,11 +3,11 @@
   import { flyLeft, flyRight } from "../stores";
 
   import BlogEntryBox from "../components/blogentrybox.svelte";
-  import { allPosts, hashTags } from "../blog/postindex";
+  import { allPosts, hashTags } from "../blog/!postindex";
 
   let showTag: string = "all"; // default is "all"
 
-  function filterTag(tag: string) {
+  function changeTag(tag: string) {
     showTag = tag;
   }
 </script>
@@ -17,10 +17,10 @@
     {#if showTag === tag}
       <button
         class={tag === "all" ? "highlight all" : "highlight"}
-        on:click={() => filterTag(tag)}>{tag}</button
+        on:click={() => changeTag(tag)}>{tag}</button
       >
     {:else}
-      <button class={tag === "all" ? "all" : ""} on:click={() => filterTag(tag)}
+      <button class={tag === "all" ? "all" : ""} on:click={() => changeTag(tag)}
         >{tag}</button
       >
     {/if}

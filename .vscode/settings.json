@@ -5,6 +5,7 @@
         "mdsvex",
         "sveltejs",
         "transp",
-        "vite"
+        "vite",
+        "Xfader"
     ]
 }
