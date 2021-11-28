@@ -129,7 +129,7 @@
 
     overflow-y: auto;
     overflow-x: hidden;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
 
   .content {

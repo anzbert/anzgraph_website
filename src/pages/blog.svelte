@@ -1,20 +1,19 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
   import { flyLeft, flyRight } from "../stores";
-  import { tagTypes, tags } from "../blog/postindex";
 
   import BlogEntryBox from "../components/blogentrybox.svelte";
-  import allPosts from "../blog/postindex";
+  import { allPosts, hashTags } from "../blog/postindex";
 
-  let showTag: tagTypes = "all";
+  let showTag: string = "all"; // default is "all"
 
-  function filterTag(tag: tagTypes) {
+  function filterTag(tag: string) {
     showTag = tag;
   }
 </script>
 
 <div class="tags" in:fly={flyRight}>
-  {#each tags as tag}
+  {#each hashTags as tag}
     {#if showTag === tag}
       <button
         class={tag === "all" ? "highlight all" : "highlight"}
@@ -31,7 +30,7 @@
 {#key showTag}
   <div class="wrapper" in:fly={flyLeft}>
     {#each allPosts as post (post.title)}
-      {#if post.tags.some((tag) => tag === showTag || showTag === "all")}
+      {#if post.tags.some((tag) => tag === showTag) || showTag === "all"}
         <div class="post" in:fly={flyLeft}>
           <svelte:component
             this={BlogEntryBox}
@@ -56,7 +55,6 @@
     gap: min(1.5vw, 1rem);
     margin: 0.5rem;
 
-    height: 3rem;
     width: 100%;
     margin: 0 auto;
     padding: 0.5em;
@@ -75,5 +73,11 @@
   }
   .highlight {
     border: 2px solid var(--blue1);
+  }
+
+  .wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
   }
 </style>

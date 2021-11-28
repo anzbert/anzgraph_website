@@ -1,0 +1,9 @@
+<script context="module" lang="ts">
+  export const meta: postMeta = {
+    title: "Hello World! sadfasd",
+    date: new Date("2021-11-26"),
+    tags: ["#electronics", "#test"],
+  };
+</script>
+
+This is my first blog entry of my website.

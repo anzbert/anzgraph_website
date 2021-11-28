@@ -6,10 +6,33 @@ declare module "*.md";
 declare module "*.svx";
 
 // GLOBAL TYPES
-
-interface Post {
+interface postMeta {
   title: string;
   date: Date;
+  tags: Array<string>;
+}
+interface post extends postMeta {
   post: SvelteComponent;
-  tags: Array<tagTypes>;
+}
+
+interface logo {
+  name: string;
+  path: string;
+  url: string;
+}
+
+interface category {
+  title: string;
+  array: Array<project>;
+}
+interface project {
+  name: string;
+  source: sourceSet;
+  link: string;
+  logos: Array<logo>;
+}
+interface sourceSet {
+  jpg: string;
+  avif: string;
+  webP: string;
 }

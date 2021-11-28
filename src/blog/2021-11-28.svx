@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
   export const meta = {
-    title: "Hello World!",
-    date: new Date("2021-11-27"),
-    tags: ["#misc","#electronics", "#test"],
+    title: "Hello World! 2",
+    date: new Date("2021-11-28"),
+    tags: ["#misc","#coding"],
   };
 
 </script>

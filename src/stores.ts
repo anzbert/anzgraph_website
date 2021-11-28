@@ -24,12 +24,6 @@ export const flyTop = {
 export const fade1 = { delay: 400, duration: 350 };
 
 // PROJECTS
-interface logo {
-  name: string;
-  path: string;
-  url: string;
-}
-
 export const logos: { [key: string]: logo } = {
   mdsvex: {
     name: "mdsvex",
@@ -107,22 +101,6 @@ export const logos: { [key: string]: logo } = {
     url: "https://en.wikipedia.org/wiki/Tool",
   },
 };
-
-interface category {
-  title: string;
-  array: Array<project>;
-}
-interface project {
-  name: string;
-  source: sourceSet;
-  link: string;
-  logos: Array<logo>;
-}
-interface sourceSet {
-  jpg: string;
-  avif: string;
-  webP: string;
-}
 
 export const projects: Array<category> = [
   {
