@@ -20,18 +20,26 @@ In March 2021, I started taking coding and studying a lot more seriously. I want
 
 I also love the idea of contributing to the open source community, which helped me **a lot** along the way! But first, I would need to get to a level, where I could actually be helpful to others.
 
-### Deciding on my next language
+### My next language: Javascript
 
-So hard!! 
+So hard! There is a tonne of conflicting advice on the internet on what the most useful languages are, because there probably isn't *one*. In the end, I picked Javascript (and therefore HTML and CSS as a consequence). 
+Some of my reasons were:
+- It has a massive user base, which for me translates to easy googling for help. It is versatile and can be used on many platforms, backend and frontend. 
+- It is not too hard to pick up, thanks to high-level abstractions and allows for different programming styles. 
+- And finally, it is written with familiar C syntax, which I found myself preferring a lot over Python's indented blocks. Love myself some curly brackets {😛} !
 
+Most of my studying was done with the help of text books and Youtube.
 
+## Links
+
+### My favourite Javascript ressources
 
 
 <style>
 .gif {
   width: 6rem;
-  /* float:left; */
-  margin: 0.7rem;
+  float:left;
+  margin: 0.7rem 0.7rem 0 0;
 }
 
 </style>
