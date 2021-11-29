@@ -1,0 +1,13 @@
+<script context="module" lang="ts">
+  export const meta: postMeta = {
+    title: "Hello World!",
+    date: new Date("2021-11-29"),
+    tags: ["#misc", "#coding"],
+  };
+</script>
+
+This is my first blog entry of my new website. The site is still under development, but it has been an enjoyable journey to get it to its current state.
+
+I started writing C in around 2018, just tinkering with Arduinos and LEDS. That was my *'gateway drug'* into coding, because I was hooked. I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this page.
+
+My knowledge of software engineering was quite shallow at the time, low-level concepts seemed scary and overwhelming and I never 
