@@ -51,7 +51,7 @@
 <style>
   .tags {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     gap: min(1.5vw, 1rem);

@@ -163,7 +163,7 @@
       align-items: center;
     }
     .row2 {
-      justify-content: end;
+      justify-content: flex-end;
       gap: 3vw;
     }
 

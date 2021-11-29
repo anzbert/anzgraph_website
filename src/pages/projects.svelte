@@ -113,7 +113,7 @@
     /* margin: auto; */
     /* width: min(90%, 45rem); */
 
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     gap: min(1.5vw, 1rem);
     margin-right: max(1.4vw, 1rem);
