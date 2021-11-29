@@ -8,6 +8,30 @@
 
 This is my first blog entry of my new website. The site is still under development, but it has been an enjoyable journey to get it to its current state.
 
-I started writing C in around 2018, just tinkering with Arduinos and LEDS. That was my *'gateway drug'* into coding, because I was hooked. I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this page.
+I started writing C in around 2018, just tinkering with Arduinos and LEDs. That was my *'gateway drug'* into coding, because I was hooked. I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this page.
 
-My knowledge of software engineering was quite shallow at the time, low-level concepts seemed scary and overwhelming and I never 
+My knowledge of software engineering was quite shallow at the time and low-level concepts seemed a bit scary and overwhelming. I never ventured beyond the cozy libraries-included Arduino ecosystem, whose loosely walled-garden kept me safe from the madness that is cmake and dependency management in C/C++.
+
+## Take it to the next level!
+
+  <img class="gif" loading="lazy" src="../../public/img/gif/you-can-do-it.gif" alt="animation of girl saying 'you can do it!'">
+
+In March 2021, I started taking coding and studying a lot more seriously. I wanted to understand how software works and build projects on different platforms. I wanted to understand what happened when I naively threw lines of code at the compiler. And I wanted to call my self a **Developer**!
+
+I also love the idea of contributing to the open source community, which helped me **a lot** along the way! But first, I would need to get to a level, where I could actually be helpful to others.
+
+### Deciding on my next language
+
+So hard!! 
+
+
+
+
+<style>
+.gif {
+  width: 6rem;
+  /* float:left; */
+  margin: 0.7rem;
+}
+
+</style>
