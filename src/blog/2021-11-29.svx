@@ -8,13 +8,13 @@
 
 This is my first blog entry of my new website. The site is still under development, but it has been an enjoyable journey to get it to its current state.
 
-I started writing plain **C** in around 2018, just tinkering with Arduinos and LEDs. That was my *'gateway drug'* into coding, because I was hooked. I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this page.
+I started writing plain **C** in around 2018, just tinkering with Arduinos and LEDs. That was my _'gateway drug'_ into coding, because I was hooked. I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this page.
 
-My knowledge of software engineering was quite shallow at the time and low-level concepts seemed a bit scary and overwhelming. I never ventured beyond the cozy libraries-included Arduino ecosystem, whose loosely walled-garden kept me safe from the madness that is cmake and dependency management in C/C++.
+My knowledge of software engineering was quite shallow at the time and low-level concepts seemed a bit scary and overwhelming. I never ventured beyond the cosy libraries-included Arduino ecosystem, whose loosely walled-garden kept me safe from the madness that is cmake and dependency management in C/C++.
 
 ## Taking it to the next level!
 
-  <img class="gif" loading="lazy" src="../../public/img/gif/you-can-do-it.gif" alt="animation of girl saying 'you can do it!'">
+  <img class="gif" loading="lazy" src="img/gif/you-can-do-it-small.gif" alt="animation of girl saying 'you can do it!'">
 
 In March 2021, I started taking coding and studying a lot more seriously. I wanted to understand how software works and build projects on different platforms. I wanted to understand what happened when I naively threw lines of code at the compiler. And I wanted to call my self a **Developer**!
 
@@ -22,12 +22,13 @@ I also love the idea of contributing to the open source community, which helped 
 
 ### My next language: Javascript
 
-So hard! There is a tonne of conflicting advice on the internet on what the most useful languages are, because there probably isn't *one*. In the end, I picked Javascript (and therefore HTML and CSS as a consequence). 
+So hard! There is a tonne of conflicting advice on the internet on what the most useful languages are, because there probably isn't _one_. In the end, I picked Javascript (and therefore HTML and CSS as a consequence).
 Some of my reasons were:
+
 - It has a massive user base, which for me translates to easy googling for help.
-- It is versatile and can be used on many platforms, backend and frontend. 
-- It is not too hard to pick up, thanks to high-level abstractions and allows for different programming styles. 
-- And finally, it is written with familiar C syntax, which I found myself preferring a lot over Python's indented blocks. Love myself some curly brackets {😛} !
+- It is versatile and can be used on many platforms, backend and frontend.
+- It is not too hard to pick up, thanks to high-level abstractions and allows for different programming styles.
+- And finally, it is written with familiar C syntax, which I found myself preferring a lot over Python's indented blocks. Love myself some curly brackets 😛 !
 
 Most of my studying was done with a combination of text books, web search, Youtube and an online course I bought from Mosh Hamedani. Overall, I probably dedicated about 1-6 hours per (almost every) day to studying, with at least an hour of reading per day.
 
@@ -37,17 +38,17 @@ I also made sure to always find a small project to apply my newly learned skills
 
 Looking back on the last 6 months, I am now comfortable with Javascript and I am getting there with CSS as well, as a side effect. I am confident that I can read code and work out its meaning, that I can read and understand the documentation and that I can google almost everything else 😆.
 
-Maybe the biggest challenge throughout learning Javascript was that it is such a permissive multi-paradigm language. For me as a beginner, it would have sometimes been more helpful to have one clear best-practice solution to a problem. But hell no!! Javascript let's you do everything in 10 different ways. Functional, object-oriented, declarative, imperative, whatever... use prototypes, constructors, factories, classes or just functions and literal objects?! Anything goes! Googling for best practices will lead to controversial opinions about the language and its features, and which *'syntactic sugar'* needs to be avoided at all cost.
+Maybe the biggest challenge throughout learning Javascript was that it is such a permissive multi-paradigm language. For me as a beginner, it would have sometimes been more helpful to have one clear best-practice solution to a problem. But hell no!! Javascript let's you do everything in 10 different ways. Functional, object-oriented, declarative, imperative, whatever... use prototypes, constructors, factories, classes or just functions and literal objects?! Anything goes! Googling for best practices will lead to controversial opinions about the language and its features, and which _'syntactic sugar'_ needs to be avoided at all cost.
 
 For a beginner, it's not always an easy territory to traverse. I have found my way somewhere in the middle and I use different features in an experimental and playful way, and then refactor them away or leave them in later on. Whatever helps simplicity, modularity and readability.
 
-At the end of the day, there is always more to learn and I am looking forward to it! I have since discovered Rust 😍 and Typescript 😎, but thats a different story.
+At the end of the day, there is always more to learn and I am looking forward to it! I have since discovered Rust 😍 and Typescript 😎, but that's a different story.
 
 ## Links
 
 A non-exhaustive list of some of my most used learning materials and tools.
 
-### Javascript ressources which I found most helpful:
+### Javascript resources which I found most helpful:
 
 - [javascript.info](https://javascript.info), website and e-book by Ilya Kantor
 - [Secrets of the Javascript Ninja, 2nd Edition](https://www.manning.com/books/secrets-of-the-javascript-ninja-second-edition), by John Resig, Bear Bibeault, and Josip Maras
@@ -56,9 +57,9 @@ A non-exhaustive list of some of my most used learning materials and tools.
 
 ### Tools I used a lot while learning:
 
- - [Visual Studio Code](https://code.visualstudio.com/), by Microsoft and my favourite code editor
- - [Node.js](https://nodejs.org/) and its package manager NPM
- - [p5.js](https://p5js.org/), an amazingly simple graphical library based on canvas
+- [Visual Studio Code](https://code.visualstudio.com/), by Microsoft and my favourite code editor
+- [Node.js](https://nodejs.org/) and its package manager NPM
+- [p5.js](https://p5js.org/), an amazingly simple graphical library based on canvas
 
 ### Content creators I enjoyed greatly as my teachers:
 
@@ -66,7 +67,6 @@ A non-exhaustive list of some of my most used learning materials and tools.
 - [Code with Mosh](https://www.youtube.com/c/programmingwithmosh), by Mosh Hamedani
 - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) with Kyle
 - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA), by Jeff Delaney
-
 
 <style>
 .gif {
