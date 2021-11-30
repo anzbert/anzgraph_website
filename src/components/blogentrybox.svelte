@@ -16,9 +16,9 @@
 <Textbox1>
   <div class="header">
     <h1 class="title">{title}</h1>
-    <h4 class="date">
+    <h3 class="date">
       {date.toLocaleDateString("en-AU", dateOptions)}
-    </h4>
+    </h3>
   </div>
 
   <hr />
