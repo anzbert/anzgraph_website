@@ -10,7 +10,7 @@ This is the first blog entry of my new website. The site is still under developm
 
 I started writing plain **C** in around 2018, just tinkering with Arduinos and LEDs. That was my _'gateway drug'_ into coding, because I was hooked. Soon, I started taking on bigger micro controller projects, such as the MIDI devices in the project section of this site.
 
-My knowledge of software engineering was quite shallow at the time and low-level concepts seemed a bit scary and overwhelming. I never ventured beyond the cosy libraries-included Arduino ecosystem, whose loosely walled-garden kept me safe from the madness that is cmake and dependency management in C/C++.
+My knowledge of software engineering was quite shallow at the time and low-level concepts seemed a bit scary and overwhelming. I never ventured beyond the cosy libraries-included Arduino ecosystem, whose loosely walled-garden kept me safe from the madness that is cmake and dependency management in **C**/**C++**.
 
 ## Taking it to the next level!
 
