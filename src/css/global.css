@@ -65,19 +65,20 @@ h2 {
   margin: 0;
   color: var(--green1);
   font-weight: 200;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
-h3 {
+h4 {
   margin: 0;
   font-weight: 200;
   color: var(--green1);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
-h4 {
+h3 {
   color: var(--blue2);
   margin: 0;
   font-weight: 200;
+  font-size: 1.2rem;
 }
 p {
   color: var(--font3);

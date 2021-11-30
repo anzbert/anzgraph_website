@@ -15,7 +15,7 @@
 
 <Textbox1>
   <div class="header">
-    <h2 class="title">{title}</h2>
+    <h1 class="title">{title}</h1>
     <h4 class="date">
       {date.toLocaleDateString("en-AU", dateOptions)}
     </h4>
@@ -63,5 +63,8 @@
 
   .footer {
     height: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 </style>
