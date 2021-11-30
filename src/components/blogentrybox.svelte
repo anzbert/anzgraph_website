@@ -48,7 +48,6 @@
     justify-content: space-between;
     align-items: end;
   }
-
   .tags {
     display: flex;
     gap: min(1.5vw, 1rem);
@@ -60,11 +59,7 @@
     padding: 0.3em 0.6em;
     font-size: 0.8rem;
   }
-
   .footer {
     height: 3rem;
-  }
-  h1 {
-    font-size: 2rem;
   }
 </style>

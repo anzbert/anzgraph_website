@@ -73,8 +73,7 @@ A non-exhaustive list of some of my most liked learning materials and tools that
 <style>
 .gif {
   width: 6rem;
-  float:left;
+  float: left;
   margin: 0.7rem 0.7rem 0 0;
 }
-
 </style>
