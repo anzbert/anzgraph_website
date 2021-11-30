@@ -2,7 +2,7 @@
   export const meta: postMeta = {
     title: "Hello World!",
     date: new Date("2021-11-29"),
-    tags: ["#misc", "#coding"],
+    tags: ["#misc", "#javascript"],
   };
 </script>
 
@@ -44,7 +44,7 @@ As a newbie, it was not always an easy territory to traverse. I have found my wa
 
 At the end of the day, there is always more to learn and I am still very much a student, not an expert. I am grateful for all the help that I have received and maybe one day, when I have reached coding Nirvana as an enlightened code conjurer, I will be able to pass on the wisdom I have have since gained. 😇 Ok, that was cheesy, and as a side note, I hope to become a better writer as well through this website and blog, so excuse me please, for now. 😅
 
-But seriously, it has been a lot of fun I am looking forward to continue learning! Since my initial Javascript journey, I have discovered Rust 🦀😍 and Typescript ⌨️😎, but that is a different story for another time.
+But seriously, it has been a lot of fun I am looking forward to continue learning! Since my initial Javascript journey, I have discovered Rust 🦀 and Typescript, but that is a different story for another time.
 
 ## Links
 
