@@ -16,7 +16,7 @@ My knowledge of software engineering was quite shallow at the time and low-level
 
   <img class="gif" loading="lazy" src="img/gif/you-can-do-it-small.gif" alt="animation of girl saying 'you can do it!'">
 
-In 2021, I started taking coding and studying a lot more seriously. I wanted to learn a language properly and be able to build projects on different platforms. I wanted to understand what happened behind the scenes when I naively threw lines of code at the compiler. And I wanted to call my self at least a hobby **Developer**!
+In 2021, I started taking coding and studying a lot more seriously. I wanted to learn a language properly and be able to build projects on different platforms. I wanted to understand what happened behind the scenes when I naively threw lines of code at the compiler. And I wanted to call myself a **Developer**!
 
 I also love the idea of contributing to the open source community, which helped me **a lot** along the way! But first, I would need to get to a level, where I could actually be helpful to others.
 

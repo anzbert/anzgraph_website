@@ -41,6 +41,7 @@
 <style>
   .date {
     margin-top: 0.5em;
+    font-size: 1rem;
   }
   .header {
     display: flex;
