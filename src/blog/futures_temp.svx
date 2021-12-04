@@ -1,0 +1,25 @@
+<script lang="ts" context="module">
+  export const meta = {
+    title: "Promises vs Futures",
+    date: new Date("2021-11-28"), // set date when ready
+    tags: ["#rust","#javascript"],
+  };
+
+</script>
+
+Promises in Javascript/Typescript and Futures in Rust seem very similar on the surface, but there are substantial differences that can create traps when switching between the two languages. I tried to compile a list of key difference, while learning
+
+### Some Differences
+
+|  | JavaScript | Rust |
+|--|------------|------|
+| **Execution** | Managed by built-in event loop as 'microtask' | No default executor in std. Choice of external libraries to executo async fn (tokio, async-std, etc..) |
+| **Initialization** | Promises start operating once used | Futures are inert on declaration and only start processing, once invoked by an executor |
+| **Async/Await** | async/await are syntactic sugar for Promises to simplify writing asynchronous code. At the time of writing await can only be used in an async function, not top level | async is a ?????!?!?!? |
+| **Spawning** |  | Asynchronous functions  |
+| **Multithreading** |  |  |
+| **CPU-intensive Operations** |  |  |
+| **IO-Operations** |  |  |
+| **Blocking** |  |  |
+|  |  |  |
+|  |  |  |
