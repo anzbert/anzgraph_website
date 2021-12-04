@@ -37,7 +37,7 @@ export const projects: Array<category> = [
       {
         name: "Dog Feeder",
         source: {
-          jpg: "img/placeholder.png",
+          jpg: "img/projects/feed/feed0.jpg",
           avif: "",
           webP: "",
         },
