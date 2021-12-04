@@ -35,24 +35,14 @@ export const projects: Array<category> = [
         logos: [logos.arduino, logos.c],
       },
       {
-        name: "Dog Timer",
+        name: "Dog Feeder",
         source: {
           jpg: "img/placeholder.png",
           avif: "",
           webP: "",
         },
-        link: "DogTimer",
-        logos: [logos.arduino, logos.c],
-      },
-      {
-        name: "Pi Dog Feeder",
-        source: {
-          jpg: "img/placeholder.png",
-          avif: "",
-          webP: "",
-        },
-        link: "DogPi",
-        logos: [logos.rpi, logos.node],
+        link: "Feed",
+        logos: [logos.arduino, logos.c, logos.rpi, logos.node],
       },
     ],
   },

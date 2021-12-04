@@ -16,6 +16,7 @@
   import Clock from "../projects/clock.svelte";
   import Pedal from "../projects/pedal.svelte";
   import Tiny from "../projects/tiny.svelte";
+  import Feed from "../projects/feed.svelte";
 
   async function scrollTo(id: string) {
     currentFocus = "all";
@@ -88,6 +89,7 @@
   {#if currentFocus === "Clock"}<Clock />{/if}
   {#if currentFocus === "Pedal"}<Pedal />{/if}
   {#if currentFocus === "Tiny"}<Tiny />{/if}
+  {#if currentFocus === "Feed"}<Feed />{/if}
 </div>
 
 <!-- -----------------------------CSS --------------------------------------------->
