@@ -18,6 +18,7 @@
   import Tiny from "../projects/tiny.svelte";
   import Feed from "../projects/feed.svelte";
   import Deskmetro from "../projects/deskmetro.svelte";
+  import Kolibri from "../projects/kolibri.svelte";
 
   async function scrollTo(id: string) {
     currentFocus = "all";
@@ -92,6 +93,7 @@
   {#if currentFocus === "Tiny"}<Tiny />{/if}
   {#if currentFocus === "Feed"}<Feed />{/if}
   {#if currentFocus === "DeskMetro"}<Deskmetro />{/if}
+  {#if currentFocus === "Kolibri"}<Kolibri />{/if}
 </div>
 
 <!-- -----------------------------CSS --------------------------------------------->

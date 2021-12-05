@@ -37,7 +37,7 @@ export const projects: Array<category> = [
       {
         name: "Dog Feeder",
         source: {
-          jpg: "img/projects/feed/feed0.jpg",
+          jpg: "img/icons/underconstruction.svg",
           avif: "",
           webP: "",
         },
@@ -52,7 +52,7 @@ export const projects: Array<category> = [
       {
         name: "Metronome",
         source: {
-          jpg: "img/placeholder.png",
+          jpg: "img/icons/underconstruction.svg",
           avif: "",
           webP: "",
         },
@@ -65,9 +65,19 @@ export const projects: Array<category> = [
     title: "Building",
     array: [
       {
+        name: "Kolibri PC",
+        source: {
+          jpg: "img/icons/underconstruction.svg",
+          avif: "",
+          webP: "",
+        },
+        link: "Kolibri",
+        logos: [logos.tools],
+      },
+      {
         name: "Tiny House",
         source: {
-          jpg: "img/placeholder.png",
+          jpg: "img/icons/underconstruction.svg",
           avif: "",
           webP: "",
         },
