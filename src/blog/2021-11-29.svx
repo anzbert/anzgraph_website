@@ -16,31 +16,31 @@ My knowledge of software engineering was quite shallow at the time and low-level
 
   <img class="gif" loading="lazy" src="img/gif/you-can-do-it-small.gif" alt="animation of girl saying 'you can do it!'">
 
-In 2021, I started taking coding and studying a lot more seriously. I wanted to learn a language properly and be able to build projects on different platforms. I wanted to understand what happened behind the scenes when I naively threw lines of code at the compiler. And I wanted to call myself a **Developer**!
+In 2021, I started taking coding and studying a lot more seriously, since I wanted to learn at least one language properly and then be able to build projects on different platforms. I was curious to understand what happened behind the scenes, when I naively threw lines of code at the compiler. And I wanted to call myself a **Developer**!
 
 I also love the idea of contributing to the open source community, which helped me **a lot** along the way! But first, I would need to get to a level, where I could actually be helpful to others.
 
 ### My next language: Javascript
 
-Choosing a language was **super** hard! There is a tonne of conflicting advice on the internet on what the most useful ones are, because there definitely isn't just _one_. In the end, I picked Javascript (and therefore HTML and CSS as a consequence).
+Choosing a language was **very** hard! There is a tonne of conflicting advice on the internet on what the most useful ones are, because there definitely isn't just _one_. In the end, I picked Javascript (and therefore HTML and CSS as a consequence).
 Some of my reasons were:
 
-- It has a massive user base, which for me translates to easy googling for help.
+- It has a massive user base, which for me, translates to easy googling for help.
 - It is versatile and can be used on many platforms, backend and frontend.
-- It is not too hard to pick up, thanks to high-level abstractions and allows for different programming styles.
+- It is not too hard to pick up, thanks to high-level abstractions and it allows for different programming styles.
 - And finally, it is written with familiar C syntax, which I found myself preferring **a lot** over Python's indented blocks. Love myself some curly brackets &lbrace 😛 &rbrace !
 
-Most of my studying was done with a combination of text books, web search, Youtube and an online course I bought (from Mosh Hamedani). Overall, I probably dedicated about 1-6 hours per (almost every) day to studying, with at least an hour of reading per day.
+Most of my studying was done with a combination of text books, web search, Youtube and an online course I bought (from Mosh Hamedani). Overall, I probably dedicated about 1-4 hours per (almost every) day to studying, with at least an hour of reading per day.
 
 I also made sure to always find a small project to apply my newly learned skills to practically. Some of my beginner examples: I made an XXO game with a simple AI, a Connect 4 game, an attempt at a website and some simple graphical simulations with bouncing balls, moving waves and jumping 2D block shaped characters. I also made a nice-looking, but ultimately useless 😅 markdown-based report generator with Electron, which was a great learning exercise for both back and frontend. [Advent of Code](https://adventofcode.com/) was also a great resource of fun coding quizzes / job interview-like exercises.
 
 ## Looking back
 
-Looking back on the last 6 months, I am now quite comfortable with Javascript and I am getting there with CSS as well, as a side effect. The most important thing is that I feel confident that I can work out a problem through breaking it up into smaller pieces and without being intimidated by seemingly cryptic code. I know now that I can read and understand the documentation, given enough time, and that I can google almost everything else 😆.
+Looking back on the last 6 months, I am now quite comfortable with Javascript and I am getting there with CSS as well. The most important thing is that I feel confident now, that I can work out most problems through breaking it up into smaller pieces and without being intimidated by seemingly cryptic code. I know now that I can read and understand the documentation, given enough time, and that I can google almost everything else 😆.
 
 Maybe the biggest challenge throughout learning Javascript was that it is such a permissive multi-paradigm language. For me as a beginner, it would have sometimes been easier to have one clear best-practice solution to a common problem. But hell no!! Javascript let's you approach things in **many** different ways. Functional, object-oriented, declarative, imperative, whatever... use prototypes, constructors, factories, classes or just functions and literal objects?! Anything goes! Googling for best practices will lead to controversial opinions about the language and its features, and with conflicting advice on which _'syntactic sugar'_ needs to be avoided at all cost.
 
-As a newbie, it was not always an easy territory to traverse. I have found my way somewhere in the middle of the advice I have been getting, and I now use the different features of the language in an experimental and playful way. I may later refactor them away again, exchange them for other patterns or leave them in. What I believe trumps dogmatic use of patterns is whatever helps with simplicity, modularity and readability.
+As a newbie, that was not always an easy territory to traverse. I have found my current way somewhere in the middle of the advice I have been getting, and I now use the different features of the language in an experimental and playful way. I may later refactor them away again, exchange them for other patterns or leave them in. What I believe trumps dogmatic use of patterns is whatever helps with simplicity, modularity and readability.
 
 At the end of the day, there is always more to learn and I am still very much a student, not an expert. I am grateful for all the help that I have received and maybe one day, when I have reached coding Nirvana as an enlightened code conjurer, I will be able to pass on the wisdom I have have since gained. 😇 Ok, that was cheesy, and as a side note, I hope to become a better writer as well through this website and blog, so excuse me please, for now. 😅
 
