@@ -20,6 +20,7 @@
     "vite": "^2.6.14"
   },
   "dependencies": {
+    "svelte-carousel": "^1.0.17-rc1",
     "svelte-lazy": "^1.0.12",
     "svelte-swipe": "^1.8.2"
   }
