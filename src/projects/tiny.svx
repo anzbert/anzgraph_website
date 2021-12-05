@@ -16,4 +16,16 @@ Okay 😅... Maybe I got carried away a bit there, but house prices are ridiculo
 - Finding a suitable construction site, which was for rent and not too far away
 - The legality of permanently living in a movable construct depends on local authorities and state laws
 
+<div class="sketchfab-embed-wrapper"> <iframe title="framing only" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1272346228f944edb9fea081eea3b923/embed?autospin=0&ui_theme=dark"> </iframe> </div>
+
 TO BE COMPLETED....
+
+<style>
+.sketchfab-embed-wrapper {
+    display: block;
+}
+iframe {
+    width: 100%;
+}
+
+</style>
