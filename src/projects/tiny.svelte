@@ -19,7 +19,11 @@
     let path = `img/projects/Tiny/tiny${i}.jpg`;
     paths.push(path);
   }
+
+  import Construction from "../components/construction.svelte";
 </script>
+
+<Construction />
 
 <div class="markdown" in:fly={flyLeft}>
   <div class="card-wrapper">
