@@ -52,7 +52,7 @@
   img {
     height: calc(var(--width) / 4 * 3);
     width: var(--width);
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .markdown {
