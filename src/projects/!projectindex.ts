@@ -56,7 +56,7 @@ export const projects: Array<category> = [
           avif: "",
           webP: "",
         },
-        link: "DesktopMetro",
+        link: "DeskMetro",
         logos: [logos.rpi, logos.rust],
       },
     ],

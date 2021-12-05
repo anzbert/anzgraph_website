@@ -1,7 +1,9 @@
 # Dog Food Timer / Remote Feeder
 
+## Background
+
 ## Links
 
-[Source: Arduino](https://github.com/anzbert/dog-timer)
+[Source: v1 Arduino Food Timer](https://github.com/anzbert/dog-timer)
 
-[Source: Raspberry Pi](https://github.com/anzbert/feedingPi)
+[Source: v2 Raspberry Pi Remote Camera Feeder](https://github.com/anzbert/feedingPi)

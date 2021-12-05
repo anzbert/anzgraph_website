@@ -45,12 +45,12 @@
   }
   .swipe-holder {
     --width: clamp(200px, 75vmin, 70vmax);
-    height: calc(var(--width) / 5 * 3);
+    height: calc(var(--width) / 4 * 3);
     width: var(--width);
     margin: auto;
   }
   img {
-    height: calc(var(--width) / 5 * 3);
+    height: calc(var(--width) / 4 * 3);
     width: var(--width);
     object-fit: contain;
   }

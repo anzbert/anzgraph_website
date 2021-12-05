@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Swipe, SwipeItem } from "svelte-swipe";
   import Card from "../components/card1.svelte";
-  import Markdown from "./clock.svx";
+  import Markdown from "./deskmetro.svx";
 
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft } from "../stores";
@@ -15,14 +15,18 @@
   };
 
   let paths: Array<string> = [];
-  for (let i = 0; i < 5; i++) {
-    let path = `img/projects/Clock/clock${i}.jpg`;
+  for (let i = 0; i < 0; i++) {
+    let path = `img/projects/deskmetro/deskm${i}.jpg`;
     paths.push(path);
   }
+
+  import Construction from "../components/construction.svelte";
 </script>
 
+<Construction />
+
 <div class="markdown" in:fly={flyLeft}>
-  <div class="card-wrapper">
+  <!-- <div class="card-wrapper">
     <Card width="fit-content">
       <div class="swipe-holder" in:fade={fade1}>
         <Swipe {...swipeConfig}>
@@ -34,7 +38,7 @@
         </Swipe>
       </div>
     </Card>
-  </div>
+  </div> -->
   <Markdown />
 </div>
 
