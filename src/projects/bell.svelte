@@ -43,7 +43,7 @@
         <Swipe {...swipeConfig} bind:this={SwipeComp}>
           {#each paths as path, index}
             <SwipeItem>
-              <Figure {path} multiformat={false} caption={captions[index]} />
+              <Figure {path} multiformat={true} caption={captions[index]} />
             </SwipeItem>
           {/each}
         </Swipe>
