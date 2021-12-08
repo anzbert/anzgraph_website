@@ -31,7 +31,7 @@
               <picture>
                 <source srcset="{path}_comp.avif" type="image/avif" />
                 <source srcset="{path}_comp.webp" type="image/webp" />
-                <img loading="lazy" src="{path}.jpg" alt="project views" />
+                <img loading="lazy" src="{path}.jpg" alt="loading..." />
               </picture>
             </SwipeItem>
           {/each}

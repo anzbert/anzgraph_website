@@ -1,6 +1,11 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import { onMount } from "svelte";
+
+  onMount(() => {});
+</script>
 
 <img
+  loading="lazy"
   class="construction-logo"
   src="img/icons/underconstruction.svg"
   alt="under construction logo"

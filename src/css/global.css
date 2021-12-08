@@ -160,6 +160,12 @@ a:active {
   text-decoration: underline;
 }
 
+img {
+  color: var(--green1);
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
 table {
   color: var(--font3);
   border-collapse: collapse;
