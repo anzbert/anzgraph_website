@@ -19,11 +19,7 @@
     let path = `img/projects/feed/feed${i}`;
     paths.push(path);
   }
-
-  import Construction from "../components/construction.svelte";
 </script>
-
-<Construction />
 
 <div class="markdown" in:fly={flyLeft}>
   <div class="card-wrapper">

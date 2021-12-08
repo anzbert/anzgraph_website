@@ -2,6 +2,49 @@
 
 ## Background
 
+I have always built my own PCs, starting with a Pentium 166Mhz in the 90s, and it has always been fun, exciting and educational. You don't necessarily save any money compared to pre-built machines, but you always end up learning something, and it leaves you with a sense of pride, achievement and a deeper connection to your digital helper.
+
+This built has evolved from a standard Cooler Master Elite 130 Mini-ITX enclosure with a small water cooling loop for the CPU. I have lived with limited space for a number of years, which made mini ITX my preferred form factor.
+
+The PC in the original case worked well for a long time, but I was never quite happy with some of its short-comings. And when the already noisy water pump started developing a nasty grinding sound, it was time for some alterations. Enter the Kolibri!
+
+Kolibri translates to Hummingbird, since I wanted it to be small, quiet and air-cooled (think flip-flapping wings 😝)
+
+The original case looked like [this](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/). Not terrible, but not the best for XXL air cooling.
+
+### Goals
+
+- I wanted to create a 'Wind Tunnel' kind of system. Air in from the front and out the back, with all fans in line and blowing in that direction.
+- I needed to get rid of the PSU on top of the CPU to make room for a decent CPU cooler, plus an exhaust fan on the back.
+
+### Modifications
+
+To achieve these goals, I needed to get a smaller, SFX format PSU. I cut into the case and made a new mount for it on the bottom, from where it exhausts its hot air. That was the only spot in this space-constrained case that could accommodate a power supply. The PSU now needed to be plugged in from the bottom, which required me to get an angle piece for the IEC plug. No biggie!
+
+Now there was enough room above the motherboard, I could get a wonderfully quiet and efficient Noctua NH-U12S 120mm CPU cooler.
+
+The exhaust on the back needed an opening and some screw holes, which I cut and drilled into the case on the back. All cuts were unfortunately made with a jigsaw 😬, since that was the only tool I had available that day and led to some embarrassingly wonky cuts. A bit of black spray paint helped to hide that hideous handy work and a grill was mounted to the back to keep fingers separate from fan blades.
+
+I had previously made some stencils with laminated paper and used those for a decent enough finish on the case. As a bonus, I also made a t-shirt with the kolibri logo, using those stencils with a shirt and bleach in a spray bottle. Nice!
+
+## Conclusion
+
+The PC is beautifully quiet. In fact much quieter than the old annoying water cooled PC ever was. Temps are well within acceptable ranges when gaming, and maybe one day I'll have an overclockable CPU to test it at its limits.
+
+The PC mod was quite simple and didn't take too much time, but still I feel like I really made this computer my own. And no over the counter pre-built can ever compete with that!
+
+| PC Specs    |                                |
+| ----------- | ------------------------------ |
+| CPU         | Intel i5-10600                 |
+| RAM         | 2x8GB                          |
+| GPU         | EVGA RTX 3080                  |
+| Storage     | NVME 500GB / 2TB SSD / 1TB SSD |
+| Motherboard | ASUS B460 Gaming               |
+| Fans        | 3x Noctua 120mm                |
+
 ## Links
 
-[CoolerMaster Elite 130 Mini-ITX](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/)
+[The unmodified CoolerMaster Elite 130 Mini-ITX](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/)
+
+[SketchUp 3D Model](https://anzgraph.com/files/kolibri-sketchup17.skp)
+- Can be used in the free [SketchUp for Web](https://www.sketchup.com/products/sketchup-for-web) editor.

@@ -160,6 +160,27 @@ a:active {
   text-decoration: underline;
 }
 
+table {
+  color: var(--font3);
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+th {
+  border-bottom: 2px solid var(--gray4);
+  color: var(--blue2);
+  text-align: start;
+  text-transform: uppercase;
+}
+td,
+tr {
+  border-bottom: 1px solid var(--gray3);
+}
+td,
+tr,
+th {
+  padding: 0.1em 0.2em;
+}
+
 /* for devices that can hover: */
 @media (hover: hover) {
   button:hover {

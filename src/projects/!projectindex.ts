@@ -34,8 +34,8 @@ export const projects: Array<category> = [
       {
         name: "Dog Feeder",
         source: {
-          path: "img/icons/underconstruction.png",
-          multiformat: false,
+          path: "img/projects/feed/feed2",
+          multiformat: true,
         },
         link: "Feed",
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
@@ -71,8 +71,8 @@ export const projects: Array<category> = [
       {
         name: "Kolibri PC",
         source: {
-          path: "img/icons/underconstruction.png",
-          multiformat: false,
+          path: "img/projects/kolibri/kolibri1",
+          multiformat: true,
         },
         link: "Kolibri",
         logos: [logos.tools],

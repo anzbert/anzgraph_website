@@ -26,13 +26,13 @@
 <Construction />
 
 <div class="markdown" in:fly={flyLeft}>
-  <!-- <div class="card-wrapper">
+  <div class="card-wrapper">
     <Card width="fit-content">
       <div class="swipe-holder" in:fade={fade1}>
         <Swipe {...swipeConfig}>
           {#each paths as path}
             <SwipeItem>
-             <picture>
+              <picture>
                 <source srcset="{path}_comp.avif" type="image/avif" />
                 <source srcset="{path}_comp.webp" type="image/webp" />
                 <img loading="lazy" src="{path}.jpg" alt="project views" />
@@ -42,7 +42,7 @@
         </Swipe>
       </div>
     </Card>
-  </div> -->
+  </div>
   <Markdown />
 </div>
 

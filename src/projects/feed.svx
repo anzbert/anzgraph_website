@@ -1,9 +1,70 @@
-# Dog Food Timer / Remote Feeder
+# Dog Food Timer and Remote Feeder
 
 ## Background
+
+Knowing that your pet will get a tasty treat to pass the time while you are away is quite comforting. Especially when you can't make it in time for the regular dinner-schedule. My girlfriend has an obsession with novelty enrichment feeding devices and she had been eye balling these timed feeders for a while. They are pretty expensive for what they are, and surely this kind of thing can be DIY'ed ?!
+
+## Challenges
+
+#### General
+
+- Storing and releasing larger food items like Kongs, as well as small kibbles was a mechanical challenge.
+- Translating an electrical signal to some kind of latch or rotator to dispense food
+
+#### Arduino
+
+- Separate voltage power delivery for the micro controller and the mechanics
+- Creating an easy to use UI with display and timer
+
+#### Raspberry Pi Webcam Control
+
+- Obvious security concerns when exposing a port of the home WiFi to the internet
+- Handling an MJPG webcam stream efficiently and securely
+- Linux rights management to allow a minimal rights user to run the program for added security
+
+## The Build
+
+This project went through a number of iterations. First, I only built an Arduino-based timer, initially with a gigantic bell, both in dimensions and in loudness, which was ringing when dinner was ready. The bell was quickly deemed to scary for the dog and therefore removed to be used in another project.
+
+There as also an existing rotating Kibble dispenser in the house from K-mart. I wanted to be able to control that with the timer as well, so I soldered a couple of cables to the internal activator switch and mounted a 3.5mm socket to the case. The idea was to run a cable to the control unit to activate that feeder on a timer as well.
+
+The control unit and the feeder were at first separate units and there were unnecessary long cables everywhere. Of course, that was simplified in a rebuild as well.
+
+And finally, a Raspberry Pi with a NodeJS server and a webcam was added later on to make the feeder remotely controllable instead of just relying on a timer, for some extra dog feeding fun when out and about. Managing the webcam with internal routing to the Express server was time-consuming to get to work on the resource constrained Pi Zero. In the end, I made it work with a combination of the fantastic [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer) and an ExpressJS Server. A single port was opened in the home WiF and routed to the Pi Zero and a password login was included using a HTTP Authentication module.
+
+### Materials
+
+- 1x Arduino Pro Micro
+- 1x Project Box
+- 1x SSD1306 Display
+- 1x Rotary Encoder
+- 2x 12v Solenoids
+- 2x Diodes for solenoids
+- 2x 10K Ohm Pull-down Resistors for solenoids
+- 3x Logic Level Transistor for 2 solenoids and triggering of 1 external dispenser
+- 1x 3.5mm socket for control of external food dispenser from K-mart
+- 1x 12v to 5v transformer unit
+- 1x 12v power supply
+- 1x Barrel plug socket for PSU
+- 1x Female to Male Micro USB Panel Mount Adapter
+- 2x Plastic Flower Pots
+- 2x Hinges
+- Wood / Cables / Bolts / Cable Ties / Chain & Hook
+
+#### Pi Webcam Add-on
+
+- 1x Switch to select Raspberry Pi Control of feeder
+- 1x Pi Zero W
+- 1x generic USB webcam
+
+## Conclusion
+
+The feeder works a treat (pun intended!), but there was a very unfortunate incident, where a Kong was dropped onto the dog's head in a remote feeding session. The dog has been scared of this spooky apparatus ever since. Bummer! It was a great project and we are trying to re-establish the superstitious animal's trust into the machine.
 
 ## Links
 
 [Source: v1 Arduino Food Timer](https://github.com/anzbert/dog-timer)
 
 [Source: v2 Raspberry Pi Remote Camera Feeder](https://github.com/anzbert/feedingPi)
+
+[MJPG Streamer by Jackson Liam for Linux](https://github.com/jacksonliam/mjpg-streamer)
