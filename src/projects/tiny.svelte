@@ -16,7 +16,7 @@
 
   let paths: Array<string> = [];
   for (let i = 0; i < 0; i++) {
-    let path = `img/projects/Tiny/tiny${i}`;
+    let path = `img/projects/tiny/tiny${i}`;
     paths.push(path);
   }
 

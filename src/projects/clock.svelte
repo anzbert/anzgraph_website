@@ -16,7 +16,7 @@
 
   let paths: Array<string> = [];
   for (let i = 0; i < 5; i++) {
-    let path = `img/projects/Clock/clock${i}`;
+    let path = `img/projects/clock/clock${i}`;
     paths.push(path);
   }
 </script>

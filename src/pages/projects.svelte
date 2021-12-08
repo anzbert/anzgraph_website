@@ -65,13 +65,6 @@
                 </div>
 
                 <div class="image" slot="thumbnail">
-                  <!-- <img
-                    on:click={() => changeFocus(project.link)}
-                    loading="lazy"
-                    class="thumbnail"
-                    src={project.source.jpg}
-                    alt="{project.name} thumbnail picture"
-                  /> -->
                   {#if project.source.multiformat}
                     <picture>
                       <source
@@ -85,7 +78,6 @@
 
                       <img
                         on:click={() => changeFocus(project.link)}
-                        loading="lazy"
                         class="thumbnail"
                         src="{project.source.path}.jpg"
                         alt="{project.name} thumbnail picture"
@@ -94,7 +86,6 @@
                   {:else}
                     <img
                       on:click={() => changeFocus(project.link)}
-                      loading="lazy"
                       class="thumbnail"
                       src={project.source.path}
                       alt="{project.name} thumbnail picture"
