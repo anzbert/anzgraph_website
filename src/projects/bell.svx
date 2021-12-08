@@ -1,3 +1,5 @@
 # Wireless Bus Bell
 
 ## Background
+
+Two of my dear friends bought an old street bus. Even better, they actually bought a former [O-Bahn Bus](https://en.wikipedia.org/wiki/O-Bahn_Busway) from South Australia.
