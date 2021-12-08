@@ -7,7 +7,7 @@
 
   let paths: Array<string> = [];
   for (let i = 0; i < 0; i++) {
-    let path = `img/projects/kolibri/kolibri${i}.jpg`;
+    let path = `img/projects/kolibri/kolibri${i}`;
     paths.push(path);
   }
 

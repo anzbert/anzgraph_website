@@ -65,13 +65,41 @@
                 </div>
 
                 <div class="image" slot="thumbnail">
-                  <img
+                  <!-- <img
                     on:click={() => changeFocus(project.link)}
                     loading="lazy"
                     class="thumbnail"
                     src={project.source.jpg}
                     alt="{project.name} thumbnail picture"
-                  />
+                  /> -->
+                  {#if project.source.multiformat}
+                    <picture>
+                      <source
+                        srcset="{project.source.path}_comp.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="{project.source.path}_comp.webp"
+                        type="image/webp"
+                      />
+
+                      <img
+                        on:click={() => changeFocus(project.link)}
+                        loading="lazy"
+                        class="thumbnail"
+                        src="{project.source.path}.jpg"
+                        alt="{project.name} thumbnail picture"
+                      />
+                    </picture>
+                  {:else}
+                    <img
+                      on:click={() => changeFocus(project.link)}
+                      loading="lazy"
+                      class="thumbnail"
+                      src={project.source.path}
+                      alt="{project.name} thumbnail picture"
+                    />
+                  {/if}
                   <div id={project.link} class="project-icons">
                     {#each project.logos as logo}
                       <img src={logo.path} alt="" class="icon" />

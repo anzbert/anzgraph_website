@@ -7,9 +7,9 @@
 </script>
 
 <picture in:fade={{ delay: 400, duration: 350 }}>
-  <source srcset="{bg_path}.avif" type="image/avif" />
-  <source srcset="{bg_path}.webp" type="image/webp" />
-  <img class="background" srcset="{bg_path}_compressed.jpg" alt="Background" />
+  <source srcset="{bg_path}_comp.avif" type="image/avif" />
+  <source srcset="{bg_path}_comp.webp" type="image/webp" />
+  <img class="background" srcset="{bg_path}_comp.jpg" alt="Background" />
 </picture>
 
 <style>

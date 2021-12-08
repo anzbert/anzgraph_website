@@ -16,7 +16,7 @@
 
   let paths: Array<string> = [];
   for (let i = 0; i < 9; i++) {
-    let path = `img/projects/Pedal/footp${i}.jpg`;
+    let path = `img/projects/Pedal/footp${i}`;
     paths.push(path);
   }
 </script>
@@ -28,7 +28,11 @@
         <Swipe {...swipeConfig}>
           {#each paths as path}
             <SwipeItem>
-              <img loading="lazy" srcset={path} alt="" />
+              <picture>
+                <source srcset="{path}_comp.avif" type="image/avif" />
+                <source srcset="{path}_comp.webp" type="image/webp" />
+                <img loading="lazy" src="{path}.jpg" alt="project views" />
+              </picture>
             </SwipeItem>
           {/each}
         </Swipe>

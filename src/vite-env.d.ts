@@ -32,7 +32,6 @@ interface project {
   logos: Array<logo>;
 }
 interface sourceSet {
-  jpg: string;
-  avif: string;
-  webP: string;
+  path: string;
+  multiformat: boolean;
 }

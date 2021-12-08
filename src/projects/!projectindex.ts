@@ -7,9 +7,8 @@ export const projects: Array<category> = [
       {
         name: "Crossfader",
         source: {
-          jpg: "img/projects/fader1.jpg",
-          avif: "",
-          webP: "",
+          path: "img/projects/xfader/fader_thumb",
+          multiformat: true,
         },
         link: "Xfader",
         logos: [logos.arduino, logos.c],
@@ -17,9 +16,8 @@ export const projects: Array<category> = [
       {
         name: "Alarm Clock",
         source: {
-          jpg: "img/projects/clock1.jpg",
-          avif: "",
-          webP: "",
+          path: "img/projects/clock/clock_thumb",
+          multiformat: true,
         },
         link: "Clock",
         logos: [logos.arduino, logos.c],
@@ -27,9 +25,8 @@ export const projects: Array<category> = [
       {
         name: "USB/Midi Pedal",
         source: {
-          jpg: "img/projects/pedal2.jpg",
-          avif: "",
-          webP: "",
+          path: "img/projects/pedal/pedal_thumb",
+          multiformat: true,
         },
         link: "Pedal",
         logos: [logos.arduino, logos.c],
@@ -37,9 +34,8 @@ export const projects: Array<category> = [
       {
         name: "Dog Feeder",
         source: {
-          jpg: "img/icons/underconstruction.svg",
-          avif: "",
-          webP: "",
+          path: "img/icons/underconstruction.png",
+          multiformat: false,
         },
         link: "Feed",
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
@@ -47,9 +43,8 @@ export const projects: Array<category> = [
       {
         name: "Bus Bell",
         source: {
-          jpg: "img/icons/underconstruction.svg",
-          avif: "",
-          webP: "",
+          path: "img/icons/underconstruction.png",
+          multiformat: false,
         },
         link: "Bell",
         logos: [logos.arduino, logos.c],
@@ -62,9 +57,8 @@ export const projects: Array<category> = [
       {
         name: "Metronome",
         source: {
-          jpg: "img/icons/underconstruction.svg",
-          avif: "",
-          webP: "",
+          path: "img/icons/underconstruction.png",
+          multiformat: false,
         },
         link: "DeskMetro",
         logos: [logos.rpi, logos.rust],
@@ -77,9 +71,8 @@ export const projects: Array<category> = [
       {
         name: "Kolibri PC",
         source: {
-          jpg: "img/icons/underconstruction.svg",
-          avif: "",
-          webP: "",
+          path: "img/icons/underconstruction.png",
+          multiformat: false,
         },
         link: "Kolibri",
         logos: [logos.tools],
@@ -87,9 +80,8 @@ export const projects: Array<category> = [
       {
         name: "Tiny House",
         source: {
-          jpg: "img/icons/underconstruction.svg",
-          avif: "",
-          webP: "",
+          path: "img/icons/underconstruction.png",
+          multiformat: false,
         },
         link: "Tiny",
         logos: [logos.tools],
