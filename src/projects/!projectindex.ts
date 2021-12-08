@@ -43,8 +43,8 @@ export const projects: Array<category> = [
       {
         name: "Bus Bell",
         source: {
-          path: "img/icons/underconstruction.png",
-          multiformat: false,
+          path: "img/projects/bell/bell0",
+          multiformat: true,
         },
         link: "Bell",
         logos: [logos.arduino, logos.c],
