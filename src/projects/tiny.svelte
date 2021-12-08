@@ -32,7 +32,7 @@
         <Swipe {...swipeConfig}>
           {#each paths as path}
             <SwipeItem>
-              <img srcset={path} alt="" />
+              <img loading="lazy" srcset={path} alt="" />
             </SwipeItem>
           {/each}
         </Swipe>

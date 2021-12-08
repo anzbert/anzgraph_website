@@ -11,19 +11,8 @@
     paths.push(path);
   }
 
-  // import Carousel from "svelte-carousel";
-  // import { onMount } from "svelte";
-
-  // let Carousel; // for saving Carousel component class
-  // let carousel; // for calling methods of the carousel instance
-  // onMount(async () => {
-  //   const module = await import("svelte-carousel");
-  //   Carousel = module.default;
-  // });
-
-  // const handleNextClick = () => {
-  //   carousel.goToNext();
-  // };
+  import { Swiper, SwiperSlide } from "swiper/svelte";
+  import "swiper/css";
 
   import Construction from "../components/construction.svelte";
 </script>
@@ -34,13 +23,17 @@
   <div class="card-wrapper">
     <Card width="fit-content">
       <div class="swipe-holder" in:fade={fade1}>
-        <!-- <svelte:component this={Carousel} bind:this={carousel}>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-        </svelte:component>
-
-        <button on:click={handleNextClick}>Next</button> -->
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          on:slideChange={() => console.log("slide change")}
+          on:swiper={(e) => console.log(e.detail[0])}
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+        </Swiper>
       </div>
     </Card>
   </div>
