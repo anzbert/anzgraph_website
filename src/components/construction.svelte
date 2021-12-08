@@ -8,11 +8,10 @@
 
 <style>
   img {
-    /* z-index: 999; */
-    /* opacity: 0.7; */
+    z-index: 3;
     position: fixed;
     top: 8rem;
-    width: 50vmin;
+    width: 45vmin;
     left: 0.5rem;
     transform: rotate(-20deg) scaleY(0.75);
     filter: hue-rotate(60deg) grayscale(0.3);

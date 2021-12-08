@@ -44,6 +44,16 @@ export const projects: Array<category> = [
         link: "Feed",
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
       },
+      {
+        name: "Bus Bell",
+        source: {
+          jpg: "img/icons/underconstruction.svg",
+          avif: "",
+          webP: "",
+        },
+        link: "Bell",
+        logos: [logos.arduino, logos.c],
+      },
     ],
   },
   {

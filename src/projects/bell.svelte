@@ -1,29 +1,24 @@
 <script lang="ts">
+  import { Swipe, SwipeItem } from "svelte-swipe";
   import Card from "../components/card1.svelte";
-  import Markdown from "./kolibri.svx";
+  import Markdown from "./bell.svx";
 
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft } from "../stores";
 
+  const swipeConfig = {
+    defaultIndex: 0,
+    showIndicators: true,
+    autoplay: false,
+    delay: 4000,
+    transitionDuration: 500,
+  };
+
   let paths: Array<string> = [];
   for (let i = 0; i < 0; i++) {
-    let path = `img/projects/kolibri/kolibri${i}.jpg`;
+    let path = `img/projects/bell/bell${i}.jpg`;
     paths.push(path);
   }
-
-  // import Carousel from "svelte-carousel";
-  // import { onMount } from "svelte";
-
-  // let Carousel; // for saving Carousel component class
-  // let carousel; // for calling methods of the carousel instance
-  // onMount(async () => {
-  //   const module = await import("svelte-carousel");
-  //   Carousel = module.default;
-  // });
-
-  // const handleNextClick = () => {
-  //   carousel.goToNext();
-  // };
 
   import Construction from "../components/construction.svelte";
 </script>
@@ -31,19 +26,19 @@
 <Construction />
 
 <div class="markdown" in:fly={flyLeft}>
-  <div class="card-wrapper">
+  <!-- <div class="card-wrapper">
     <Card width="fit-content">
       <div class="swipe-holder" in:fade={fade1}>
-        <!-- <svelte:component this={Carousel} bind:this={carousel}>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-        </svelte:component>
-
-        <button on:click={handleNextClick}>Next</button> -->
+        <Swipe {...swipeConfig}>
+          {#each paths as path}
+            <SwipeItem>
+              <img srcset={path} alt="" />
+            </SwipeItem>
+          {/each}
+        </Swipe>
       </div>
     </Card>
-  </div>
+  </div> -->
   <Markdown />
 </div>
 

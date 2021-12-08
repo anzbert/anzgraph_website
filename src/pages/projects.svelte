@@ -19,7 +19,9 @@
   import Feed from "../projects/feed.svelte";
   import Deskmetro from "../projects/deskmetro.svelte";
   import Kolibri from "../projects/kolibri.svelte";
+  import Bell from "../projects/bell.svelte";
 
+  // scrolling and page changing
   async function scrollTo(id: string) {
     currentFocus = "all";
     await tick();
@@ -27,7 +29,12 @@
       behavior: "smooth",
     });
   }
+
   let currentFocus = "all";
+  function changeFocus(focus: string) {
+    document.getElementById("wrapper").scrollTo(0, 0); // scroll to top
+    currentFocus = focus; // change page
+  }
 </script>
 
 <!-- ----------------------------------HMTL ----------------------------------------- -->
@@ -41,7 +48,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div id="wrapper">
   {#if currentFocus === "all"}
     <div class="project-page">
       <div class="projects">
@@ -59,7 +66,7 @@
 
                 <div class="image" slot="thumbnail">
                   <img
-                    on:click={() => (currentFocus = project.link)}
+                    on:click={() => changeFocus(project.link)}
                     loading="lazy"
                     class="thumbnail"
                     src={project.source.jpg}
@@ -94,6 +101,7 @@
   {#if currentFocus === "Feed"}<Feed />{/if}
   {#if currentFocus === "DeskMetro"}<Deskmetro />{/if}
   {#if currentFocus === "Kolibri"}<Kolibri />{/if}
+  {#if currentFocus === "Bell"}<Bell />{/if}
 </div>
 
 <!-- -----------------------------CSS --------------------------------------------->
@@ -131,7 +139,7 @@
   }
 
   /* main content: */
-  .wrapper {
+  #wrapper {
     flex-grow: 1;
     flex-shrink: 1;
 
