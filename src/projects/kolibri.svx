@@ -33,18 +33,20 @@ The PC is beautifully quiet. In fact much quieter than the old annoying water co
 
 The PC mod was quite simple and didn't take too much time, but still I feel like I really made this computer my own. And no over the counter pre-built can ever compete with that!
 
-| PC Specs    |                                |
-| ----------- | ------------------------------ |
-| CPU         | Intel i5-10600                 |
-| RAM         | 2x8GB                          |
-| GPU         | EVGA RTX 3080                  |
-| Storage     | NVME 500GB / 2TB SSD / 1TB SSD |
-| Motherboard | ASUS B460 Gaming               |
-| Fans        | 3x Noctua 120mm                |
+| PC Specs    |                                    |
+| ----------- | ---------------------------------- |
+| CPU         | Intel i5-10600                     |
+| RAM         | 2x8GB DDR4                         |
+| GPU         | EVGA XC3 Ultra RTX3080 10GB        |
+| Storage     | NVME 500GB / 2TB SSD / 1TB SSD     |
+| Motherboard | ASUS B460i Gaming                  |
+| Fans        | Noctua 3x 120mm / 1x 90mm          |
+| Monitor     | ASUS VG27AQ 27" 144Hz 1440p G-Sync |
 
 ## Links
 
 [The unmodified CoolerMaster Elite 130 Mini-ITX](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/)
 
 [SketchUp 3D Model](https://anzgraph.com/files/kolibri-sketchup17.skp)
+
 - Can be used in the free [SketchUp for Web](https://www.sketchup.com/products/sketchup-for-web) editor.
