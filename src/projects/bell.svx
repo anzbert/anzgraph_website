@@ -23,7 +23,7 @@ I scored this nice collector's piece at the time, but it seemed appropriate to e
 
 This project relies heavily on the excellent [RF433any](https://github.com/sebmillet/RF433any) library, which made it a breeze to intercept and decipher the cheap bell remote's signal. When a signal is intercepted, the bell solenoid is activated briefly through a logic level transistor. 
 
-The biggest challenge was to get the 433Mhz receiver to function reliably when sharing power with the Arduino. I suspect the first RF module I used (MX-FS-03V) was quite sensitive to import power fluctuations. I did not have an oscilloscope to confirm this theory, neither did I have a bunch of capacitors at home to try to fix the issue through some kind of filtering circuit. The easiest solution, that worked withouyt any drama, was to use a higher quality, so called "superheterodyne" RF module. The range was much better and the bell could be activated with great reliability. Win! 🥂
+The biggest challenge was to get the 433Mhz receiver to function reliably when sharing power with the Arduino. I suspect the first RF module I used (MX-FS-03V) was quite sensitive to import power fluctuations. I did not have an oscilloscope to confirm this theory, neither did I have a bunch of capacitors at home to try to fix the issue through some kind of filtering circuit. The easiest solution, that worked without any further drama, was to use a higher quality, so called "superheterodyne" RF module (RX470-4). The range was much better with this unit and the bell can now be activated with perfect reliability. I call this a win! 😊🥂
 
 ## Links
 
