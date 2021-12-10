@@ -25,13 +25,13 @@ We already had a rotating treat dispenser from Kmart, which only releases kibble
 
 ## The Build
 
-This project went through a number of iterations. First, I only built an Arduino-based timer with a display and an encoder as the input device. Initially it featured a gigantic bell in the middle, both huge in dimensions and in volume. The bell was supposed to be ringing when dinner was ready. It was quickly deemed to scary for the dog though and therefore removed to be used in another project.
+This project went through a number of iterations. First, I only built the core Arduino-based timer with a display and an encoder as an input device. Initially, it featured a gigantic solenoid-driven bell in the middle, both huge in dimensions and in volume. The bell was supposed to ring whenthe dog dinner was ready. It was quickly deemed to scary for the the poor animal and therefore removed to be used in another project.
 
-The existing rotating Kibble feeder from K-mart was integrated by soldering a couple of cables to the internal activator switch. I mounted a 3.5mm socket to the case as a connection port through which the timer can trigger a food drop.
+The rotating Kibble feeder from K-mart was integrated by soldering a couple of cables to its internal activator switch. I mounted a 3.5mm socket to the case of the timer and that feeder as connection ports through which the timer can trigger a food drop.
 
-The control unit and the feeder were at first separate units and the long cables conecting the two made the device pretty inconvenient to use. That was simplified and improved later in a rebuild. And 
+I built a separate feeder unit for two larger food items with two flower pots and hinges to release the treat by tipping. The two pots are locked in place with two solenoids, which the timer can activate at the programmed time. 
 
-Finally, a Raspberry Pi with a NodeJS server and a webcam was added later on to make the feeder remotely controllable instead of just relying on a timer, for some extra dog feeding fun when out and about. Managing the webcam with internal routing to the Express server was time-consuming to get to work on the resource constrained Pi Zero. In the end, I made it work with a combination of the fantastic [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer) and an ExpressJS Server. A single port was opened in the home WiF and routed to the Pi Zero and a password login was included using a HTTP Authentication module.
+Afew months later, I used a Raspberry Pi running NodeJS and a USB webcam to make a remote feeding add-on unit. Since the resource constrained Pi Zero W can't efficiently be used to transcode a MJPG stream to be used with WebRTC, or a similar protocol, I had to make it work with the fantastic [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer) proxied to an ExpressJS Server. A single port was opened in the home WiFi and routed to the Pi, and a password login was included using a HTTP Authentication.
 
 ### Materials
 
@@ -60,7 +60,7 @@ Finally, a Raspberry Pi with a NodeJS server and a webcam was added later on to 
 
 ## Conclusion
 
-The feeder works a treat (pun intended!), but there was a very unfortunate incident, where a Kong was dropped onto the dog's head in a remote feeding session. The dog has been scared of this spooky apparatus ever since. Bummer! It was a great project and we are trying to re-establish the superstitious animal's trust into the machine.
+The feeder works a treat (pun intended!), but there was a very unfortunate incident, where a food-filled Kong was dropped onto the dog's head in a remote feeding session. The dog has been scared of this spooky apparatus ever since. Bummer! It was a great project and we have since been trying to re-establish the superstitious animal's trust into the machine. Fingers crossed...
 
 ## Links
 
