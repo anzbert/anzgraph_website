@@ -2,4 +2,27 @@
 
 ## Background
 
-Two of my dear friends bought an old street bus. Even better, they actually bought a former [O-Bahn Bus](https://en.wikipedia.org/wiki/O-Bahn_Busway) from South Australia.
+Two of my dear friends bought an old street bus. Even better, they actually bought a former [O-Bahn Bus](https://en.wikipedia.org/wiki/O-Bahn_Busway) from South Australia. This beauty featured a massive bell to be binged when a stop was requested. Unfortunately, it needed to be removed during the full renovation.
+
+I scored this nice collector's piece at the time, but it seemed appropriate to eventually return it to its original home and give it a purpose as a door bell again.
+
+## The Build
+
+### Materials
+- 1x Arduino Pro Micro
+- 1x Box made from MDF
+- 1x Crappy wireless door bell remote from a kit (Bunnings)
+- 1x RF433Mhz receiver module ... name??
+- 1x Resistor ... value??
+- 1x Bus Bell
+- 1x 12v to 5v transformer
+- 1x 12v power supply
+- 1x Cables and PCB
+
+### Code
+
+
+
+## Links
+
+[Source Code](https://github.com/anzbert/rf_bus_bell)
