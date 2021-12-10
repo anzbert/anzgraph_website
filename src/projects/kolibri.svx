@@ -2,36 +2,36 @@
 
 ## Background
 
-I have always built my own PCs, starting with a Pentium 166Mhz in the 90s, and it has always been fun, exciting and educational. You don't necessarily save any money compared to pre-built machines, but you always end up learning something, and it leaves you with a sense of pride, achievement and a deeper connection to your digital helper.
+I have built my own PCs since I was a teenager, starting with a Pentium 166Mhz in the 90s, and it has always been fun, exciting and educational. Building doesn't necessarily save any money compared to buying a pre-built machine, but you always end up learning something new, and it leaves you with a sense of pride, achievement and a deeper connection to your little digital helper.
 
-This built has evolved from a standard Cooler Master Elite 130 Mini-ITX enclosure with a small water cooling loop for the CPU. I have lived with limited space for a number of years, which made mini ITX my preferred form factor.
+This particular build has evolved from a standard Cooler Master Elite 130 Mini-ITX case with a small water cooling loop for the CPU. Mini ITX is my preferred form factor, ever since I have lived with limited space in a caravan and a tiny house on wheels.
 
-The PC in the original case worked well for a long time, but I was never quite happy with some of its short-comings. And when the already noisy water pump started developing a nasty grinding sound, it was time for some alterations. Enter the Kolibri!
+The PC in the original case worked well for a long time, but I was never quite happy with some of its short-comings. And when the already noisy water pump started developing a nasty grinding sound, it was time for some modifications. Enter the Kolibri! 🐤
 
-Kolibri translates to Hummingbird, since I wanted it to be small, quiet and air-cooled (think flip-flapping wings 😝)
+Kolibri translates to Hummingbird, since I wanted the PC to be small, quiet and air-cooled (think flip-flapping wings 😝)
 
-The original case looked like [this](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/). Not terrible, but not the best for XXL air cooling.
+The original case looked like [this](https://www.coolermaster.com/catalog/cases/mini-itx/elite130/). Not terrible, but not the best for proper desktop sized air cooling.
 
 ### Goals
 
-- I wanted to create a 'Wind Tunnel' kind of system. Air in from the front and out the back, with all fans in line and blowing in that direction.
-- I needed to get rid of the PSU on top of the CPU to make room for a decent CPU cooler, plus an exhaust fan on the back.
+- I wanted to create a 'Wind Tunnel' air flow layout. Air in from the front and out the back, with large fans in serial, blowing along that axis.
+- I wanted to get rid of the ATX PSU on top of the CPU to make room for a 120mm CPU cooler. Instead of the PSU, I wanted another large exhaust fan on the back of the case.
 
 ### Modifications
 
-To achieve these goals, I needed to get a smaller, SFX format PSU. I cut into the case and made a new mount for it on the bottom, from where it exhausts its hot air. That was the only spot in this space-constrained case that could accommodate a power supply. The PSU now needed to be plugged in from the bottom, which required me to get an angle piece for the IEC plug. No biggie!
+The first step was to get a small, high quality SFX format power supply and remove the massive ATX PSU. The only spot I could move the new supply to was in the middle of the case, under the drive bay. I cut into the bottom of the case to create a new mount with air outlet for it. The PSU needs to be plugged in from the bottom now, which is a bit different and requires an angle piece for the IEC plug. No biggie though! 😅  
 
-Now there was enough room above the motherboard, I could get a wonderfully quiet and efficient Noctua NH-U12S 120mm CPU cooler.
+There was plenty of room above the motherboard now , which fits the wonderfully quiet, efficient and massive Noctua NH-U12S 120mm CPU cooler perfectly.
 
-The exhaust on the back needed an opening and some screw holes, which I cut and drilled into the case on the back. All cuts were unfortunately made with a jigsaw 😬, since that was the only tool I had available that day and led to some embarrassingly wonky cuts. A bit of black spray paint helped to hide that hideous handy work and a grill was mounted to the back to keep fingers separate from fan blades.
+The new exhaust opeing was cut and drilled into the back of the case. All of these cuts were unfortunately made with a jigsaw wqith pretty blunt blades 😆, since that was the only tool I had available that day, which led to some embarrassingly wonky cuts. A bit of black spray paint hid that hideous handy work sufficiently and a grill was mounted to the back to keep fingers from fan blades.
 
-I had previously made some stencils with laminated paper and used those for a decent enough finish on the case. As a bonus, I also made a t-shirt with the kolibri logo, using those stencils with a shirt and bleach in a spray bottle. Nice!
+I had previously made some stencils with laminated paper and used those for a decent enough finish on the case. As a bonus, I also made a t-shirt with the kolibri logo, using those same materials with a shirt and bleach in a spray bottle. Nice!
 
 ## Conclusion
 
-The PC is beautifully quiet. In fact much quieter than the old annoying water cooled PC ever was. Temps are well within acceptable ranges when gaming, and maybe one day I'll have an overclockable CPU to test it at its limits.
+The PC is amazingly quiet. In fact much quieter than the old annoying water cooled PC ever was. Temps are well within acceptable ranges when gaming, and maybe one day I'll have an overclockable CPU to test it at its limits.
 
-The PC mod was quite simple and didn't take too much time, but still I feel like I really made this computer my own. And no over the counter pre-built can ever compete with that!
+The PC mod was quite simple and didn't take too much time, but still I feel like I really made this computer my own. The look is subjectively nice and I love it. And no over the counter pre-built can ever compete with that!
 
 | PC Specs    |                                    |
 | ----------- | ---------------------------------- |
@@ -41,7 +41,9 @@ The PC mod was quite simple and didn't take too much time, but still I feel like
 | Storage     | NVME 500GB / 2TB SSD / 1TB SSD     |
 | Motherboard | ASUS B460i Gaming                  |
 | Fans        | Noctua 3x 120mm / 1x 90mm          |
+| PSU |Corsair SF750 |
 | Monitor     | ASUS VG27AQ 27" 144Hz 1440p G-Sync |
+
 
 ## Links
 
