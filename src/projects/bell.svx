@@ -11,18 +11,22 @@ I scored this nice collector's piece at the time, but it seemed appropriate to e
 ### Materials
 - 1x Arduino Pro Micro
 - 1x Box made from MDF
-- 1x Crappy wireless door bell remote from a kit (Bunnings)
-- 1x RF433Mhz receiver module ... name??
-- 1x Resistor ... value??
-- 1x Bus Bell
+- 1x Crappy wireless door bell remote from a hardware store kit (Bunnings)
+- 1x Superheterodyne RF433Mhz receiver module (RX470-4)
+- 1x Resistor 470 Ohm between arduino and RF433 module
+- 1x Logic level transistor
+- 1x Bus Bell (using a solenoid as the hammer)
+- 1x Diode (as '_flywheel_ diode' for solenoid)
 - 1x 12v to 5v transformer
 - 1x 12v power supply
 - 1x Cables and PCB
 
-### Code
+This project relies heavily on the excellent [RF433any](https://github.com/sebmillet/RF433any) library, which made it a breeze to intercept and decipher the cheap bell remote's signal. When a signal is intercepted, the bell solenoid is activated briefly through a logic level transistor. 
 
-
+The biggest challenge was to get the 433Mhz receiver to function reliably when sharing power with the Arduino. I suspect the first RF module I used (MX-FS-03V) was quite sensitive to import power fluctuations. I did not have an oscilloscope to confirm this theory, neither did I have a bunch of capacitors at home to try to fix the issue through some kind of filtering circuit. The easiest solution, that worked withouyt any drama, was to use a higher quality, so called "superheterodyne" RF module. The range was much better and the bell could be activated with great reliability. Win! 🥂
 
 ## Links
 
 [Source Code](https://github.com/anzbert/rf_bus_bell)
+
+[RF433any](https://github.com/sebmillet/RF433any)
