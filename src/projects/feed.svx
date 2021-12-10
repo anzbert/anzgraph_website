@@ -2,25 +2,26 @@
 
 ## Background
 
-Knowing that your pet will get a tasty treat to pass the time while you are away is quite comforting. Especially when you can't make it in time for the regular dinner-schedule. My girlfriend has an obsession with novelty enrichment feeding devices and she had been eye balling these timed feeders for a while. They are pretty expensive for what they are, and surely this kind of thing can be DIY'ed ?!
+Knowing that your pet will get a tasty treat while you are away is quite reassuring and comforting. Especially when you can't make it home in time for the regular dinner-schedule. 
+
+My girlfriend has an obsession with novelty enrichment feeding toys, and she had been eye balling timed feeders for a while. I found that they are pretty expensive for what they are, and surely this kind of thing can be DIY'ed ?! 
+
+We already had a rotating treat dispenser from Kmart, which only releases kibbles when the dog presses a button. The vision was to add a timer function to that machine, as well as add another dispenser for larger treats, such as Kongs.
 
 ## Challenges
 
-#### General
-
-- Storing and releasing larger food items like Kongs, as well as small kibbles was a mechanical challenge.
+- Finding a way of storing and releasing larger food items like Kongs
 - Translating an electrical signal to some kind of latch or rotator to dispense food
-
-#### Arduino
-
-- Separate voltage power delivery for the micro controller and the mechanics
+- Separate low voltage power delivery for the micro controller from the electromechanics (5V and 12V)
 - Creating an easy to use UI with display and timer
+- Interfacing with the external rotating feeder
 
 #### Raspberry Pi Webcam Control
 
 - Obvious security concerns when exposing a port of the home WiFi to the internet
-- Handling an MJPG webcam stream efficiently and securely
-- Linux rights management to allow a minimal rights user to run the program for added security
+- Handling an MJPG webcam stream efficiently on a low power device
+- Limiting user rights in Linux for the feeder service
+- Secure password login and GPIO control on a NodeJS server
 
 ## The Build
 
