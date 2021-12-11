@@ -4,10 +4,9 @@
   import MaskedHeading from "../components/maskedheading.svelte";
   import { tick } from "svelte";
 
-  import Sidebar from "../components/sidebar1.svelte";
-
   // Constants:
   import { flyRight, flyLeft } from "../stores";
+  import { getSuffix } from "../utils";
 
   // Project Files:
   import { projects } from "../projects/!projectindex";
@@ -20,6 +19,7 @@
   import Deskmetro from "../projects/deskmetro.svelte";
   import Kolibri from "../projects/kolibri.svelte";
   import Bell from "../projects/bell.svelte";
+  import Figure3 from "../components/figure3.svelte";
 
   // scrolling and page changing
   async function scrollTo(id: string) {
@@ -51,64 +51,42 @@
 <div id="wrapper">
   {#if currentFocus === "all"}
     <div class="project-page">
-      <div class="projects">
-        {#each projects as category}
-          <div class="divider" id={category.title} in:fly={flyLeft}>
-            <MaskedHeading fontSize="1.8rem">{category.title}</MaskedHeading>
-          </div>
+      {#await getSuffix() then suffix}
+        <div class="projects">
+          {#each projects as category}
+            <div class="divider" id={category.title} in:fly={flyLeft}>
+              <MaskedHeading fontSize="1.8rem">{category.title}</MaskedHeading>
+            </div>
 
-          <div class="content" in:fly={flyLeft}>
-            {#each category.array as project}
-              <Card2>
-                <div slot="header">
-                  <h3 class="title">{project.name}</h3>
-                </div>
-
-                <div class="image" slot="thumbnail">
-                  {#if project.source.multiformat}
-                    <picture>
-                      <source
-                        srcset="{project.source.path}_comp.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="{project.source.path}_comp.webp"
-                        type="image/webp"
-                      />
-
-                      <img
-                        on:click={() => changeFocus(project.link)}
-                        class="thumbnail"
-                        src="{project.source.path}.jpg"
-                        alt="{project.name} thumbnail picture"
-                      />
-                    </picture>
-                  {:else}
-                    <img
-                      on:click={() => changeFocus(project.link)}
-                      class="thumbnail"
-                      src={project.source.path}
-                      alt="{project.name} thumbnail picture"
-                    />
-                  {/if}
-                  <div id={project.link} class="project-icons">
-                    {#each project.logos as logo}
-                      <img src={logo.path} alt="" class="icon" />
-                    {/each}
+            <div class="content" in:fly={flyLeft}>
+              {#each category.array as project}
+                <Card2>
+                  <div slot="header">
+                    <h3 class="title">{project.name}</h3>
                   </div>
-                </div>
-              </Card2>
-            {/each}
-          </div>
-        {/each}
-      </div>
 
-      <!-- SIDEBAR -->
-      <div class="sidebar" in:fly={flyRight}>
-        <div class="sidebar-content">
-          <Sidebar />
+                  <div
+                    class="image"
+                    slot="thumbnail"
+                    on:click={() => changeFocus(project.link)}
+                  >
+                    {#if project.source.multiformat}
+                      <Figure3 path={`${project.source.path}${suffix}`} />
+                    {:else}
+                      <Figure3 path={`${project.source.path}`} />
+                    {/if}
+                    <div id={project.link} class="project-icons">
+                      {#each project.logos as logo}
+                        <img src={logo.path} alt="" class="icon" />
+                      {/each}
+                    </div>
+                  </div>
+                </Card2>
+              {/each}
+            </div>
+          {/each}
         </div>
-      </div>
+      {/await}
     </div>
   {/if}
 
@@ -143,9 +121,6 @@
 
   .buttons {
     display: flex;
-    /* margin: auto; */
-    /* width: min(90%, 45rem); */
-
     justify-content: flex-end;
     width: 100%;
     gap: min(1.5vw, 1rem);
@@ -183,7 +158,6 @@
     text-align: center;
     margin: 3rem 0 0.5rem 0;
     background-image: var(--gradient5);
-    /* background-color: var(--gray2); */
   }
 
   /* card styles: */
@@ -194,27 +168,15 @@
     font-size: clamp(0.3rem, 4vmin, 1.5rem);
   }
 
-  .thumbnail {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-    position: relative;
-    filter: grayscale(100%);
-  }
   .image {
-    filter: grayscale(50%);
+    filter: grayscale(80%);
     transition: all 200ms;
-    position: relative;
+    transform: scale(1.05);
+    cursor: pointer;
   }
   .image:hover {
     filter: none;
-    transform: scale(1.08);
-  }
-
-  .thumbnail:hover {
-    filter: none;
+    transform: scale(1.12);
   }
 
   .project-icons {
@@ -229,31 +191,4 @@
     margin: 0 0.2em;
     filter: drop-shadow(1px 1px 1px var(--gray2));
   }
-
-  /* Sidebar: */
-  .sidebar {
-    display: none;
-  }
-
-  /* @media (min-width: 1150px) {
-    .project-page {
-      display: grid;
-      grid-template-columns: [left]1fr [center]70% [right]2fr;
-    }
-    .projects {
-      grid-area: center;
-    }
-    .sidebar {
-      display: block;
-      grid-area: right;
-
-     
-    }
-    .sidebar-content {
-      position: sticky;
-      top: 20%;
-
-      color: white;
-    }
-  } */
 </style>

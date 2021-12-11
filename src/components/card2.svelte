@@ -17,7 +17,7 @@
     <div class="card-header">
       <slot name="header" />
     </div>
-    <div class="thumbnail" in:fade={{ delay: 500, duration: 250 }}>
+    <div class="thumbnail">
       <slot name="thumbnail" />
     </div>
     <div class="icons">
@@ -54,6 +54,7 @@
     max-width: 90%;
     margin: auto;
     box-shadow: 3px 3px 2px var(--gray1);
+    position: relative;
   }
 
   .upper-box {

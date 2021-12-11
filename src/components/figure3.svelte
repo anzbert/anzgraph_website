@@ -4,6 +4,9 @@
   export let width: string = "100%";
   export let caption: string = undefined;
 
+  import { fade } from "svelte/transition";
+  import { fade1 } from "../stores";
+
   async function loading(path: string) {
     const imageUrl = path;
     try {
@@ -21,7 +24,7 @@
   {#await loading(path)}
     <div class="loader" />
   {:then image}
-    <img {width} src={image} {alt} />
+    <img in:fade={fade1} {width} src={image} {alt} />
   {/await}
   {#if caption}
     <figcaption>{caption}</figcaption>
@@ -32,6 +35,8 @@
   figure {
     margin: 0;
     height: 100%;
+    width: 100%;
+    position: relative;
   }
 
   img {

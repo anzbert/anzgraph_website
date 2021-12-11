@@ -21,7 +21,7 @@ export const flyTop = {
   y: -window.innerHeight,
 };
 
-export const fade1 = { delay: 400, duration: 350 };
+export const fade1 = { delay: 300, duration: 300 };
 
 export const defaultSwipeConfig = {
   defaultIndex: 0,
