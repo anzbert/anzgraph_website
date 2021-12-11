@@ -10,7 +10,7 @@
 
   import Card from "../components/card1.svelte";
   import Figure from "../components/figure3.svelte";
-  import { checkAvif, checkWebp } from "../utils";
+  import { getSuffix } from "../utils";
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft, defaultSwipeConfig } from "../stores";
   import { Swipe, SwipeItem } from "svelte-swipe";
@@ -21,19 +21,6 @@
   for (let i = 0; i < pictures; i++) {
     let path = `${picPrefixPath}${i}`;
     paths.push(path);
-  }
-
-  async function getSuffix(modernFormats: boolean): Promise<string> {
-    let suffix = ".jpg"; // default
-    if (modernFormats) {
-      const avifSupport = await checkAvif();
-      if (avifSupport) suffix = "_comp.avif";
-      else {
-        const webpSupport = await checkWebp();
-        if (webpSupport) suffix = "_comp.webp";
-      }
-    }
-    return suffix;
   }
 </script>
 

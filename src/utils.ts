@@ -29,3 +29,18 @@ export async function checkWebp() {
     };
   });
 }
+
+export async function getSuffix(
+  modernFormats: boolean = true
+): Promise<string> {
+  let suffix = ".jpg"; // default
+  if (modernFormats) {
+    const avifSupport = await checkAvif();
+    if (avifSupport) suffix = "_comp.avif";
+    else {
+      const webpSupport = await checkWebp();
+      if (webpSupport) suffix = "_comp.webp";
+    }
+  }
+  return suffix;
+}
