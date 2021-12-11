@@ -28,7 +28,7 @@
     let path = `img/projects/bell/bell${i}`;
     paths.push(path);
   }
-  import Figure from "../components/figure.svelte";
+  import Figure from "../components/figure_test.svelte";
   let captions = ["", "", ""];
 
   import Construction from "../components/construction.svelte";

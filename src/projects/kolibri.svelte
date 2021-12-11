@@ -28,7 +28,7 @@
     let path = `img/projects/kolibri/kolibri${i}`;
     paths.push(path);
   }
-  import Figure from "../components/figure.svelte";
+  import Figure from "../components/figure_test.svelte";
   let captions = [
     "The finished box...",
     "Making a stencil",
