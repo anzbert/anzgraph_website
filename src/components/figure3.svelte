@@ -1,6 +1,6 @@
 <script lang="ts">
   export let path: string;
-  export let alt: string = "no image description";
+  export let alt: string = "";
   export let width: string = "100%";
   export let caption: string = undefined;
 
