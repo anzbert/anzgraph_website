@@ -45,7 +45,9 @@
           <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
             {#each paths as path, index}
               <SwipeItem>
-                <Figure path={`${path}${suffix}`} caption={captions[index]} />
+                <div class="image-container">
+                  <Figure path={`${path}${suffix}`} caption={captions[index]} />
+                </div>
               </SwipeItem>
             {/each}
           </Swipe>
@@ -83,12 +85,16 @@
     margin: auto;
   }
 
+  .image-container {
+    height: calc(var(--width) / 4 * 3);
+  }
+
   .swipe-buttons {
     margin-top: 0.3rem;
   }
   .swipe-buttons button {
     font-size: 0.8rem;
-    padding: 0.2em 4em;
+    padding: 0.2em 2.4em;
     margin: 0 1em;
   }
 

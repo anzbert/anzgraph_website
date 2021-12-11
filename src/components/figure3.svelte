@@ -1,6 +1,6 @@
 <script lang="ts">
   export let path: string;
-  export let alt: string = "image";
+  export let alt: string = "no image description";
   export let width: string = "100%";
   export let caption: string = undefined;
 
@@ -31,10 +31,13 @@
 <style>
   figure {
     margin: 0;
+    height: 100%;
   }
 
   img {
     object-fit: contain;
+    height: 100%;
+    width: 100%;
   }
 
   figcaption {
