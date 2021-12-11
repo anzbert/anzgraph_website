@@ -1,59 +1,70 @@
 <script lang="ts">
-  import Card from "../components/card1.svelte";
   import Markdown from "./bell.svx";
+  const picPrefixPath: string = "img/projects/bell/bell";
+  const modernFormats: boolean = true;
+  const pictures: number = 3;
+  const captions: Array<string> = ["The finished Bell", "", ""];
 
+  /////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////
+
+  import Card from "../components/card1.svelte";
+  import Figure from "../components/figure3.svelte";
+  import { checkAvif, checkWebp } from "../utils";
   import { fade, fly } from "svelte/transition";
-  import { fade1, flyLeft } from "../stores";
-
-  // gallery module:
+  import { fade1, flyLeft, defaultSwipeConfig } from "../stores";
   import { Swipe, SwipeItem } from "svelte-swipe";
-  const swipeConfig = {
-    defaultIndex: 0,
-    showIndicators: true,
-    autoplay: false,
-    delay: 4000,
-    transitionDuration: 500,
-  };
-  let SwipeComp: any; // from swipe module. type unknown
-  function nextSlide() {
-    SwipeComp.nextItem();
-  }
-  function prevSlide() {
-    SwipeComp.prevItem();
-  }
+  import type { SvelteComponent } from "svelte";
+  let SwipeComponent: SvelteComponent; // from swipe module. type unknown
 
-  // pictures:
   let paths: Array<string> = [];
-  for (let i = 0; i <= 2; i++) {
-    let path = `img/projects/bell/bell${i}`;
+  for (let i = 0; i < pictures; i++) {
+    let path = `${picPrefixPath}${i}`;
     paths.push(path);
   }
-  import Figure from "../components/figure_test.svelte";
-  let captions = ["", "", ""];
 
-  import Construction from "../components/construction.svelte";
+  async function getSuffix(modernFormats: boolean): Promise<string> {
+    let suffix = ".jpg"; // default
+    if (modernFormats) {
+      const avifSupport = await checkAvif();
+      if (avifSupport) suffix = "_comp.avif";
+      else {
+        const webpSupport = await checkWebp();
+        if (webpSupport) suffix = "_comp.webp";
+      }
+    }
+    return suffix;
+  }
 </script>
 
-<Construction />
-
 <div class="markdown" in:fly={flyLeft}>
-  <div class="card-wrapper">
-    <Card width="fit-content">
-      <div class="swipe-holder" in:fade={fade1}>
-        <Swipe {...swipeConfig} bind:this={SwipeComp}>
-          {#each paths as path, index}
-            <SwipeItem>
-              <Figure {path} multiformat={true} caption={captions[index]} />
-            </SwipeItem>
-          {/each}
-        </Swipe>
+  {#await getSuffix(modernFormats) then suffix}
+    <div class="card-wrapper">
+      <Card width="fit-content">
+        <div class="swipe-holder" in:fade={fade1}>
+          <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
+            {#each paths as path, index}
+              <SwipeItem>
+                <Figure path={`${path}${suffix}`} caption={captions[index]} />
+              </SwipeItem>
+            {/each}
+          </Swipe>
+        </div>
+      </Card>
+      <div class="swipe-buttons">
+        <button
+          on:click={() => {
+            SwipeComponent.prevItem();
+          }}>Prev</button
+        >
+        <button
+          on:click={() => {
+            SwipeComponent.nextItem();
+          }}>Next</button
+        >
       </div>
-    </Card>
-    <div class="swipe-buttons">
-      <button on:click={prevSlide}>Prev</button>
-      <button on:click={nextSlide}>Next</button>
     </div>
-  </div>
+  {/await}
   <Markdown />
 </div>
 

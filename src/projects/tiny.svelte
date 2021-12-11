@@ -1,48 +1,70 @@
 <script lang="ts">
-  import { Swipe, SwipeItem } from "svelte-swipe";
-  import Card from "../components/card1.svelte";
   import Markdown from "./tiny.svx";
+  const picPrefixPath: string = "img/projects/tiny/tiny";
+  const modernFormats: boolean = true;
+  const pictures: number = 0;
+  const captions: Array<string> = ["", "", "", "", ""];
 
+  /////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////
+
+  import Card from "../components/card1.svelte";
+  import Figure from "../components/figure3.svelte";
+  import { checkAvif, checkWebp } from "../utils";
   import { fade, fly } from "svelte/transition";
-  import { fade1, flyLeft } from "../stores";
-
-  const swipeConfig = {
-    defaultIndex: 0,
-    showIndicators: true,
-    autoplay: false,
-    delay: 4000,
-    transitionDuration: 500,
-  };
+  import { fade1, flyLeft, defaultSwipeConfig } from "../stores";
+  import { Swipe, SwipeItem } from "svelte-swipe";
+  import type { SvelteComponent } from "svelte";
+  let SwipeComponent: SvelteComponent; // from swipe module. type unknown
 
   let paths: Array<string> = [];
-  for (let i = 0; i < 0; i++) {
-    let path = `img/projects/tiny/tiny${i}`;
+  for (let i = 0; i < pictures; i++) {
+    let path = `${picPrefixPath}${i}`;
     paths.push(path);
   }
 
-  import Construction from "../components/construction.svelte";
+  async function getSuffix(modernFormats: boolean): Promise<string> {
+    let suffix = ".jpg"; // default
+    if (modernFormats) {
+      const avifSupport = await checkAvif();
+      if (avifSupport) suffix = "_comp.avif";
+      else {
+        const webpSupport = await checkWebp();
+        if (webpSupport) suffix = "_comp.webp";
+      }
+    }
+    return suffix;
+  }
 </script>
 
-<Construction />
-
 <div class="markdown" in:fly={flyLeft}>
-  <div class="card-wrapper">
-    <Card width="fit-content">
-      <div class="swipe-holder" in:fade={fade1}>
-        <Swipe {...swipeConfig}>
-          {#each paths as path}
-            <SwipeItem>
-              <picture>
-                <source srcset="{path}_comp.avif" type="image/avif" />
-                <source srcset="{path}_comp.webp" type="image/webp" />
-                <img loading="lazy" src="{path}.jpg" alt="project views" />
-              </picture>
-            </SwipeItem>
-          {/each}
-        </Swipe>
+  {#await getSuffix(modernFormats) then suffix}
+    <div class="card-wrapper">
+      <Card width="fit-content">
+        <div class="swipe-holder" in:fade={fade1}>
+          <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
+            {#each paths as path, index}
+              <SwipeItem>
+                <Figure path={`${path}${suffix}`} caption={captions[index]} />
+              </SwipeItem>
+            {/each}
+          </Swipe>
+        </div>
+      </Card>
+      <div class="swipe-buttons">
+        <button
+          on:click={() => {
+            SwipeComponent.prevItem();
+          }}>Prev</button
+        >
+        <button
+          on:click={() => {
+            SwipeComponent.nextItem();
+          }}>Next</button
+        >
       </div>
-    </Card>
-  </div>
+    </div>
+  {/await}
   <Markdown />
 </div>
 
@@ -50,6 +72,9 @@
   .card-wrapper {
     margin: 2rem auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .swipe-holder {
     --width: clamp(200px, 75vmin, 70vmax);
@@ -57,10 +82,14 @@
     width: var(--width);
     margin: auto;
   }
-  img {
-    height: calc(var(--width) / 4 * 3);
-    width: var(--width);
-    object-fit: contain;
+
+  .swipe-buttons {
+    margin-top: 0.3rem;
+  }
+  .swipe-buttons button {
+    font-size: 0.8rem;
+    padding: 0.2em 4em;
+    margin: 0 1em;
   }
 
   .markdown {
