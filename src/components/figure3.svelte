@@ -30,7 +30,7 @@
 
 <style>
   figure {
-    margin: auto;
+    margin: 0;
   }
 
   img {

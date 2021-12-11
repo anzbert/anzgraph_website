@@ -19,7 +19,7 @@
   import Feed from "../projects/feed.svelte";
   import Deskmetro from "../projects/deskmetro.svelte";
   import Kolibri from "../projects/kolibri.svelte";
-  import Bell from "../projects/bell_bak.svelte";
+  import Bell from "../projects/bell.svelte";
 
   // scrolling and page changing
   async function scrollTo(id: string) {

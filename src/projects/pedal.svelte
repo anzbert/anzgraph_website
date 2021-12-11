@@ -1,6 +1,6 @@
 <script lang="ts">
   import Markdown from "./pedal.svx";
-  const picPrefixPath: string = "img/projects/pedal/pedal";
+  const picPrefixPath: string = "img/projects/pedal/footp";
   const modernFormats: boolean = true;
   const pictures: number = 9;
   const captions: Array<string> = ["", "", "", "", ""];
