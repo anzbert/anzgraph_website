@@ -30,6 +30,7 @@ export async function checkWebp() {
   });
 }
 
+// function takes up to 1/refresh rate in latency:
 export async function getSuffix(
   modernFormats: boolean = true
 ): Promise<string> {
