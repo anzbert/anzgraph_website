@@ -34,7 +34,7 @@ export const projects: Array<category> = [
       {
         name: "Dog Feeder",
         source: {
-          path: "img/projects/feed/feed2",
+          path: "img/projects/feed/feed_thumb",
           multiformat: true,
         },
         link: "Feed",
@@ -43,7 +43,7 @@ export const projects: Array<category> = [
       {
         name: "Bus Bell",
         source: {
-          path: "img/projects/bell/bell0",
+          path: "img/projects/bell/bell_thumb",
           multiformat: true,
         },
         link: "Bell",
@@ -71,7 +71,7 @@ export const projects: Array<category> = [
       {
         name: "Kolibri PC",
         source: {
-          path: "img/projects/kolibri/kolibri1",
+          path: "img/projects/kolibri/kolibri_thumb",
           multiformat: true,
         },
         link: "Kolibri",
