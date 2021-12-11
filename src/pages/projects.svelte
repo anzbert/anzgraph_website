@@ -181,13 +181,13 @@
 
   .project-icons {
     position: absolute;
-    bottom: 7%;
-    left: 5%;
+    bottom: 8%;
+    left: 6%;
     pointer-events: none;
   }
 
   .icon {
-    height: min(2.8vmin, 1.8rem);
+    height: min(2.8vmin, 1.5rem);
     margin: 0 0.2em;
     filter: drop-shadow(1px 1px 1px var(--gray2));
   }

@@ -2,11 +2,11 @@
 
 ## Background
 
-Knowing that your pet will get a tasty treat while you are away is quite reassuring and comforting. Especially when you can't make it home in time for the regular dinner-schedule. 
+Knowing that your pet will get a tasty treat while you are away is quite reassuring and comforting. Especially when you can't make it home in time for the regular dinner-schedule.
 
-My girlfriend has an obsession with novelty enrichment feeding toys, and she had been eye balling timed feeders for a while. I found that they are pretty expensive for what they are, and surely this kind of thing can be DIY'ed ?! 
+My girlfriend has an obsession with novelty enrichment feeding toys, and she had been eye balling timed feeders for a while. I found that they are pretty expensive for what they are, and surely this kind of thing can be DIY'ed ?!
 
-We already had a rotating treat dispenser from Kmart, which only releases kibbles when the dog presses a button. The vision was to add a timer function to that machine, as well as add another dispenser for larger treats, such as Kongs.
+We already had a rotating treat dispenser from K-mart, which only releases kibbles when the dog presses a button. The vision was to add a timer function to that machine, as well as add another dispenser for larger treats, such as Kongs.
 
 ## Challenges
 
@@ -25,13 +25,13 @@ We already had a rotating treat dispenser from Kmart, which only releases kibble
 
 ## The Build
 
-This project went through a number of iterations. First, I only built the core Arduino-based timer with a display and an encoder as an input device. Initially, it featured a gigantic solenoid-driven bell in the middle, both huge in dimensions and in volume. The bell was supposed to ring whenthe dog dinner was ready. It was quickly deemed to scary for the the poor animal and therefore removed to be used in another project.
+This project went through a number of iterations. First, I only built the core Arduino-based timer with a display and an encoder as an input device. Initially, it featured a gigantic solenoid-driven bell in the middle, both huge in dimensions and in volume. The bell was supposed to ring when the dog dinner was ready. It was quickly deemed to scary for the the poor animal and therefore removed to be used in another project.
 
 The rotating Kibble feeder from K-mart was integrated by soldering a couple of cables to its internal activator switch. I mounted a 3.5mm socket to the case of the timer and that feeder as connection ports through which the timer can trigger a food drop.
 
-I built a separate feeder unit for two larger food items with two flower pots and hinges to release the treat by tipping. The two pots are locked in place with two solenoids, which the timer can activate at the programmed time. 
+I built a separate feeder unit for two larger food items with two flower pots and hinges to release the treat by tipping. The two pots are locked in place with two solenoids, which the timer can activate at the programmed time.
 
-Afew months later, I used a Raspberry Pi running NodeJS and a USB webcam to make a remote feeding add-on unit. Since the resource constrained Pi Zero W can't efficiently be used to transcode a MJPG stream to be used with WebRTC, or a similar protocol, I had to make it work with the fantastic [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer) proxied to an ExpressJS Server. A single port was opened in the home WiFi and routed to the Pi, and a password login was included using a HTTP Authentication.
+A few months later, I used a Raspberry Pi running NodeJS and a USB webcam to make a remote feeding add-on unit. Since the resource constrained Pi Zero W can't efficiently be used to transcode a MJPG stream to be used with WebRTC, or a similar protocol, I had to make it work with the fantastic [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer) proxied to an ExpressJS Server. A single port was opened in the home WiFi and routed to the Pi, and a password login was included using a HTTP Authentication.
 
 ### Materials
 

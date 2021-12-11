@@ -19,11 +19,11 @@ The original case looked like [this](https://www.coolermaster.com/catalog/cases/
 
 ### Modifications
 
-The first step was to get a small, high quality SFX format power supply and remove the massive ATX PSU. The only spot I could move the new supply to was in the middle of the case, under the drive bay. I cut into the bottom of the case to create a new mount with air outlet for it. The PSU needs to be plugged in from the bottom now, which is a bit different and requires an angle piece for the IEC plug. No biggie though! 😅  
+The first step was to get a small, high quality SFX format power supply and remove the massive ATX PSU. The only spot I could move the new supply to was in the middle of the case, under the drive bay. I cut into the bottom of the case to create a new mount with air outlet for it. The PSU needs to be plugged in from the bottom now, which is a bit different and requires an angle piece for the IEC plug. No biggie though! 😅
 
 There was plenty of room above the motherboard now , which fits the wonderfully quiet, efficient and massive Noctua NH-U12S 120mm CPU cooler perfectly.
 
-The new exhaust opeing was cut and drilled into the back of the case. All of these cuts were unfortunately made with a jigsaw wqith pretty blunt blades 😆, since that was the only tool I had available that day, which led to some embarrassingly wonky cuts. A bit of black spray paint hid that hideous handy work sufficiently and a grill was mounted to the back to keep fingers from fan blades.
+The new exhaust opening was cut and drilled into the back of the case. All of these cuts were unfortunately made with a jigsaw with pretty blunt blades 😆, since that was the only tool I had available that day, which led to some embarrassingly wonky cuts. A bit of black spray paint hid that hideous handy work sufficiently and a grill was mounted to the back to keep fingers from fan blades.
 
 I had previously made some stencils with laminated paper and used those for a decent enough finish on the case. As a bonus, I also made a t-shirt with the kolibri logo, using those same materials with a shirt and bleach in a spray bottle. Nice!
 
@@ -41,9 +41,8 @@ The PC mod was quite simple and didn't take too much time, but still I feel like
 | Storage     | NVME 500GB / 2TB SSD / 1TB SSD     |
 | Motherboard | ASUS B460i Gaming                  |
 | Fans        | Noctua 3x 120mm / 1x 90mm          |
-| PSU |Corsair SF750 |
+| PSU         | Corsair SF750                      |
 | Monitor     | ASUS VG27AQ 27" 144Hz 1440p G-Sync |
-
 
 ## Links
 
