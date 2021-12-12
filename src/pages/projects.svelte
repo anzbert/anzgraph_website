@@ -12,6 +12,7 @@
 
   // Project Files:
   import { projects } from "../projects/!projectindex";
+  import Projectpage from "src/components/projectpage.svelte";
 
   // scrolling and page changing
   async function scrollTo(id: string) {
@@ -22,7 +23,7 @@
     });
   }
 
-  let currentFocus = "all";
+  let currentFocus = "all"; // default is "all"
   function changeFocus(focus: string) {
     document.getElementById("wrapper").scrollTo(0, 0); // scroll to top
     currentFocus = focus; // change page
@@ -88,15 +89,14 @@
       {/await}
     </div>
   {:else}
-    {#await getComp(currentFocus) then Comp}
-      <svelte:component this={Comp} />
+    {#await getComp(currentFocus) then ProjectPage}
+      <svelte:component this={ProjectPage} />
     {/await}
   {/if}
 </div>
 
 <!-- -----------------------------CSS --------------------------------------------->
 <style>
-  /* subnav: */
   .subnav {
     height: 3rem;
     width: 100%;
