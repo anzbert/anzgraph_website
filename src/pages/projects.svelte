@@ -1,8 +1,10 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
+  import Figure3 from "../components/figure3.svelte";
   import MaskedHeading from "../components/maskedheading.svelte";
   import { tick } from "svelte";
+  import type { SvelteComponent } from "svelte";
 
   // Constants:
   import { flyRight, flyLeft } from "../stores";
@@ -10,16 +12,6 @@
 
   // Project Files:
   import { projects } from "../projects/!projectindex";
-
-  import Xfader from "../projects/xfader.svelte";
-  import Clock from "../projects/clock.svelte";
-  import Pedal from "../projects/pedal.svelte";
-  import Tiny from "../projects/tiny.svelte";
-  import Feed from "../projects/feed.svelte";
-  import Deskmetro from "../projects/deskmetro.svelte";
-  import Kolibri from "../projects/kolibri.svelte";
-  import Bell from "../projects/bell.svelte";
-  import Figure3 from "../components/figure3.svelte";
 
   // scrolling and page changing
   async function scrollTo(id: string) {
@@ -34,6 +26,13 @@
   function changeFocus(focus: string) {
     document.getElementById("wrapper").scrollTo(0, 0); // scroll to top
     currentFocus = focus; // change page
+  }
+
+  // dynamic component loading
+  async function getComp(path: string): Promise<SvelteComponent> {
+    /* @vite-ignore */
+    let comp = import(path).then((r) => r.default);
+    return comp;
   }
 </script>
 
@@ -88,17 +87,11 @@
         </div>
       {/await}
     </div>
+  {:else}
+    {#await getComp(currentFocus) then Comp}
+      <svelte:component this={Comp} />
+    {/await}
   {/if}
-
-  <!-- PROJECT PAGES -->
-  {#if currentFocus === "Xfader"}<Xfader />{/if}
-  {#if currentFocus === "Clock"}<Clock />{/if}
-  {#if currentFocus === "Pedal"}<Pedal />{/if}
-  {#if currentFocus === "Tiny"}<Tiny />{/if}
-  {#if currentFocus === "Feed"}<Feed />{/if}
-  {#if currentFocus === "DeskMetro"}<Deskmetro />{/if}
-  {#if currentFocus === "Kolibri"}<Kolibri />{/if}
-  {#if currentFocus === "Bell"}<Bell />{/if}
 </div>
 
 <!-- -----------------------------CSS --------------------------------------------->
