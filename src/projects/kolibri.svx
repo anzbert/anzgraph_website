@@ -25,6 +25,9 @@ There was plenty of room above the motherboard now , which fits the wonderfully 
 
 The new exhaust opening was cut and drilled into the back of the case. All of these cuts were unfortunately made with a jigsaw with pretty blunt blades 😆, since that was the only tool I had available that day, which led to some embarrassingly wonky cuts. A bit of black spray paint hid that hideous handy work sufficiently and a grill was mounted to the back to keep fingers from fan blades.
 
+<figure class="sketchfab-embed-wrapper"> <iframe title="PC Mod - Kolibri" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/5263874ae94d43a8a282da1bd5ccc501/embed?camera=0&ui_theme=dark"> </iframe> 
+<figcaption>Drafting the Kolibri stencil in SketchUp</figcaption></figure>
+
 I had previously made some stencils with laminated paper and used those for a decent enough finish on the case. As a bonus, I also made a t-shirt with the kolibri logo, using those same materials with a shirt and bleach in a spray bottle. Nice!
 
 ## Conclusion
@@ -51,3 +54,13 @@ The PC mod was quite simple and didn't take too much time, but still I feel like
 [SketchUp 3D Model](https://anzgraph.com/files/kolibri-sketchup17.skp)
 
 - Can be used in the free [SketchUp for Web](https://www.sketchup.com/products/sketchup-for-web) editor.
+
+<style>
+    iframe {
+        width: min(100%, 500px);
+        height: 180px;
+        /* margin: auto; */
+        display:block;
+    }
+
+</style>

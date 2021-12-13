@@ -188,6 +188,16 @@ th {
   padding: 0.1em 0.2em;
 }
 
+figcaption {
+  color: var(--font1);
+  font-style: italic;
+  font-size: smaller;
+  font-weight: 100;
+  padding: 0.15em 0.8em;
+  text-align: start;
+  text-transform: none;
+}
+
 /* for devices that can hover: */
 @media (hover: hover) {
   button:hover {
