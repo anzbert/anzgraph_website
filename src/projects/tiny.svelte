@@ -2,8 +2,8 @@
   import Markdown from "./tiny.svx";
   const picPrefixPath: string = "img/projects/tiny/tiny";
   const modernFormats: boolean = true;
-  const pictures: number = 0;
-  const captions: Array<string> = ["", "", "", "", ""];
+  const pictures: number = 1;
+  const captions: Array<string> = ["A cozy home", "", "", "", ""];
 
   /////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +22,11 @@
     let path = `${picPrefixPath}${i}`;
     paths.push(path);
   }
+
+  import Construction from "../components/construction.svelte";
 </script>
+
+<Construction />
 
 {#await getSuffix(modernFormats) then suffix}
   <div class="markdown" in:fly={flyLeft}>

@@ -22,7 +22,11 @@
     let path = `${picPrefixPath}${i}`;
     paths.push(path);
   }
+
+  import Construction from "../components/construction.svelte";
 </script>
+
+<Construction />
 
 {#await getSuffix(modernFormats) then suffix}
   <div class="markdown" in:fly={flyLeft}>

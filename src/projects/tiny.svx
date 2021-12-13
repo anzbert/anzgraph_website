@@ -10,7 +10,7 @@ In Australia, houses are expensive and often come with too many bathrooms. Mortg
 
 Okay 😅... Maybe I got carried away a bit there, but house prices are ridiculous and the quality of housing is pretty dubious in this country. On the other hand, building things yourself can be fun, and if you are happy with a more minimalistic life, then tiny living can surely be an option.
 
-After watching some Netflix and YouTube videos, my ex-partner and me were convinced that we could build a small house as well in a reasonable amount of time.
+After watching some Netflix and YouTube videos, my ex-partner and I were convinced that we could build a small house in a reasonable amount of time.
 
 ### Challenges
 
@@ -18,7 +18,11 @@ After watching some Netflix and YouTube videos, my ex-partner and me were convin
 - Finding a suitable construction site for rent not too far away
 - The legality of permanently living in a movable construct depends on local authorities and state laws
 
-### 3D Models
+### Planning
+
+The house was first roughly laid out by putting masking tape on the floor of the garage, to get an idea for the dimensions. I then created detailed construction plans with [SketchUp](https://www.sketchup.com/), mostly relying on the "Australian Standard 1684 for Residential Timber Framed Construction" for engineering information, such as required bracing strengths and load bearing capacities of materials. Planning, research and ordering took up a huge part of the overall building time.
+
+Here are some 3D views from different planing stages:
 
 <div class="models">
     <SketchFab src="https://sketchfab.com/models/4d5dfd8450b6495186c0e3e7f494f60c/embed?camera=0&ui_theme=dark" caption="The custom-made trailer"/>
@@ -29,9 +33,30 @@ After watching some Netflix and YouTube videos, my ex-partner and me were convin
     <SketchFab src="https://sketchfab.com/models/59876ab6a5ca41f0b132d3993eb03073/embed?camera=0&ui_theme=dark" caption="Inside the house (VR ready)"/>
 </div>
 
+## Building
+
+The house was constructed on the rented backyard of a small asian store in the Guildford(WA) area over about 8 months. We did all the work ourselves, with the occasional help of friends. A professional electrician did the 240V wiring and a trailer maker welded the custom-made trailer according to our plans, with two axles and rated at 4.5 tonnes.
+
+<figure><iframe class="youtube" src="https://www.youtube.com/embed/pvUuOauXDDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>A time lapse of the timber framing</figcaption></figure>
+
+## Conclusion
+
+My personal favourite feature of the house is the little cat door, next to the main door. It was made for Rudolph, the beautiful champion cat 🐈 that I miss greatly 😥.
+
+## Links
+
+[Timber and Teal: The initial building blog](http://www.timberandteal.com) (no longer updated)
+
+[Tiny House Facebook page](https://www.facebook.com/timberandteal) (maintained by Isabella)
+
 <style>
     .models {
         display: flex;
         flex-wrap: wrap;
+    }
+    .youtube {
+        width: min(100%, 480px);
+        aspect-ratio: 4/3;
     }
 </style>

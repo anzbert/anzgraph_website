@@ -80,8 +80,8 @@ export const projects: Array<category> = [
       {
         name: "Tiny House",
         source: {
-          path: "img/icons/underconstruction.png",
-          multiformat: false,
+          path: "img/projects/tiny/tiny_thumb",
+          multiformat: true,
         },
         link: "tiny",
         logos: [logos.tools],
