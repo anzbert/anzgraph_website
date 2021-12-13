@@ -1,5 +1,5 @@
 <script>
-
+import SketchFab from "../components/sketchfab.svelte"
 </script>
 
 # Tiny House on Wheels
@@ -8,7 +8,7 @@
 
 In Australia, houses are expensive and often come with too many bathrooms. Mortgages stick around for longer than a healthy house cat while accelerating **your** aging. Single glazing let's all the horrible bird noises 🦅 penetrate right into your overpriced _'shelter'_. Ants and termites invade your many bathrooms through all the cracks and other air channels in your walls, while the aircon keeps chugging along, fighting an expensive but futile battle against a superheated UV-flavoured blaze that could combust into yet another bushfire at any random moment. Dire times indeed!
 
-Okay 😅... Maybe I got carried away a bit there, but house prices are ridiculous and the quality of housing is pretty dubious in this country. On the other hand, building things yourself can be fun, and if you are happy with a more minimalistic life, then tiny living can surely be an option. 
+Okay 😅... Maybe I got carried away a bit there, but house prices are ridiculous and the quality of housing is pretty dubious in this country. On the other hand, building things yourself can be fun, and if you are happy with a more minimalistic life, then tiny living can surely be an option.
 
 After watching some Netflix and Youtube videos, my ex-partner and me were convinced that we could build a small house as well in a reasonable amount of time.
 
@@ -18,22 +18,20 @@ After watching some Netflix and Youtube videos, my ex-partner and me were convin
 - Finding a suitable construction site for rent and not too far away
 - The legality of permanently living in a movable construct depends on local authorities and state laws
 
+### 3D Models
 
-<figure>
-    <div class="sketchfab-embed-wrapper"> <iframe title="framing only" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1272346228f944edb9fea081eea3b923/embed?autospin=0&ui_theme=dark"> </iframe> </div>
-    <figcaption>The framing plans</figcaption>
-</figure>
-
-
-
-
-
+<div class="models">
+    <SketchFab src="https://sketchfab.com/models/21de728eda6e4cc795468fb3ccfe835b/embed?camera=0&ui_theme=dark" caption="A view onto the timber framing"/>
+    <SketchFab src="https://sketchfab.com/models/d9a0f14d9a6e401fac7ae27e0afa51bf/embed?camera=0&ui_theme=dark" caption="Drafting the interior layout"/>
+    <SketchFab src="https://sketchfab.com/models/f6e3cbe929d44e09931106afae768e0a/embed?camera=0&ui_theme=dark" caption="A peek into the inside of the house"/>
+    <SketchFab src="https://sketchfab.com/models/4d5dfd8450b6495186c0e3e7f494f60c/embed?camera=0&ui_theme=dark" caption="The custom-made trailer"/>
+    <SketchFab src="https://sketchfab.com/models/68ab3b69306c4486aac5aa5aa0471376/embed?camera=0&ui_theme=dark" caption="The outside look with cedar cladding"/>
+    <SketchFab src="https://sketchfab.com/models/59876ab6a5ca41f0b132d3993eb03073/embed?camera=0&ui_theme=dark" caption="Inside the house (VR ready)"/>
+</div>
 
 <style>
-.sketchfab-embed-wrapper {
-    display: block;
-}
-iframe {
-    width: 100%;
-}
+    .models {
+        display: flex;
+        flex-wrap: wrap;
+    }
 </style>
