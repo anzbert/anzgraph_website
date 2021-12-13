@@ -12,8 +12,7 @@
 
   // Project Files:
   import { projects } from "../projects/!projectindex";
-  import Projectpage from "src/components/projectpage.svelte";
-
+  
   // scrolling and page changing
   async function scrollTo(id: string) {
     currentFocus = "all";
@@ -31,8 +30,7 @@
 
   // dynamic component loading
   async function getComp(path: string): Promise<SvelteComponent> {
-    /* @vite-ignore */
-    let comp = import(path).then((r) => r.default);
+    let comp = import(`../projects/${path}.svelte`).then((r) => r.default);
     return comp;
   }
 </script>
@@ -99,6 +97,8 @@
 <style>
   .subnav {
     height: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 100%;
 
     margin: 0 auto;

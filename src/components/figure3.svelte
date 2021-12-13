@@ -1,5 +1,6 @@
 <script lang="ts">
   export let path: string;
+
   export let alt: string = "";
   export let width: string = "100%";
   export let caption: string = undefined;
@@ -24,7 +25,7 @@
   {#await loading(path)}
     <div class="loader" />
   {:then image}
-    <img in:fade={fade1} {width} src={image} {alt} />
+    <img in:fade={{ ...fade1, delay: 800 }} {width} src={image} {alt} />
   {/await}
   {#if caption}
     <figcaption>{caption}</figcaption>

@@ -4,8 +4,8 @@
 
   export let square = "min(35vmin, 280px)";
   const scaleSettings = {
-    duration: 500,
-    delay: 500,
+    duration: 400,
+    delay: 400,
     opacity: 0.5,
     start: 0.5,
     easing: quintOut,

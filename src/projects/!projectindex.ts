@@ -2,7 +2,7 @@ import { logos } from "../components/logo.svelte";
 
 export const projects: Array<category> = [
   {
-    title: "Electronics",
+    title: "Embedded",
     array: [
       {
         name: "Crossfader",
@@ -10,7 +10,7 @@ export const projects: Array<category> = [
           path: "img/projects/xfader/fader_thumb",
           multiformat: true,
         },
-        link: "../projects/xfader.svelte",
+        link: "xfader",
         logos: [logos.arduino, logos.c],
       },
       {
@@ -19,7 +19,7 @@ export const projects: Array<category> = [
           path: "img/projects/clock/clock_thumb",
           multiformat: true,
         },
-        link: "../projects/clock.svelte",
+        link: "clock",
         logos: [logos.arduino, logos.c],
       },
       {
@@ -28,7 +28,7 @@ export const projects: Array<category> = [
           path: "img/projects/pedal/pedal_thumb",
           multiformat: true,
         },
-        link: "../projects/pedal.svelte",
+        link: "pedal",
         logos: [logos.arduino, logos.c],
       },
       {
@@ -37,7 +37,7 @@ export const projects: Array<category> = [
           path: "img/projects/feed/feed_thumb",
           multiformat: true,
         },
-        link: "../projects/feed.svelte",
+        link: "feed",
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
       },
       {
@@ -46,13 +46,13 @@ export const projects: Array<category> = [
           path: "img/projects/bell/bell_thumb",
           multiformat: true,
         },
-        link: "../projects/bell.svelte",
+        link: "bell",
         logos: [logos.arduino, logos.c],
       },
     ],
   },
   {
-    title: "Coding",
+    title: "Desktop",
     array: [
       {
         name: "Metronome",
@@ -60,13 +60,13 @@ export const projects: Array<category> = [
           path: "img/icons/underconstruction.png",
           multiformat: false,
         },
-        link: "../projects/deskmetro.svelte",
+        link: "deskmetro",
         logos: [logos.rpi, logos.rust],
       },
     ],
   },
   {
-    title: "Building",
+    title: "Build",
     array: [
       {
         name: "Kolibri PC",
@@ -74,7 +74,7 @@ export const projects: Array<category> = [
           path: "img/projects/kolibri/kolibri_thumb",
           multiformat: true,
         },
-        link: "../projects/kolibri.svelte",
+        link: "kolibri",
         logos: [logos.tools],
       },
       {
@@ -83,7 +83,7 @@ export const projects: Array<category> = [
           path: "img/icons/underconstruction.png",
           multiformat: false,
         },
-        link: "../projects/tiny.svelte",
+        link: "tiny",
         logos: [logos.tools],
       },
     ],

@@ -38,8 +38,8 @@
   }
 </script>
 
+{#await getSuffix(modernFormats) then suffix}
 <div class="markdown" in:fly={flyLeft}>
-  {#await getSuffix(modernFormats) then suffix}
     <div class="card-wrapper">
       <Card width="fit-content">
         <div class="swipe-holder" in:fade={fade1}>
@@ -67,9 +67,9 @@
         >
       </div>
     </div>
+    <Markdown />
+  </div>
   {/await}
-  <Markdown />
-</div>
 
 <style>
   .card-wrapper {

@@ -4,7 +4,7 @@
   const dispatch = createEventDispatcher<{ page: string }>();
 
   // Constants:
-  import { flyTop } from "../stores";
+  // import { flyTop } from "../stores";
 
   let showMenu: boolean;
 
@@ -15,7 +15,7 @@
   });
 </script>
 
-<menu transition:fly={flyTop}>
+<menu>
   <h1 class="title">ANZ GRAPH</h1>
   <div class="buttons">
     <button
@@ -52,10 +52,7 @@
 
 <!-- MENU ON SMALL DISPLAYS: -->
 {#if showMenu === true}
-  <menu
-    transition:fly={{ ...flyTop, delay: 0, duration: 100 }}
-    class="popup-menu"
-  >
+  <menu class="popup-menu">
     <div class="row">
       <h1 class="title popup-title">Menu</h1>
       <div

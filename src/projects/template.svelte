@@ -33,8 +33,8 @@
   }
 </script>
 
+{#await getSuffix(modernFormats) then suffix}
 <div class="markdown" in:fly={flyLeft}>
-  {#await getSuffix(modernFormats) then suffix}
     <div class="card-wrapper">
       <Card width="fit-content">
         <div class="swipe-holder" in:fade={fade1}>
@@ -62,11 +62,11 @@
         >
       </div>
     </div>
-  {/await}
-  {#await getMarkdown(markdownPath) then Markdown}
+    {#await getMarkdown(markdownPath) then Markdown}
     <svelte:component this={Markdown} />
+    {/await}
+  </div>
   {/await}
-</div>
 
 <style>
   .card-wrapper {

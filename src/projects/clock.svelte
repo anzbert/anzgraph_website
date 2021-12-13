@@ -22,11 +22,10 @@
     let path = `${picPrefixPath}${i}`;
     paths.push(path);
   }
-
 </script>
 
-<div class="markdown" in:fly={flyLeft}>
-  {#await getSuffix(modernFormats) then suffix}
+{#await getSuffix(modernFormats) then suffix}
+  <div class="markdown" in:fly={flyLeft}>
     <div class="card-wrapper">
       <Card width="fit-content">
         <div class="swipe-holder" in:fade={fade1}>
@@ -54,9 +53,9 @@
         >
       </div>
     </div>
-  {/await}
-  <Markdown />
-</div>
+    <Markdown />
+  </div>
+{/await}
 
 <style>
   .card-wrapper {
