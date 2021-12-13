@@ -21,10 +21,10 @@ After watching some Netflix and YouTube videos, my ex-partner and me were convin
 ### 3D Models
 
 <div class="models">
+    <SketchFab src="https://sketchfab.com/models/4d5dfd8450b6495186c0e3e7f494f60c/embed?camera=0&ui_theme=dark" caption="The custom-made trailer"/>
     <SketchFab src="https://sketchfab.com/models/21de728eda6e4cc795468fb3ccfe835b/embed?camera=0&ui_theme=dark" caption="A view onto the timber framing"/>
     <SketchFab src="https://sketchfab.com/models/d9a0f14d9a6e401fac7ae27e0afa51bf/embed?camera=0&ui_theme=dark" caption="Drafting the interior layout"/>
-    <SketchFab src="https://sketchfab.com/models/f6e3cbe929d44e09931106afae768e0a/embed?camera=0&ui_theme=dark" caption="A peek into the inside of the house"/>
-    <SketchFab src="https://sketchfab.com/models/4d5dfd8450b6495186c0e3e7f494f60c/embed?camera=0&ui_theme=dark" caption="The custom-made trailer"/>
+    <SketchFab src="https://sketchfab.com/models/f6e3cbe929d44e09931106afae768e0a/embed?camera=0&ui_theme=dark" caption="A doll-house peek into the house"/>
     <SketchFab src="https://sketchfab.com/models/68ab3b69306c4486aac5aa5aa0471376/embed?camera=0&ui_theme=dark" caption="The outside look with cedar cladding"/>
     <SketchFab src="https://sketchfab.com/models/59876ab6a5ca41f0b132d3993eb03073/embed?camera=0&ui_theme=dark" caption="Inside the house (VR ready)"/>
 </div>
