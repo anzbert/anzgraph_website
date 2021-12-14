@@ -6,7 +6,7 @@ import SketchFab from "../components/sketchfab.svelte"
 
 ## Background
 
-In Australia, houses are expensive and often come with too many bathrooms. Mortgages stick around for longer than a healthy house cat while accelerating **your** ageing. Single glazing let's all the horrible bird noises 🦅 penetrate right into your overpriced _'shelter'_. Ants and termites invade your many bathrooms through all the cracks and other air channels in your walls, while the air con keeps chugging along, fighting an expensive but futile battle against a superheated UV-flavoured blaze that could combust into yet another bushfire at any random moment. Dire times indeed!
+In Australia, houses are expensive and often come with too many bathrooms. Single glazing lets all the horrible bird noises 🦅 penetrate right into your overpriced _'shelter'_. Ants and termites invade your many bathrooms through all the cracks and other air channels in your walls, while the air con keeps chugging along, fighting an expensive but futile battle against a superheated UV-flavoured blaze that could combust into yet another bushfire at any random moment. Dire times indeed!
 
 Okay 😅... Maybe I got carried away a bit there, but house prices are ridiculous and the quality of housing is pretty dubious in this country. On the other hand, building things yourself can be fun, and if you are happy with a more minimalistic life, then tiny living can surely be an option.
 
@@ -18,9 +18,17 @@ After watching some Netflix and YouTube videos, my ex-partner and I were convinc
 - Finding a suitable construction site for rent not too far away
 - The legality of permanently living in a movable construct depends on local authorities and state laws
 
-### Planning
+### Planning and Building
 
-The house was first roughly laid out by putting masking tape on the floor of the garage, to get an idea for the dimensions. I then created detailed construction plans with [SketchUp](https://www.sketchup.com/), mostly relying on the "Australian Standard 1684 for Residential Timber Framed Construction" for engineering information, such as required bracing strengths and load bearing capacities of materials. Planning, research and ordering took up a huge part of the overall building time.
+The house was first roughly laid out by putting masking tape on the floor of the garage, to get an idea for the dimensions. I then created detailed construction plans with [SketchUp](https://www.sketchup.com/), mostly relying on the "Australian Standard 1684 for Residential Timber Framed Construction" for engineering information, such as required bracing strengths and load bearing capacities of materials. Planning, research and ordering took up a huge part of the overall building time. 
+
+A lot of thought went into the moisture permeability of the walls and condensation prevention, to create a comfortable living environment and to reduce the risk of premature decay of the timber. A major design goal was that the house should be air tight, but allow for absorption, buffering, transmission and release of any water contained in the room air and walls.
+
+Coming from Europe, it would have felt wrong to use anything but double glazing for the windows (german PVC frames) combined with proper wall insulation (sheep's wool).
+
+The water heating solution is a gas-powered instant hot water system with a humble flow rate of 9L/min, and the plumbing is completely made with the Sharkbite push fittings and PEX piping.
+
+The toilet is a dry compost system with a urine separator and a low powered fan for moisture extraction. A great design with zero smell and zero water waste that I would recommend to anyone!
 
 Here are some 3D views from different planing stages:
 
@@ -33,8 +41,6 @@ Here are some 3D views from different planing stages:
     <SketchFab src="https://sketchfab.com/models/59876ab6a5ca41f0b132d3993eb03073/embed?camera=0&ui_theme=dark" caption="Inside the house (VR ready)"/>
 </div>
 
-## Building
-
 The house was constructed on the rented backyard of a small asian store in the Guildford(WA) area over about 8 months. We did all the work ourselves, with the occasional help of friends. A professional electrician did the 240V wiring and a trailer maker welded the custom-made trailer according to our plans, with two axles and rated at 4.5 tonnes.
 
 <figure><iframe class="youtube" src="https://www.youtube.com/embed/pvUuOauXDDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -42,7 +48,9 @@ The house was constructed on the rented backyard of a small asian store in the G
 
 ## Conclusion
 
-My personal favourite feature of the house is the little cat door, next to the main door. It was made for Rudolph, the beautiful champion cat 🐈 that I miss greatly 😥.
+This little house provides a living environment unlike any house I've lived in in Australia. It is quiet and well-temperatured inside, thanks to double glazing and sheep's wool insulation. The kitchen and bathroom are perfectly sized, in my experience, and the overall layout is very convenient.
+
+My personal favourite feature of the house is the little cat door, next to the main door. It was made for Rudolph, the beautiful champion cat 🐈 who I miss greatly 😥. I have lived in the tiny home for about 2-3 years and it was a wonderful experience. I understand that tiny living is not suitable for everyone, but I believe that our culture of abundance of space and "stuff" might be unnecessarily wasteful and not 
 
 ## Links
 
