@@ -1,38 +1,44 @@
 <script lang="ts">
-  interface imgSources {
-    jpg: string | null;
-    webp: string | null;
-    avif: string | null;
+  interface picSources {
+    base: string;
+    webp?: string;
+    avif?: string;
   }
-  export let sources: imgSources;
+  export let sources: picSources;
+  export let spinner: boolean = true;
   export let lazy: boolean = false;
   export let alt: string = "";
-  export let spinner: boolean = true;
 
   let imgVisible: boolean = false;
 </script>
 
-{#if spinner}
-  <div class="loader" class:loader-invisible={imgVisible} />
-{/if}
-<picture>
-  {#if sources.avif}
-    <source srcset={sources.avif} type="image/avif" />
+<div class="wrapper">
+  {#if spinner}
+    <div class="loader" class:remove-loader={imgVisible} />
   {/if}
-  {#if sources.webp}
-    <source srcset={sources.webp} type="image/avif" />
-  {/if}
+  <picture>
+    {#if sources.avif}
+      <source srcset={sources.avif} type="image/avif" />
+    {/if}
+    {#if sources.webp}
+      <source srcset={sources.webp} type="image/webp" />
+    {/if}
 
-  <img
-    loading={lazy ? "lazy" : "eager"}
-    srcset={sources.jpg}
-    {alt}
-    class:imgVisible
-    on:load|once={() => (imgVisible = true)}
-  />
-</picture>
+    <img
+      loading={lazy ? "lazy" : "eager"}
+      srcset={sources.base}
+      {alt}
+      class:imgVisible
+      on:load|once={() => (imgVisible = true)}
+    />
+  </picture>
+</div>
 
 <style>
+  .wrapper {
+    position: relative;
+  }
+
   img {
     width: 100%;
     object-fit: contain;
@@ -44,7 +50,7 @@
     opacity: 1;
   }
 
-  .loader-invisible {
+  .remove-loader {
     display: none;
   }
   .loader {
