@@ -7,9 +7,10 @@
   import Projects from "./pages/projects.svelte";
   import Blog from "./pages/blog.svelte";
 
-  let currentPage = "Projects"; // Default start page
+  // Default page:
+  let currentPage: pages = "About";
 
-  const setPage = async (event: { detail: string }) => {
+  const setPage = async (event: { detail: pages }) => {
     currentPage = "";
     await tick();
     currentPage = event.detail;

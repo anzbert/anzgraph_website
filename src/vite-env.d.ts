@@ -6,6 +6,8 @@ declare module "*.md";
 declare module "*.svx";
 
 // GLOBAL TYPES
+type pages = "About" | "Projects" | "Blog" | "";
+
 interface postMeta {
   title: string;
   date: Date;

@@ -1,10 +1,6 @@
 <script lang="ts">
-  import { fly } from "svelte/transition";
   import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher<{ page: string }>();
-
-  // Constants:
-  // import { flyTop } from "../stores";
+  const dispatch = createEventDispatcher<{ page: pages }>();
 
   let showMenu: boolean;
 
