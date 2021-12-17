@@ -8,14 +8,16 @@
   export let spinner: boolean = true;
   export let lazy: boolean = false;
   export let alt: string = "";
+  export let caption: string = "";
 
   let imgVisible: boolean = false;
 </script>
 
-<div class="wrapper">
+<figure class="wrapper">
   {#if spinner}
     <div class="spinner" class:remove-spinner={imgVisible} />
   {/if}
+
   <picture>
     {#if sources.avif}
       <source srcset={sources.avif} type="image/avif" />
@@ -32,7 +34,10 @@
       on:load|once={() => (imgVisible = true)}
     />
   </picture>
-</div>
+  {#if caption !== ""}
+    <figcaption class:imgVisible>{caption}</figcaption>
+  {/if}
+</figure>
 
 <style>
   .wrapper {

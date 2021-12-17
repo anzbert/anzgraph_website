@@ -28,7 +28,7 @@
   }
 
   // dynamic component loading
-  async function getComp(path: string): Promise<SvelteComponent> {
+  async function asyncImportComponent(path: string): Promise<SvelteComponent> {
     let comp = import(`../projects/${path}.svelte`).then((r) => r.default);
     return comp;
   }
@@ -88,7 +88,7 @@
       </div>
     </div>
   {:else}
-    {#await getComp(currentFocus) then ProjectPage}
+    {#await asyncImportComponent(currentFocus) then ProjectPage}
       <svelte:component this={ProjectPage} />
     {/await}
   {/if}

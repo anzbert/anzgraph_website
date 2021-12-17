@@ -1,8 +1,6 @@
 <script lang="ts">
-  // import Markdown from "./bell.svx";
   export let markdownPath: string;
   export let picPrefixPath: string = "";
-  export let modernFormats: boolean = true;
   export let pictures: number = 0;
   export let captions: Array<string> = [];
 
@@ -10,15 +8,14 @@
   /////////////////////////////////////////////////////////////////////////////////
 
   import type { SvelteComponent } from "svelte";
-  // import { onMount } from "svelte";
 
-  async function getMarkdown(path: string): Promise<SvelteComponent> {
-    return await import(path);
+  async function asyncImportSvx(path: string): Promise<SvelteComponent> {
+    let comp = import(`./${path}.svx`).then((r) => r.default);
+    return comp;
   }
 
   import Card from "../components/card1.svelte";
-  import Figure from "../components/figure3.svelte";
-  import { getSuffix } from "../utils";
+  import Lazypicture from "../components/lazypicture.svelte";
   import { fade, fly } from "svelte/transition";
   import { fade1, flyLeft, defaultSwipeConfig } from "../stores";
   import { Swipe, SwipeItem } from "svelte-swipe";
@@ -33,40 +30,47 @@
   }
 </script>
 
-{#await getSuffix(modernFormats) then suffix}
 <div class="markdown" in:fly={flyLeft}>
-    <div class="card-wrapper">
-      <Card width="fit-content">
-        <div class="swipe-holder" in:fade={fade1}>
-          <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
-            {#each paths as path, index}
-              <SwipeItem>
-                <div class="image-container">
-                  <Figure path={`${path}${suffix}`} caption={captions[index]} />
-                </div>
-              </SwipeItem>
-            {/each}
-          </Swipe>
-        </div>
-      </Card>
-      <div class="swipe-buttons">
-        <button
-          on:click={() => {
-            SwipeComponent.prevItem();
-          }}>Prev</button
-        >
-        <button
-          on:click={() => {
-            SwipeComponent.nextItem();
-          }}>Next</button
-        >
+  <div class="card-wrapper">
+    <Card width="fit-content">
+      <div class="swipe-holder" in:fade={fade1}>
+        <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
+          {#each paths as path, index}
+            <SwipeItem>
+              <div class="image-container">
+                <Lazypicture
+                  caption={captions[index]}
+                  lazy={false}
+                  spinner={true}
+                  sources={{
+                    base: `${path}.jpg`,
+                    webp: `${path}_comp.webp`,
+                    avif: `${path}_comp.avif`,
+                  }}
+                />
+              </div>
+            </SwipeItem>
+          {/each}
+        </Swipe>
       </div>
+    </Card>
+    <div class="swipe-buttons">
+      <button
+        on:click={() => {
+          SwipeComponent.prevItem();
+        }}>Prev</button
+      >
+      <button
+        on:click={() => {
+          SwipeComponent.nextItem();
+        }}>Next</button
+      >
     </div>
-    {#await getMarkdown(markdownPath) then Markdown}
-    <svelte:component this={Markdown} />
-    {/await}
   </div>
+  {#await asyncImportSvx(markdownPath) then Markdown}
+    <svelte:component this={Markdown} />
   {/await}
+</div>
 
 <style>
   .card-wrapper {
