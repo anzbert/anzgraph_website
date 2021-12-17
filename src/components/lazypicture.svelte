@@ -14,7 +14,7 @@
 
 <div class="wrapper">
   {#if spinner}
-    <div class="loader" class:remove-loader={imgVisible} />
+    <div class="spinner" class:remove-spinner={imgVisible} />
   {/if}
   <picture>
     {#if sources.avif}
@@ -50,10 +50,11 @@
     opacity: 1;
   }
 
-  .remove-loader {
+  .remove-spinner {
     display: none;
   }
-  .loader {
+  .spinner {
+    z-index: 999;
     position: absolute;
     top: calc(50% - 1.5rem);
     left: calc(50% - 1.5rem);

@@ -1,13 +1,14 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
+  import Figure3 from "../components/figure3.svelte";
   import MaskedHeading from "../components/maskedheading.svelte";
   import { tick } from "svelte";
   import type { SvelteComponent } from "svelte";
 
   // Constants:
   import { flyRight, flyLeft } from "../stores";
-  import Lazypicture from "../components/lazypicture.svelte";
+  import { getSuffix } from "../utils";
 
   // Project Files:
   import { projects } from "../projects/!projectindex";
@@ -48,44 +49,42 @@
 <div id="wrapper">
   {#if currentFocus === "all"}
     <div class="project-page">
-      <div class="projects">
-        {#each projects as category}
-          <div class="divider" id={category.title} in:fly={flyLeft}>
-            <MaskedHeading fontSize="1.8rem">{category.title}</MaskedHeading>
-          </div>
+      {#await getSuffix() then suffix}
+        <div class="projects">
+          {#each projects as category}
+            <div class="divider" id={category.title} in:fly={flyLeft}>
+              <MaskedHeading fontSize="1.8rem">{category.title}</MaskedHeading>
+            </div>
 
-          <div class="content" in:fly={flyLeft}>
-            {#each category.array as project}
-              <Card2>
-                <div slot="header">
-                  <h3 class="title">{project.name}</h3>
-                </div>
-
-                <div
-                  class="image"
-                  slot="thumbnail"
-                  on:click={() => changeFocus(project.link)}
-                >
-                  <Lazypicture
-                    lazy={false}
-                    spinner={true}
-                    sources={{
-                      base: `${project.source.path}.jpg`,
-                      webp: `${project.source.path}_comp.webp`,
-                      avif: `${project.source.path}_comp.avif`,
-                    }}
-                  />
-                  <div id={project.link} class="project-icons">
-                    {#each project.logos as logo}
-                      <img src={logo.path} alt="" class="icon" />
-                    {/each}
+            <div class="content" in:fly={flyLeft}>
+              {#each category.array as project}
+                <Card2>
+                  <div slot="header">
+                    <h3 class="title">{project.name}</h3>
                   </div>
-                </div>
-              </Card2>
-            {/each}
-          </div>
-        {/each}
-      </div>
+
+                  <div
+                    class="image"
+                    slot="thumbnail"
+                    on:click={() => changeFocus(project.link)}
+                  >
+                    {#if project.source.multiformat}
+                      <Figure3 path={`${project.source.path}${suffix}`} />
+                    {:else}
+                      <Figure3 path={`${project.source.path}`} />
+                    {/if}
+                    <div id={project.link} class="project-icons">
+                      {#each project.logos as logo}
+                        <img src={logo.path} alt="" class="icon" />
+                      {/each}
+                    </div>
+                  </div>
+                </Card2>
+              {/each}
+            </div>
+          {/each}
+        </div>
+      {/await}
     </div>
   {:else}
     {#await getComp(currentFocus) then ProjectPage}

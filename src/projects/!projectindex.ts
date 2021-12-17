@@ -57,8 +57,8 @@ export const projects: Array<category> = [
       {
         name: "Metronome",
         source: {
-          path: "img/icons/underconstruction.png",
-          multiformat: false,
+          path: "img/icons/underconstruction",
+          multiformat: true,
         },
         link: "deskmetro",
         logos: [logos.rpi, logos.rust],
