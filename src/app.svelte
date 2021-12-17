@@ -11,8 +11,10 @@
   let currentPage: pages = "About";
 
   const setPage = async (event: { detail: pages }) => {
-    currentPage = "";
-    await tick();
+    if (currentPage === event.detail) {
+      currentPage = "";
+      await tick();
+    }
     currentPage = event.detail;
   };
 </script>

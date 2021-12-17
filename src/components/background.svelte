@@ -1,12 +1,10 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
-
   export let bg_image = "subvertivo-_lab-8HrVclautyw-unsplash";
 
   let bg_path = "img/background/" + bg_image;
 </script>
 
-<picture in:fade={{ delay: 400, duration: 350 }}>
+<picture>
   <source srcset="{bg_path}_comp.avif" type="image/avif" />
   <source srcset="{bg_path}_comp.webp" type="image/webp" />
   <img class="background" srcset="{bg_path}_comp.jpg" alt="Background" />
