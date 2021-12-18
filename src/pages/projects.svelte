@@ -21,7 +21,7 @@
       document.getElementById(`${id}`).scrollIntoView({
         behavior: "smooth",
       });
-    }, 750);
+    }, 200);
   }
 
   // dynamic component loading
