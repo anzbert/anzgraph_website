@@ -17,7 +17,7 @@
 
     font-weight: 300;
     font-size: 1.1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0.5em 0.5em;
     border-width: 2px;
     box-shadow: 0px 0px 15px hsla(39, 77%, 83%, 0.2);

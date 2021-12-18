@@ -39,63 +39,66 @@
     </Textbox1>
   </div>
   <div class="card-wrapper" in:fly={flyLeft}>
-    <Card width="fit-content"
-      ><div class="inside-card">
-        <div class="card-elements">
-          Site made with
-          <ul>
-            <li>
-              <Logo logo="vscode" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="svelte" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="vite" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="ts" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="mdsvex" name={true} link={true} />
-            </li>
-          </ul>
-          Images from
-          <ul>
-            <li>
-              <Logo logo="unsplash" name={true} link={true} />
-            </li>
-          </ul>
-          My Repos
-          <ul>
-            <li>
-              <Logo logo="github" name={true} link={true} />
-            </li>
-          </ul>
-        </div>
+    <Card width="fit-content">
+      <div class="links">
+        <h2>Links</h2>
+        <div class="inside-card">
+          <div class="card-elements">
+            <h3>Site made with:</h3>
+            <ul>
+              <li>
+                <Logo logo="vscode" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="svelte" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="vite" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="ts" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="mdsvex" name={true} link={true} />
+              </li>
+            </ul>
+            <h3>Images from:</h3>
+            <ul>
+              <li>
+                <Logo logo="unsplash" name={true} link={true} />
+              </li>
+            </ul>
+            <h3>My repos:</h3>
+            <ul>
+              <li>
+                <Logo logo="github" name={true} link={true} />
+              </li>
+            </ul>
+          </div>
 
-        <div class="card-elements">
-          Other Tech I Use
-          <ul>
-            <li>
-              <Logo logo="js" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="node" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="rust" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="c" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="arduino" name={true} link={true} />
-            </li>
-            <li>
-              <Logo logo="rpi" name={true} link={true} />
-            </li>
-          </ul>
+          <div class="card-elements">
+            <h3>Other tech I like:</h3>
+            <ul>
+              <li>
+                <Logo logo="js" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="node" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="rust" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="c" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="arduino" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="rpi" name={true} link={true} />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </Card>
@@ -134,7 +137,6 @@
   .buttons {
     display: flex;
     gap: 1rem;
-    /* justify-content: center; */
     align-items: center;
   }
 
@@ -148,6 +150,17 @@
     flex-wrap: wrap;
     text-align: left;
     justify-content: center;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* gap: 2rem; */
+  }
+  h2 {
+    margin: 0.4em 0.4em;
+    /* text-decoration: underline; */
   }
 
   .card-elements {
