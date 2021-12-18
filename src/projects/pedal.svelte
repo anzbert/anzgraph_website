@@ -1,6 +1,4 @@
 <script lang="ts">
-  location.hash = "projects/pedal";
-
   import Markdown from "./pedal.svx";
   const picPath: string = "img/projects/pedal/footp";
   const picNumber: number = 9;

@@ -60,7 +60,7 @@
                 <div
                   class="image"
                   slot="thumbnail"
-                  on:click={() => (nav[1] = project.link)}
+                  on:click={() => (location.hash = `projects/${project.link}`)}
                 >
                   <Lazypicture
                     lazy={false}

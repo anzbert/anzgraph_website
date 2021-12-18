@@ -1,6 +1,4 @@
 <script lang="ts">
-  location.hash = "projects/clock";
-
   import Markdown from "./clock.svx";
   const picPath: string = "img/projects/clock/clock";
   const picNumber: number = 5;
