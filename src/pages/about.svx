@@ -1,6 +1,4 @@
-<script>
-    import MaskedHeading from "../components/maskedheading.svelte";
-</script>
+<script></script>
 
 ---
 
