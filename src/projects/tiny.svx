@@ -64,6 +64,7 @@ My personal favourite feature of the house is the little cat door, next to the m
     .models {
         display: flex;
         flex-wrap: wrap;
+        gap: 1.5em;
     }
     .youtube {
         width: min(100%, 480px);
