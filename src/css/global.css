@@ -194,7 +194,7 @@ figure {
 
 figcaption {
   color: var(--font1);
-  font-style: italic;
+  /* font-style: italic; */
   font-size: smaller;
   font-weight: 100;
   padding: 0.15em 0.8em;

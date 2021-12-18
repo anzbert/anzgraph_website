@@ -8,13 +8,9 @@
   /////////////////////////////////////////////////////////////////////////////////
 
   import Projectpage from "../components/projectpage.svelte";
-
-  import Construction from "../components/construction.svelte";
 </script>
 
-<Construction />
-
-<Projectpage {picPath} {picNumber} {picCaptions}>
+<Projectpage {picPath} {picNumber} {picCaptions} underConstruction={true}>
   <div slot="markdown">
     <Markdown />
   </div>

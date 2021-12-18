@@ -45,6 +45,13 @@
     width: 100%;
   }
 
+  figcaption {
+    position: absolute;
+    top: 0;
+    background-color: var(--gray3);
+    border-radius: 2px;
+  }
+
   img {
     width: 100%;
     object-fit: contain;

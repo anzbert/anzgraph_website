@@ -2,6 +2,7 @@
   export let picPath: string = "";
   export let picNumber: number = 0;
   export let picCaptions: Array<string> = [];
+  export let underConstruction: boolean = false;
   // slot name="markdown"
 
   /////////////////////////////////////////////////////////////////////////////////
@@ -23,7 +24,13 @@
       paths.push(path);
     }
   }
+
+  import Construction from "./construction.svelte";
 </script>
+
+{#if underConstruction}
+  <Construction />
+{/if}
 
 <div class="markdown" in:fly={flyLeft}>
   <div class="card-wrapper">
@@ -63,6 +70,7 @@
     </div>
   </div>
   <slot name="markdown" />
+  <slot />
 </div>
 
 <style>

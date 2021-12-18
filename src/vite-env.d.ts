@@ -35,5 +35,4 @@ interface project {
 }
 interface sourceSet {
   path: string;
-  multiformat: boolean;
 }

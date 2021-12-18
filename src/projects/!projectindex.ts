@@ -8,7 +8,6 @@ export const projects: Array<category> = [
         name: "Crossfader",
         source: {
           path: "img/projects/xfader/fader_thumb",
-          multiformat: true,
         },
         link: "xfader",
         logos: [logos.arduino, logos.c],
@@ -17,7 +16,6 @@ export const projects: Array<category> = [
         name: "Alarm Clock",
         source: {
           path: "img/projects/clock/clock_thumb",
-          multiformat: true,
         },
         link: "clock",
         logos: [logos.arduino, logos.c],
@@ -26,7 +24,6 @@ export const projects: Array<category> = [
         name: "USB/Midi Pedal",
         source: {
           path: "img/projects/pedal/pedal_thumb",
-          multiformat: true,
         },
         link: "pedal",
         logos: [logos.arduino, logos.c],
@@ -35,7 +32,6 @@ export const projects: Array<category> = [
         name: "Dog Feeder",
         source: {
           path: "img/projects/feed/feed_thumb",
-          multiformat: true,
         },
         link: "feed",
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
@@ -44,7 +40,6 @@ export const projects: Array<category> = [
         name: "Bus Bell",
         source: {
           path: "img/projects/bell/bell_thumb",
-          multiformat: true,
         },
         link: "bell",
         logos: [logos.arduino, logos.c],
@@ -57,8 +52,7 @@ export const projects: Array<category> = [
       {
         name: "Metronome",
         source: {
-          path: "img/icons/underconstruction",
-          multiformat: true,
+          path: "img/projects/deskmetro/deskmetro0",
         },
         link: "deskmetro",
         logos: [logos.rpi, logos.rust],
@@ -72,7 +66,6 @@ export const projects: Array<category> = [
         name: "Kolibri PC",
         source: {
           path: "img/projects/kolibri/kolibri_thumb",
-          multiformat: true,
         },
         link: "kolibri",
         logos: [logos.tools],
@@ -81,7 +74,6 @@ export const projects: Array<category> = [
         name: "Tiny House",
         source: {
           path: "img/projects/tiny/tiny_thumb",
-          multiformat: true,
         },
         link: "tiny",
         logos: [logos.tools],
