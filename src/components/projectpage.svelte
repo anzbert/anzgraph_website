@@ -119,5 +119,6 @@
   div :global(h1) {
     margin-bottom: 0.2em;
     text-align: end;
+    height: max-content;
   }
 </style>
