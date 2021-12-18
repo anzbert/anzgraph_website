@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/kolibri";
+
   import Markdown from "./kolibri.svx";
   const picPath: string = "img/projects/kolibri/kolibri";
   const picNumber: number = 13;

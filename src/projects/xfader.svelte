@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/xfader";
+
   import Markdown from "./xfader.svx";
   const picPath: string = "img/projects/xfader/fader";
   const picNumber: number = 3;

@@ -1,7 +1,4 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher<{ page: pages }>();
-
   let showMenu: boolean;
 
   // remove menu when screen width / orientation changes:
@@ -16,15 +13,15 @@
   <div class="buttons">
     <button
       class="menu-item text-button"
-      on:click={() => dispatch("page", "Projects")}>Projects</button
+      on:click={() => (location.hash = "projects")}>Projects</button
     >
     <button
       class="menu-item text-button"
-      on:click={() => dispatch("page", "Blog")}>Blog</button
+      on:click={() => (location.hash = "blog")}>Blog</button
     >
     <button
       class="menu-item text-button"
-      on:click={() => dispatch("page", "About")}>About</button
+      on:click={() => (location.hash = "about")}>About</button
     >
     <a href="https://github.com/anzbert"
       ><img
@@ -66,21 +63,21 @@
         class="menu-item "
         on:click={() => {
           showMenu = false;
-          dispatch("page", "Projects");
+          location.hash = "projects";
         }}>Projects</button
       >
       <button
         class="menu-item "
         on:click={() => {
           showMenu = false;
-          dispatch("page", "Blog");
+          location.hash = "blog";
         }}>Blog</button
       >
       <button
         class="menu-item "
         on:click={() => {
           showMenu = false;
-          dispatch("page", "About");
+          location.hash = "about";
         }}>About</button
       >
     </div>

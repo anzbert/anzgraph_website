@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/bell";
+
   import Markdown from "./bell.svx";
   const picPath: string = "img/projects/bell/bell";
   const picNumber: number = 3;

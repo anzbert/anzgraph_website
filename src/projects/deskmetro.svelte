@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/deskmetro";
+
   import Markdown from "./deskmetro.svx";
   const picPath: string = "img/projects/deskmetro/deskmetro";
   const picNumber: number = 1;

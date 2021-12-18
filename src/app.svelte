@@ -8,25 +8,25 @@
   import Blog from "./pages/blog.svelte";
 
   // Default page:
-  let currentPage: pages = "About";
+  let nav: Array<string> = ["about", undefined];
 
-  const setPage = async (event: { detail: pages }) => {
-    if (currentPage === event.detail) {
-      currentPage = "";
-      await tick();
-    }
-    currentPage = event.detail;
+  // hash-based navigation:
+  window.onhashchange = () => {
+    let focus = window.location.hash.slice(1); // remove hash tag (#)
+    nav.length = 0;
+    nav = focus.split("/");
+    // console.log(nav);
   };
 </script>
 
 <div class="wrapper">
   <Background />
 
-  <Nav on:page={setPage} />
+  <Nav />
 
-  {#if currentPage == "Blog"} <Blog />{/if}
-  {#if currentPage == "About"} <About />{/if}
-  {#if currentPage == "Projects"} <Projects />{/if}
+  {#if nav[0] == "blog"} <Blog />{/if}
+  {#if nav[0] == "about"} <About />{/if}
+  {#if nav[0] == "projects"} <Projects subNav={nav[1]} />{/if}
 </div>
 
 <style>

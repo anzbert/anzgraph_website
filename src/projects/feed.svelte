@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/feed";
+
   import Markdown from "./feed.svx";
   const picPath: string = "img/projects/feed/feed";
   const picNumber: number = 12;

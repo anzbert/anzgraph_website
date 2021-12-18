@@ -1,8 +1,10 @@
 <script lang="ts">
+  location.hash = "projects";
+  export let subNav = undefined;
+
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
   import MaskedHeading from "../components/maskedheading.svelte";
-  import { tick } from "svelte";
   import type { SvelteComponent } from "svelte";
 
   // Constants:
@@ -14,17 +16,12 @@
 
   // scrolling and page changing
   async function scrollTo(id: string) {
-    currentFocus = "all";
-    await tick();
-    document.getElementById(`${id}`).scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-
-  let currentFocus = "all"; // default is "all"
-  function changeFocus(focus: string) {
-    document.getElementById("wrapper").scrollTo(0, 0); // scroll to top
-    currentFocus = focus; // change page
+    location.hash = "projects";
+    setTimeout(() => {
+      document.getElementById(`${id}`).scrollIntoView({
+        behavior: "smooth",
+      });
+    }, 750);
   }
 
   // dynamic component loading
@@ -46,7 +43,7 @@
 </div>
 
 <div id="wrapper">
-  {#if currentFocus === "all"}
+  {#if !subNav}
     <div class="project-page">
       <div class="projects">
         {#each projects as category}
@@ -64,7 +61,7 @@
                 <div
                   class="image"
                   slot="thumbnail"
-                  on:click={() => changeFocus(project.link)}
+                  on:click={() => (subNav = project.link)}
                 >
                   <Lazypicture
                     lazy={false}
@@ -88,7 +85,7 @@
       </div>
     </div>
   {:else}
-    {#await asyncImportComponent(currentFocus) then ProjectPage}
+    {#await asyncImportComponent(subNav) then ProjectPage}
       <svelte:component this={ProjectPage} />
     {/await}
   {/if}

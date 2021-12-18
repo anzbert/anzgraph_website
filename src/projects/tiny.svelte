@@ -1,4 +1,6 @@
 <script lang="ts">
+  location.hash = "projects/tiny";
+
   import Markdown from "./tiny.svx";
   const picPath: string = "img/projects/tiny/tiny";
   const picNumber: number = 1;
