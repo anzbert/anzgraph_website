@@ -1,5 +1,6 @@
 <script lang="ts">
-  export let bg_image = "subvertivo-_lab-8HrVclautyw-unsplash";
+  // export let bg_image = "adrien-olichon-X8o-P23flgI-unsplash";
+  export let bg_image = "dejan-zakic-LDciXr1ynFk-unsplash";
 
   let bg_path = "img/background/" + bg_image;
 

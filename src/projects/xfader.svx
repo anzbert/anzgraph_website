@@ -1,5 +1,7 @@
 # Low Friction USB Crossfader
 
+---
+
 ## Background
 
 When I came up with the idea for this project, I was learning how to create old school HipHop beats with Ableton Live. Naturally, I needed some proper turntable scratching sounds and vocal cuts to add some flavour to my mix. Since I didn't want to start an expensive record collection, my plan was to to only use digital samples.

@@ -4,6 +4,8 @@ import SketchFab from "../components/sketchfab.svelte"
 
 # Tiny House on Wheels
 
+---
+
 ## Background
 
 In Australia, houses are expensive and often come with too many bathrooms. Single glazing lets all the horrible bird noises 🦅 penetrate right into your overpriced _'shelter'_. Ants and termites invade your many bathrooms through all the cracks and other air channels in your walls, while the air con keeps chugging along, fighting an expensive but futile battle against a superheated UV-flavoured blaze that could combust into yet another bushfire at any random moment. Dire times indeed!
@@ -20,7 +22,7 @@ After watching some Netflix and YouTube videos, my ex-partner and I were convinc
 
 ### Planning and Building
 
-The house was first roughly laid out by putting masking tape on the floor of the garage, to get an idea for the dimensions. I then created detailed construction plans with [SketchUp](https://www.sketchup.com/), mostly relying on the "Australian Standard 1684 for Residential Timber Framed Construction" for engineering information, such as required bracing strengths and load bearing capacities of materials. Planning, research and ordering took up a huge part of the overall building time. 
+The house was first roughly laid out by putting masking tape on the floor of the garage, to get an idea for the dimensions. I then created detailed construction plans with [SketchUp](https://www.sketchup.com/), mostly relying on the "Australian Standard 1684 for Residential Timber Framed Construction" for engineering information, such as required bracing strengths and load bearing capacities of materials. Planning, research and ordering took up a huge part of the overall building time.
 
 A lot of thought went into the moisture permeability of the walls and condensation prevention, to create a comfortable living environment and to reduce the risk of premature decay of the timber. A major design goal was that the house should be air tight, but allow for absorption, buffering, transmission and release of any water contained in the room air and walls.
 
@@ -50,7 +52,7 @@ The house was constructed on the rented backyard of a small asian store in the G
 
 This little house provides a living environment unlike any house I've lived in in Australia. It is quiet and well-temperatured inside, thanks to double glazing and sheep's wool insulation. The kitchen and bathroom are perfectly sized, in my experience, and the overall layout is very convenient.
 
-My personal favourite feature of the house is the little cat door, next to the main door. It was made for Rudolph, the beautiful champion cat 🐈 who I miss greatly 😥. I have lived in the tiny home for about 2-3 years and it was a wonderful experience. I understand that tiny living is not suitable for everyone, but I believe that our culture of abundance of space and "stuff" might be unnecessarily wasteful and not 
+My personal favourite feature of the house is the little cat door, next to the main door. It was made for Rudolph, the beautiful champion cat 🐈 who I miss greatly 😥. I have lived in the tiny home for about 2-3 years and it was a wonderful experience. I understand that tiny living is not suitable for everyone, but I believe that our culture of abundance of space and "stuff" might be unnecessarily wasteful and not
 
 ## Links
 

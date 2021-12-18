@@ -1,5 +1,7 @@
 # Kolibri: Small Form Factor PC
 
+---
+
 ## Background
 
 I have built my own PCs since I was a teenager, starting with a Pentium 166Mhz in the 90s, and it has always been fun, exciting and educational. Building doesn't necessarily save any money compared to buying a pre-built machine, but you always end up learning something new, and it leaves you with a sense of pride, achievement and a deeper connection to your little digital helper.

@@ -88,7 +88,10 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 3em 1em;
+    padding: 3em 0;
+  }
+
+  .content {
   }
 
   .card-wrapper {

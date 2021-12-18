@@ -1,5 +1,7 @@
 # Dog Food Timer and Remote Feeder
 
+---
+
 ## Background
 
 Knowing that your pet will get a tasty treat while you are away is quite reassuring and comforting. Especially when you can't make it home in time for the regular dinner-schedule.

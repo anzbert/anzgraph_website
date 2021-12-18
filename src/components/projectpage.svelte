@@ -30,7 +30,6 @@
 {#if underConstruction}
   <Construction />
 {/if}
-
 <div class="markdown" in:fly={flyLeft}>
   <div class="card-wrapper">
     <Card width="fit-content">
@@ -111,7 +110,7 @@
   }
 
   div :global(h1) {
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
     text-align: end;
   }
 </style>

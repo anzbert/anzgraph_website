@@ -1,5 +1,7 @@
 # Wireless Bus Bell
 
+---
+
 ## Background
 
 Two of my dear friends bought an old street bus. Even better, they actually bought a former [O-Bahn Bus](https://en.wikipedia.org/wiki/O-Bahn_Busway) from South Australia. This beauty featured a massive bell to be binged when a stop was requested. Unfortunately, it needed to be removed during the full renovation.
@@ -9,6 +11,7 @@ I scored this nice collector's piece at the time, but it seemed appropriate to e
 ## The Build
 
 ### Materials
+
 - 1x Arduino Pro Micro
 - 1x Box made from MDF
 - 1x Crappy wireless door bell remote from a hardware store kit (Bunnings)
@@ -21,7 +24,7 @@ I scored this nice collector's piece at the time, but it seemed appropriate to e
 - 1x 12v power supply
 - 1x Cables and PCB
 
-This project relies heavily on the excellent [RF433any](https://github.com/sebmillet/RF433any) library, which made it a breeze to intercept and decipher the cheap bell remote's signal. When a signal is intercepted, the bell solenoid is activated briefly through a logic level transistor. 
+This project relies heavily on the excellent [RF433any](https://github.com/sebmillet/RF433any) library, which made it a breeze to intercept and decipher the cheap bell remote's signal. When a signal is intercepted, the bell solenoid is activated briefly through a logic level transistor.
 
 The biggest challenge was to get the 433Mhz receiver to function reliably when sharing power with the Arduino. I suspect the first RF module I used (MX-FS-03V) was quite sensitive to import power fluctuations. I did not have an oscilloscope to confirm this theory, neither did I have a bunch of capacitors at home to try to fix the issue through some kind of filtering circuit. The easiest solution, that worked without any further drama, was to use a higher quality, so called "superheterodyne" RF module (RX470-4). The range was much better with this unit and the bell can now be activated with perfect reliability. I call this a win! 😊🥂
 

@@ -159,14 +159,14 @@
   }
 
   .image {
-    filter: grayscale(80%);
+    filter: sepia(50%);
     transition: all 200ms;
     transform: scale(1.05);
     cursor: pointer;
   }
   .image:hover {
     filter: none;
-    transform: scale(1.12);
+    transform: scale(1.11);
   }
 
   .project-icons {

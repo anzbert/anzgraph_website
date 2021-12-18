@@ -1,5 +1,7 @@
 # Alarm Clock
 
+---
+
 ## Background
 
 The idea for this project started with my girlfriend buying a cheap ass bedside clock at K-mart. She quickly got annoyed with the room-illuminating brightness of the display at night, and there being no way to turn it down at all. On top of that, this horrible clock broke after a few weeks.

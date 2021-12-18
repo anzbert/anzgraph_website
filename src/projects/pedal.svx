@@ -1,5 +1,7 @@
 # 6 Button USB Foot Pedal
 
+---
+
 ## Background
 
 This project was born out of the need for controlling music software and other hardware devices with a foot controller. Specifically, I wanted to use Ableton's loop effect while playing the guitar. And to make sure that I would never run out of buttons, I went with the old saying of 'going big, or going home'. Not that I don't like going home 😛, but building it with expandability in mind seemed like a good idea, to cover for any future need. There are a few pedals available online, but they are typically priced quite high.
