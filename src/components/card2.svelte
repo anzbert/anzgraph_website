@@ -30,12 +30,12 @@
 
 <style>
   .wrapper {
-    --wrapper-fraction: 95%;
+    --wrapper-fraction: 93%;
     --upper-color: var(--sepia1);
     --lower-color: hsla(6, 93%, 71%, 0.7);
     position: relative;
     width: var(--square);
-    height: var(--square);
+    height: calc(var(--square) * 0.93);
 
     /* height: calc(var(--square) + 2rem); */
     margin: 0.3em;
@@ -52,7 +52,7 @@
 
   .thumbnail {
     overflow: hidden;
-    max-width: 93%;
+    max-width: 94%;
     margin: auto;
     box-shadow: 2px 2px 2px var(--gray1);
     position: relative;
@@ -65,7 +65,7 @@
     background-color: var(--green3);
     /* background-image: var(--gradient4); */
     width: var(--wrapper-fraction);
-    height: var(--wrapper-fraction);
+    height: calc(var(--wrapper-fraction) * 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -80,7 +80,7 @@
     /* background-color: var(--lower-color); */
     background-image: var(--gradient2);
     width: var(--wrapper-fraction);
-    height: var(--wrapper-fraction);
+    height: calc(var(--wrapper-fraction) * 1);
     position: absolute;
     bottom: 0;
     right: 0;
