@@ -2,8 +2,6 @@
     import MaskedHeading from "../components/maskedheading.svelte";
 </script>
 
-## <MaskedHeading background="var(--gradient3)">Hi!</MaskedHeading>
-
 ---
 
 ## And welcome to my website!

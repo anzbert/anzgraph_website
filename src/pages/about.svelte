@@ -7,11 +7,22 @@
 
   import Card from "../components/card1.svelte";
   import Logo from "../components/logo.svelte";
+
+  import MaskedHeading from "../components/maskedheading.svelte";
 </script>
 
 <div class="wrapper">
   <div class="content" in:fly={flyLeft}>
     <Textbox1>
+      <div class="header">
+        <h1>
+          <MaskedHeading fontSize="5rem" background="var(--gradient3)"
+            >Hi!</MaskedHeading
+          >
+        </h1>
+        <img class="anzio" src="img/icons/anzio.svg" alt="" />
+      </div>
+
       <AboutMe />
       <div class="buttons">
         <p>Click to get started:</p>
@@ -101,6 +112,19 @@
     flex-direction: column;
 
     padding: 3em 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    height: 5rem;
+    margin: 0;
+  }
+  .anzio {
+    height: 6rem;
   }
 
   .buttons {

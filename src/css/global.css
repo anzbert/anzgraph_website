@@ -14,14 +14,14 @@
   --brown2: hsla(0, 20%, 27%, 0.8);
   --coral1: hsl(180, 25%, 54%);
   --sepia1: hsl(51, 7%, 69%);
-  --blue1: hsl(261, 97%, 79%);
+  --blue1: hsl(261, 80%, 80%);
   --blue2: hsl(261, 97%, 89%);
-  --green1: hsl(81, 97%, 39%); /* MAIN */
+  --green1: #80c403; /* MAIN */
   --green2: #20c203;
   --green3: hsl(111, 20%, 60%);
   --green_transp: hsla(81, 97%, 39%, 0.5);
   --lightgreen1: #a1f404;
-  --blue_transp: hsla(261, 97%, 79%, 0.65);
+  --blue_transp: hsla(261, 80%, 69%, 0.8);
   --gradient1: linear-gradient(120deg, var(--sepia1), var(--blue1));
   --gradient2: linear-gradient(30deg, var(--gray1), var(--blue_transp));
   --gradient3: linear-gradient(30deg, var(--blue1), var(--blue_transp));

@@ -9,7 +9,7 @@
 </script>
 
 <menu>
-  <h1 on:click={() => (location.hash = "about")} class="title">ANZ GRAPH</h1>
+  <h1 on:click={() => (location.hash = "about")} class="title">ANZ I/O</h1>
   <div class="buttons">
     <button
       class="menu-item text-button"
@@ -106,12 +106,14 @@
   }
 
   .title {
-    margin: 0 auto 0 0;
+    margin: 0 auto 0 0.2em;
     white-space: nowrap;
-    height: 2rem;
+    /* height: 2rem; */
+    line-height: 0.9;
     color: var(--brown);
     z-index: 100;
     font-weight: 100;
+    font-size: 2.4rem;
     cursor: pointer;
     text-shadow: 0px 0px 5px var(--gray1);
     transition: 200ms;
