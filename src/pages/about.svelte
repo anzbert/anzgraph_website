@@ -13,6 +13,18 @@
   <div class="content" in:fly={flyLeft}>
     <Textbox1>
       <AboutMe />
+      <div class="buttons">
+        <p>Click to get started:</p>
+        <button
+          class="menu-item text-button"
+          on:click={() => (location.hash = "projects")}>My Projects</button
+        >
+        <button
+          class="menu-item text-button"
+          on:click={() => (location.hash = "blog")}>Blog</button
+        >
+      </div>
+      <hr />
     </Textbox1>
   </div>
   <div class="card-wrapper" in:fly={flyLeft}>
@@ -91,7 +103,11 @@
     padding: 3em 0;
   }
 
-  .content {
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .card-wrapper {

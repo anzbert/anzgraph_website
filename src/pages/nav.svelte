@@ -9,7 +9,7 @@
 </script>
 
 <menu>
-  <h1 class="title">ANZ GRAPH</h1>
+  <h1 on:click={() => (location.hash = "about")} class="title">ANZ GRAPH</h1>
   <div class="buttons">
     <button
       class="menu-item text-button"
@@ -21,7 +21,7 @@
     >
     <button
       class="menu-item text-button"
-      on:click={() => (location.hash = "about")}>About</button
+      on:click={() => (location.hash = "about")}>Home</button
     >
     <a href="https://github.com/anzbert/anzgraph_website"
       ><img
@@ -112,8 +112,8 @@
     height: 2rem;
     color: var(--brown);
     z-index: 100;
-    /* weight not working on mobile? */
     font-weight: 100;
+    cursor: pointer;
   }
 
   .buttons {
