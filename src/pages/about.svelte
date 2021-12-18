@@ -114,6 +114,10 @@
     padding: 3em 0;
   }
 
+  .content {
+    margin-bottom: 5rem;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
