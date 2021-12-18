@@ -24,6 +24,11 @@
     }
   }
 
+  const swipeConfig =
+    picNumber > 1
+      ? { ...defaultSwipeConfig }
+      : { ...defaultSwipeConfig, showIndicators: false };
+
   import Construction from "./construction.svelte";
 </script>
 
@@ -34,7 +39,7 @@
   <div class="card-wrapper">
     <Card width="fit-content">
       <div class="swipe-holder" in:fade={fade1}>
-        <Swipe {...defaultSwipeConfig} bind:this={SwipeComponent}>
+        <Swipe {...swipeConfig} bind:this={SwipeComponent}>
           {#each paths as path, index}
             <SwipeItem>
               <div class="image-container">
@@ -54,18 +59,20 @@
         </Swipe>
       </div>
     </Card>
-    <div class="swipe-buttons">
-      <button
-        on:click={() => {
-          SwipeComponent.prevItem();
-        }}>Prev</button
-      >
-      <button
-        on:click={() => {
-          SwipeComponent.nextItem();
-        }}>Next</button
-      >
-    </div>
+    {#if picNumber > 1}
+      <div class="swipe-buttons">
+        <button
+          on:click={() => {
+            SwipeComponent.prevItem();
+          }}>Prev</button
+        >
+        <button
+          on:click={() => {
+            SwipeComponent.nextItem();
+          }}>Next</button
+        >
+      </div>
+    {/if}
   </div>
   <slot name="markdown" />
   <slot />
