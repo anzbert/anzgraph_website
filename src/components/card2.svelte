@@ -42,7 +42,7 @@
   }
 
   .card-header {
-    background-color: var(--sepia1);
+    background-color: var(--green_transp);
     /* background-image: var(--gradient4); */
     padding: 0.3em;
     box-shadow: 1px 1px 3px var(--gray2);
@@ -62,7 +62,7 @@
   .upper-box {
     border-radius: 2px;
     z-index: 2;
-    background-color: var(--green1);
+    background-color: var(--green3);
     /* background-image: var(--gradient4); */
     width: var(--wrapper-fraction);
     height: var(--wrapper-fraction);

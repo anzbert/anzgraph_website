@@ -98,7 +98,7 @@
     z-index: 10;
     display: flex;
     align-items: center;
-    background: var(--gradient1);
+    background: var(--gradient4);
     box-shadow: 0px 5px 3px var(--gray1);
   }
 

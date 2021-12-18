@@ -4,22 +4,24 @@
   --gray1: hsla(0, 0%, 15%, 0.4);
   --gray2: hsla(0, 0%, 10%, 0.9);
   --gray3: #333;
-  --gray4: hsl(169, 25%, 35%);
-  --gray5: hsl(169, 25%, 60%);
-  --font1: hsl(39, 70%, 90%);
-  --font3: hsl(169, 5%, 65%);
+  --gray4: hsl(180, 25%, 35%);
+  --gray5: hsl(180, 25%, 60%);
+  --font1: hsl(51, 70%, 90%);
+  --font3: hsl(261, 5%, 65%);
   --brown1: hsla(0, 25%, 27%, 1);
   --brown2: hsla(0, 20%, 27%, 0.8);
   --coral1: hsl(180, 25%, 54%);
-  --sepia1: #c2a503;
+  --sepia1: hsl(51, 7%, 69%);
   --blue1: hsl(261, 97%, 79%);
   --blue2: hsl(261, 97%, 89%);
-  --green1: #80c203; /* MAIN */
+  --green1: hsl(81, 97%, 39%); /* MAIN */
   --green2: #20c203;
+  --green3: hsl(111, 20%, 60%);
+  --green_transp: hsla(81, 97%, 39%, 0.5);
   --lightgreen1: #a1f404;
-  --blue_transp: hsla(235, 62%, 60%, 0.7);
+  --blue_transp: hsla(261, 97%, 79%, 0.65);
   --gradient1: linear-gradient(120deg, var(--sepia1), var(--blue1));
-  --gradient2: linear-gradient(30deg, var(--gray1), var(--blue1));
+  --gradient2: linear-gradient(30deg, var(--gray1), var(--blue_transp));
   --gradient3: linear-gradient(30deg, var(--blue1), var(--blue_transp));
   --gradient4: linear-gradient(30deg, var(--lightgreen1), var(--blue_transp));
   --gradient5: linear-gradient(
