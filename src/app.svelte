@@ -5,15 +5,12 @@
   import Projects from "./pages/projects.svelte";
   import Blog from "./pages/blog.svelte";
 
-  // Start Page:
-  // let nav: Array<string> = ["about", undefined];
+  // Hash-Based Navigation:
   let nav: Array<string> = window.location.hash.slice(1).split("/");
-  console.log(nav);
-
-  // hash-based navigation:
+  // console.log("entry hash: ", nav);
   window.onhashchange = () => {
     nav = window.location.hash.slice(1).split("/");
-    console.log(nav);
+    // console.log("hash changed to: ", nav);
   };
 </script>
 
