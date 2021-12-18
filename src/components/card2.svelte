@@ -52,7 +52,7 @@
 
   .thumbnail {
     overflow: hidden;
-    max-width: 90%;
+    max-width: 93%;
     margin: auto;
     box-shadow: 2px 2px 2px var(--gray1);
     position: relative;

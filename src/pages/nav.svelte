@@ -23,8 +23,8 @@
       class="menu-item text-button"
       on:click={() => (location.hash = "about")}>Home</button
     >
-    <a href="https://github.com/anzbert/anzgraph_website"
-      ><img
+    <a class="logo-icon" href="https://github.com/anzbert/anzgraph_website">
+      <img
         class="logo-icon text-button"
         src="img/logos/github.png"
         alt="GitHub Logo"
@@ -47,7 +47,6 @@
 {#if showMenu === true}
   <menu class="popup-menu">
     <div class="row">
-      <h1 class="title popup-title">Menu</h1>
       <div
         class="menu-icon"
         on:click={() => {
@@ -93,7 +92,7 @@
 
     margin: 0;
     padding: 0.8rem;
-    padding-left: max(2vw, 1rem);
+    /* padding-left: max(2vw, 1rem); */
 
     z-index: 10;
     display: flex;
@@ -114,6 +113,11 @@
     z-index: 100;
     font-weight: 100;
     cursor: pointer;
+    text-shadow: 0px 0px 5px var(--gray1);
+    transition: 200ms;
+  }
+  .title:hover {
+    text-shadow: 0px 0px 5px var(--gray4);
   }
 
   .buttons {
@@ -122,9 +126,15 @@
     display: flex;
     align-items: center;
   }
+
   .logo-icon {
     height: 2.3rem;
+    transition: 200ms;
   }
+  .logo-icon:hover {
+    filter: drop-shadow(0px 0px 8px var(--gray4));
+  }
+
   .menu-icon {
     display: none;
   }
@@ -142,14 +152,11 @@
       /* flex-wrap: wrap; */
     }
 
-    .popup-title {
-      color: var(--gray1);
-    }
-
     .row {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      /* border: 2px solid red; */
+      /* justify-content: flex-end; */
       align-items: center;
     }
     .row2 {

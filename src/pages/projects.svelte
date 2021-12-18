@@ -161,7 +161,7 @@
   .image {
     filter: sepia(50%);
     transition: all 200ms;
-    transform: scale(1.08);
+    transform: scale(1.1);
     cursor: pointer;
   }
   .image:hover {
@@ -172,7 +172,7 @@
   .project-icons {
     position: absolute;
     bottom: 8%;
-    left: 6%;
+    left: 8%;
     pointer-events: none;
   }
 

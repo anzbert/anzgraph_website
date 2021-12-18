@@ -59,6 +59,7 @@
     border-radius: 5px;
     padding: 0.3em 0.6em;
     font-size: 0.8rem;
+    pointer-events: none;
   }
   .footer {
     height: 3rem;
