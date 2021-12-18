@@ -1,6 +1,6 @@
 {
-  "name": "svelte_vite_test",
-  "version": "0.1.0",
+  "name": "anzgraph_website",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
