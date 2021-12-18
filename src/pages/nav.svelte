@@ -23,7 +23,7 @@
       class="menu-item text-button"
       on:click={() => (location.hash = "about")}>About</button
     >
-    <a href="https://github.com/anzbert"
+    <a href="https://github.com/anzbert/anzgraph_website"
       ><img
         class="logo-icon text-button"
         src="img/logos/github.png"
