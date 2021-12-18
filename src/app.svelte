@@ -5,11 +5,13 @@
   import Projects from "./pages/projects.svelte";
   import Blog from "./pages/blog.svelte";
 
+  /////////////////////////////////////////////////////////////
   // Hash-Based Navigation:
-  let nav: Array<string> = window.location.hash.slice(1).split("/");
+  let nav: Array<string> = window.location.hash.split("/");
   // console.log("entry hash: ", nav);
+
   window.onhashchange = () => {
-    nav = window.location.hash.slice(1).split("/");
+    nav = window.location.hash.split("/");
     // console.log("hash changed to: ", nav);
   };
 </script>
@@ -17,9 +19,15 @@
 <div class="wrapper">
   <Nav />
 
-  {#if nav[0] == "about" || !nav[0]} <About />{/if}
-  {#if nav[0] == "blog"} <Blog />{/if}
-  {#if nav[0] == "projects"} <Projects {nav} />{/if}
+  {#if nav[0] == "#about" || !nav[0]}
+    <About />
+  {:else if nav[0] == "#blog"}
+    <Blog />
+  {:else if nav[0] == "#projects"}
+    <Projects {nav} />
+  {:else}
+    <p>Problem loading page. Hash pointing to: {nav}</p>
+  {/if}
 
   <Background />
 </div>

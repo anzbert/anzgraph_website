@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let nav: Array<string> = ["project", undefined];
+  export let nav: Array<string> = [];
 
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
