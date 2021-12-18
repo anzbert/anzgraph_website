@@ -42,11 +42,13 @@
 <style>
   .wrapper {
     position: relative;
+    width: 100%;
   }
 
   img {
     width: 100%;
     object-fit: contain;
+    aspect-ratio: 4/3;
 
     opacity: 0;
     transition: 2s;

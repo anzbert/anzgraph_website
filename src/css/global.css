@@ -188,6 +188,10 @@ th {
   padding: 0.1em 0.2em;
 }
 
+figure {
+  margin: 0;
+}
+
 figcaption {
   color: var(--font1);
   font-style: italic;
