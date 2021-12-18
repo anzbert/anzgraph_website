@@ -35,7 +35,7 @@
     --lower-color: hsla(6, 93%, 71%, 0.7);
     position: relative;
     width: var(--square);
-    height: calc(var(--square) * 0.93);
+    height: calc(var(--square) * 1.01);
 
     /* height: calc(var(--square) + 2rem); */
     margin: 0.3em;

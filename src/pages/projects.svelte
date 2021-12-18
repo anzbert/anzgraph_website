@@ -163,6 +163,7 @@
     transition: all 200ms;
     transform: scale(1.1);
     cursor: pointer;
+    aspect-ratio: 4/3;
   }
   .image:hover {
     filter: none;

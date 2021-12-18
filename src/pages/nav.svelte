@@ -119,7 +119,7 @@
     transition: 200ms;
   }
   .title:hover {
-    text-shadow: 0px 0px 5px var(--gray4);
+    text-shadow: 0px 0px 5px var(--gray3);
   }
 
   .buttons {
@@ -134,7 +134,7 @@
     transition: 200ms;
   }
   .logo-icon:hover {
-    filter: drop-shadow(0px 0px 8px var(--gray4));
+    filter: drop-shadow(0px 0px 3px var(--gray1));
   }
 
   .menu-icon {
@@ -157,7 +157,6 @@
     .row {
       width: 100%;
       display: flex;
-      /* border: 2px solid red; */
       /* justify-content: flex-end; */
       align-items: center;
     }

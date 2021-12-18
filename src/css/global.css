@@ -5,7 +5,7 @@
   --white1: hsl(0, 0%, 90%);
   --gray1: hsla(0, 0%, 15%, 0.4);
   --gray2: hsla(0, 0%, 10%, 0.9);
-  --gray3: #333;
+  --gray3: hsl(0, 0%, 20%);
   --gray4: hsl(180, 25%, 35%);
   --gray5: hsl(180, 25%, 60%);
   --font1: hsl(51, 70%, 90%);
@@ -135,7 +135,6 @@ textarea {
   border-style: solid;
   border-radius: 2px;
   border-color: var(--gray4);
-  /* border-image: linear-gradient(to right bottom, var(--white1), var(--white2)); */
 }
 
 input:disabled {
@@ -144,7 +143,7 @@ input:disabled {
 
 button {
   color: var(--font1);
-  background-color: var(--gray1);
+  background-color: var(--gray3);
   outline: none;
   white-space: nowrap;
   user-select: none;
@@ -213,7 +212,7 @@ figcaption {
 /* for devices that can hover: */
 @media (hover: hover) {
   button:hover {
-    background-color: #333;
+    background-color: hsl(0, 0%, 40%);
   }
   a:hover {
     text-decoration: underline;
