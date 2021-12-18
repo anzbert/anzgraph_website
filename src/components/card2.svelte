@@ -42,26 +42,28 @@
   }
 
   .card-header {
-    /* background-color: var(--lightgreen1); */
-    background-image: var(--gradient4);
+    background-color: var(--sepia1);
+    /* background-image: var(--gradient4); */
     padding: 0.3em;
     box-shadow: 1px 1px 3px var(--gray2);
     border-radius: 2px;
+    text-shadow: 2px 2px 4px var(--gray1);
   }
 
   .thumbnail {
     overflow: hidden;
     max-width: 90%;
     margin: auto;
-    box-shadow: 3px 3px 2px var(--gray1);
+    box-shadow: 2px 2px 2px var(--gray1);
     position: relative;
+    border-radius: 2px;
   }
 
   .upper-box {
     border-radius: 2px;
     z-index: 2;
-    /* background-color: var(--upper-color); */
-    background-image: var(--gradient1);
+    background-color: var(--green1);
+    /* background-image: var(--gradient4); */
     width: var(--wrapper-fraction);
     height: var(--wrapper-fraction);
     position: absolute;

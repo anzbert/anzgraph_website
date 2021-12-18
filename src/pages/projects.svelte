@@ -161,12 +161,12 @@
   .image {
     filter: sepia(50%);
     transition: all 200ms;
-    transform: scale(1.05);
+    transform: scale(1.08);
     cursor: pointer;
   }
   .image:hover {
     filter: none;
-    transform: scale(1.11);
+    transform: scale(1.15);
   }
 
   .project-icons {
