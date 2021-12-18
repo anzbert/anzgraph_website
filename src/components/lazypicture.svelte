@@ -49,7 +49,7 @@
     position: absolute;
     top: 0;
     background-color: var(--gray3);
-    border-radius: 2px;
+    border-radius: 0 0 2px 0;
   }
 
   img {

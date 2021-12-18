@@ -80,6 +80,7 @@
   .wrapper {
     overflow-y: auto;
     overflow-x: hidden;
+    padding-top: 2rem;
     padding-bottom: 4rem;
   }
 </style>

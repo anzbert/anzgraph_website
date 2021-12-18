@@ -8,11 +8,11 @@
   --gray3: hsl(0, 0%, 20%);
   --gray4: hsl(180, 25%, 35%);
   --gray5: hsl(180, 25%, 60%);
-  --font1: hsl(51, 70%, 90%);
+  --font1: hsl(51, 20%, 80%);
   --font3: hsl(261, 5%, 80%);
   --brown1: hsla(0, 25%, 27%, 1);
   --brown2: hsla(0, 20%, 27%, 0.8);
-  --coral1: hsl(180, 25%, 54%);
+  --coral1: hsl(180, 20%, 74%);
   --sepia1: hsl(51, 7%, 69%);
   --blue1: hsl(261, 80%, 80%);
   --blue2: hsl(261, 97%, 89%);
@@ -38,6 +38,14 @@
   background-color: black;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -46,28 +54,24 @@ body {
   overflow: hidden;
 
   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-weight: 200;
 }
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+p,
+h1,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-
   color: var(--font3);
-  font-weight: 300;
   font-size: 1.1rem;
 }
+
 h1 {
-  font-family: "Roboto", sans-serif;
-  height: 2rem;
   color: var(--blue2);
   padding: 0;
   margin: 0 0.4em;
-  font-weight: 100;
 }
 
 code {
@@ -80,6 +84,7 @@ h2 {
   font-weight: 200;
   font-size: 1.7rem;
 }
+
 h4 {
   margin: 0;
   font-weight: 200;
@@ -201,7 +206,6 @@ figure {
 
 figcaption {
   color: var(--font1);
-  /* font-style: italic; */
   font-size: smaller;
   font-weight: 100;
   padding: 0.15em 0.8em;

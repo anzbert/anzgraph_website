@@ -42,6 +42,8 @@
     <Card width="fit-content">
       <div class="links">
         <h2>Links</h2>
+        <hr />
+
         <div class="inside-card">
           <div class="card-elements">
             <h3>Site made with:</h3>
@@ -155,12 +157,14 @@
   .links {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* gap: 2rem; */
   }
+
+  hr {
+    width: 100%;
+  }
+
   h2 {
-    margin: 0.4em 0.4em;
-    /* text-decoration: underline; */
+    margin: 0.1em 0.4em;
   }
 
   .card-elements {
