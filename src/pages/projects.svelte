@@ -1,6 +1,5 @@
 <script lang="ts">
-  location.hash = "projects";
-  export let subNav = undefined;
+  export let nav: Array<string> = ["project", undefined];
 
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
@@ -43,7 +42,7 @@
 </div>
 
 <div id="wrapper">
-  {#if !subNav}
+  {#if !nav[1]}
     <div class="project-page">
       <div class="projects">
         {#each projects as category}
@@ -61,7 +60,7 @@
                 <div
                   class="image"
                   slot="thumbnail"
-                  on:click={() => (subNav = project.link)}
+                  on:click={() => (nav[1] = project.link)}
                 >
                   <Lazypicture
                     lazy={false}
@@ -85,7 +84,7 @@
       </div>
     </div>
   {:else}
-    {#await asyncImportComponent(subNav) then ProjectPage}
+    {#await asyncImportComponent(nav[1]) then ProjectPage}
       <svelte:component this={ProjectPage} />
     {/await}
   {/if}

@@ -1,6 +1,4 @@
 <script lang="ts">
-  location.hash = "blog";
-  
   import { fly } from "svelte/transition";
   import { flyLeft, flyRight } from "../stores";
 

@@ -6,12 +6,13 @@
   import Blog from "./pages/blog.svelte";
 
   // Start Page:
-  let nav: Array<string> = ["about", undefined];
+  // let nav: Array<string> = ["about", undefined];
+  let nav: Array<string> = window.location.hash.slice(1).split("/");
+  console.log(nav);
 
   // hash-based navigation:
   window.onhashchange = () => {
-    let hash = window.location.hash.slice(1); // remove hash tag (#)
-    nav = hash.split("/");
+    nav = window.location.hash.slice(1).split("/");
     console.log(nav);
   };
 </script>
@@ -19,9 +20,9 @@
 <div class="wrapper">
   <Nav />
 
+  {#if nav[0] == "about" || !nav[0]} <About />{/if}
   {#if nav[0] == "blog"} <Blog />{/if}
-  {#if nav[0] == "about"} <About />{/if}
-  {#if nav[0] == "projects"} <Projects subNav={nav[1]} />{/if}
+  {#if nav[0] == "projects"} <Projects {nav} />{/if}
 
   <Background />
 </div>
