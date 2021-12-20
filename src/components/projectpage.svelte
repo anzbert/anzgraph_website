@@ -57,22 +57,22 @@
             </SwipeItem>
           {/each}
         </Swipe>
+        {#if picNumber > 1}
+          <button
+            class="swipe-button button-prev"
+            on:click={() => {
+              SwipeComponent.prevItem();
+            }}>&lt;</button
+          >
+          <button
+            class="swipe-button button-next"
+            on:click={() => {
+              SwipeComponent.nextItem();
+            }}>&gt;</button
+          >
+        {/if}
       </div>
     </Card>
-    {#if picNumber > 1}
-      <div class="swipe-buttons">
-        <button
-          on:click={() => {
-            SwipeComponent.prevItem();
-          }}>Prev</button
-        >
-        <button
-          on:click={() => {
-            SwipeComponent.nextItem();
-          }}>Next</button
-        >
-      </div>
-    {/if}
   </div>
   <slot name="markdown" />
   <slot />
@@ -87,6 +87,7 @@
     align-items: center;
   }
   .swipe-holder {
+    position: relative;
     --width: clamp(200px, 75vmin, 70vmax);
     height: calc(var(--width) / 4 * 3);
     width: var(--width);
@@ -97,13 +98,38 @@
     height: calc(var(--width) / 4 * 3);
   }
 
-  .swipe-buttons {
-    margin-top: 0.3rem;
+  .swipe-button {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--gray1);
+    color: var(--font1);
+    /* border: none; */
+    box-shadow: none;
+    text-shadow: 0 0 5px var(--gray1);
+
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: calc(50% - 1em);
+    width: 2em;
+    height: 2em;
+
+    filter: drop-shadow(2px 2px 2px var(--gray1));
+    opacity: 0.7;
   }
-  .swipe-buttons button {
-    font-size: 0.8rem;
-    padding: 0.2em 2.4em;
-    margin: 0 1em;
+
+  .swipe-button:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+
+  .button-prev {
+    left: 0.3em;
+  }
+  .button-next {
+    right: 0.3em;
   }
 
   .markdown {
@@ -119,6 +145,5 @@
   div :global(h1) {
     margin-bottom: 0.2em;
     text-align: end;
-    height: max-content;
   }
 </style>
