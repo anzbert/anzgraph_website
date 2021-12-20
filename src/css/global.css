@@ -61,7 +61,7 @@ li,
 figcaption,
 button {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {
@@ -80,6 +80,7 @@ code {
 }
 
 h2 {
+  font-weight: 100;
   margin: 0;
   color: var(--green1);
 
@@ -130,15 +131,11 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
   text-transform: uppercase;
   padding: 0.3em 0.7em;
   border-width: 2px;
   box-shadow: 2px 2px var(--brown2);
-  border-style: solid;
-  border-radius: 2px;
-  border-color: var(--gray4);
+  border: 2px solid var(--gray3);
 }
 
 input:disabled {
@@ -153,6 +150,7 @@ button {
   user-select: none;
   cursor: pointer;
   transition: 200ms;
+  text-align: center;
 }
 
 button:active {

@@ -4,12 +4,9 @@
 </script>
 
 <div class="wrapper">
-  <div
-    style="font-size:{fontSize}; background-image: {background}"
-    class="text"
-  >
+  <h2 style="font-size:{fontSize}; background-image: {background}" class="text">
     <slot />
-  </div>
+  </h2>
 </div>
 
 <style>

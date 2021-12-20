@@ -148,6 +148,7 @@
     text-align: center;
     margin: 3rem 0 0.5rem 0;
     background-image: var(--gradient5);
+    padding: 0.1em 0 0.2em;
   }
 
   /* card styles: */
