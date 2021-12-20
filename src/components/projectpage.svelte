@@ -110,7 +110,7 @@
     box-shadow: none;
     text-shadow: 0 0 5px var(--gray1);
 
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
     z-index: 2;
     bottom: calc(50% - 1em);
