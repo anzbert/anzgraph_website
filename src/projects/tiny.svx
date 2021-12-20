@@ -69,5 +69,6 @@ My personal favourite feature of the house is the little cat door, next to the m
     .youtube {
         width: min(100%, 480px);
         aspect-ratio: 4/3;
+        margin: 1em 0;
     }
 </style>

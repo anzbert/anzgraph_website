@@ -99,23 +99,25 @@
   }
 
   .swipe-button {
-    font-size: 1.8rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
 
     background-color: var(--gray1);
     color: var(--font1);
-    /* border: none; */
+    border: none;
     box-shadow: none;
     text-shadow: 0 0 5px var(--gray1);
 
     border-radius: 50%;
     position: absolute;
     z-index: 2;
-    bottom: calc(50% - 1em);
-    width: 2em;
-    height: 2em;
+
+    --size: min(3.5rem, 9vmin);
+    bottom: calc(50% - calc(var(--size) / 2));
+    font-size: calc(var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
 
     filter: drop-shadow(2px 2px 2px var(--gray1));
     opacity: 0.7;
@@ -126,10 +128,10 @@
   }
 
   .button-prev {
-    left: 0.3em;
+    left: 0.2em;
   }
   .button-next {
-    right: 0.3em;
+    right: 0.2em;
   }
 
   .markdown {

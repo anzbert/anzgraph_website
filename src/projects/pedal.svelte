@@ -3,10 +3,10 @@
   const picPath: string = "img/projects/pedal/footp";
   const picNumber: number = 9;
   const picCaptions: Array<string> = [
-    "The finished product blending in with the plants",
-    "Starting the build...",
+    "The finished product",
+    "Starting to build...",
     "...until late at night",
-    "Always a challenge to all the parts into a box",
+    "Tricky to fit the parts into the box",
     "Program switch and extension ports",
     "A neat-ish fit!",
     "",
