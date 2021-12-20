@@ -58,7 +58,8 @@ body {
 }
 p,
 h1,
-li {
+li,
+figcaption {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
