@@ -13,5 +13,8 @@
         "transp",
         "vite",
         "Xfader"
+    ],
+    "cSpell.enableFiletypes": [
+        "svelte"
     ]
 }

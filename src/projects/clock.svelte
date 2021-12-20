@@ -1,8 +1,13 @@
 <script lang="ts">
   import Markdown from "./clock.svx";
   const picPath: string = "img/projects/clock/clock";
-  const picNumber: number = 5;
-  const picCaptions: Array<string> = ["", "", "", "", ""];
+  const picNumber: number = 4;
+  const picCaptions: Array<string> = [
+    "Ready to ring !",
+    "",
+    "The mess is nicely hidden",
+    "The display is connected via cable",
+  ];
 
   /////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////

@@ -3,19 +3,19 @@
   const picPath: string = "img/projects/kolibri/kolibri";
   const picNumber: number = 13;
   const picCaptions: Array<string> = [
-    "The finished box...",
+    "The Kolibri K-1",
     "Making a stencil",
-    "Test seems OK",
-    "I am happy!",
-    "The original case design",
-    "A new mount for the exhaust",
+    "Seems to work",
+    "I like the result!",
+    "The original case layout",
+    "Cut a new opening for the exhaust",
     "And a new PSU mount",
     "The basic layout",
     "All assembled...",
     "",
-    "An angled power plug",
+    "Angled power plug",
     "",
-    "Fingers kept safe nicely",
+    "Nice finish with a grill",
   ];
 
   /////////////////////////////////////////////////////////////////////////////////
