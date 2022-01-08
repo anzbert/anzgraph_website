@@ -1,0 +1,22 @@
+<script context="module" lang="ts">
+  export const meta: postMeta = {
+    title: "React with Cats 😺",
+    date: new Date("2022-01-08"),
+    tags: ["#react", "#javascript"],
+  };
+</script>
+
+I've been learning ReactJS for a little while with a few resources that I can definitely recommend:
+
+| Book                                                                                                   | By                       |
+| ------------------------------------------------------------------------------------------------------ | ------------------------ |
+| [Learning React (2nd Edition)](https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/) | Alex Banks, Eve Porcello |
+| [Road to React (2021 Edition](https://www.roadtoreact.com/)                                            | Robin Wieruch            |
+
+And here is what I quickly put together as a practice project. A fictitious trading card generator with cat pictures and cat facts. [Click here to have a look 😽 !](https://anzbert.github.io/vite_react_test/dist/)
+
+I may or may not update / finish it, potentially adding some additional functionality and design tweaks. Maybe not though 😛. So many other things to do!
+
+Otherwise, to anyone actually reading this....
+
+### Happy New Year!
