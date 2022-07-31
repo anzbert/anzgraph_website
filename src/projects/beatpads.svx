@@ -1,0 +1,31 @@
+<script lang="ts">
+  import Lazypicture from "../components/lazypicture.svelte";
+  const picPath: string = "img/projects/beatpads/beatpads1";
+</script>
+
+# Beat Pads 
+
+---
+
+## Background
+
+Back when I was at uni studying nursing, I was often bored and wasted some time making beats on my laptop
+
+<Lazypicture
+  width=66
+  lazy={false}
+  spinner={true}
+  sources={{
+    base: `${picPath}.jpg`,
+    webp: `${picPath}_comp.webp`,
+    avif: `${picPath}_comp.avif`,
+  }}
+/>
+
+
+
+## Links 
+
+[Google Play](https://play.google.com/apps/internaltest/4700291633144323607) 
+
+[Apple Store](https://apps.apple.com/au/app/beat-pads/id1633882803)

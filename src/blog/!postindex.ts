@@ -12,6 +12,9 @@ function createPostObject(post: SvelteComponent, metadata: postMeta): post {
 export let allPosts: Array<post> = [];
 
 // Import posts (?change to dynamic import)
+import Post2022_07_19, { meta as meta2022_07_19 } from "../blog/2022-07-19.svx";
+allPosts.push(createPostObject(Post2022_07_19, meta2022_07_19));
+
 import Post2022_01_08, { meta as meta2022_01_08 } from "../blog/2022-01-08.svx";
 allPosts.push(createPostObject(Post2022_01_08, meta2022_01_08));
 

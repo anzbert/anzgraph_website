@@ -1,0 +1,19 @@
+<script lang="ts">
+  import Lazypicture from "../components/lazypicture.svelte";
+
+  import Markdown from "./beatpads.svx";
+  const picPath: string = "img/projects/beatpads/beatpads1";
+  const picNumber: number = 0;
+  const picCaptions: Array<string> = [];
+
+  /////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////
+
+  import Projectpage from "../components/projectpage.svelte";
+</script>
+
+<Projectpage {picPath} {picNumber} {picCaptions} underConstruction={false}>
+  <div slot="markdown">
+    <Markdown />
+  </div>
+</Projectpage>

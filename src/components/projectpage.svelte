@@ -36,44 +36,46 @@
   <Construction />
 {/if}
 <div class="markdown" in:fly={flyLeft}>
-  <div class="card-wrapper">
-    <Card width="fit-content">
-      <div class="swipe-holder" in:fade={fade1}>
-        <Swipe {...swipeConfig} bind:this={SwipeComponent}>
-          {#each paths as path, index}
-            <SwipeItem>
-              <div class="image-container">
-                <Lazypicture
-                  caption={picCaptions[index]}
-                  lazy={false}
-                  spinner={true}
-                  sources={{
-                    base: `${path}.jpg`,
-                    webp: `${path}_comp.webp`,
-                    avif: `${path}_comp.avif`,
-                  }}
-                />
-              </div>
-            </SwipeItem>
-          {/each}
-        </Swipe>
-        {#if picNumber > 1}
-          <button
-            class="swipe-button button-prev"
-            on:click={() => {
-              SwipeComponent.prevItem();
-            }}>&lt;</button
-          >
-          <button
-            class="swipe-button button-next"
-            on:click={() => {
-              SwipeComponent.nextItem();
-            }}>&gt;</button
-          >
-        {/if}
-      </div>
-    </Card>
-  </div>
+  {#if picNumber != 0}
+    <div class="card-wrapper">
+      <Card width="fit-content">
+        <div class="swipe-holder" in:fade={fade1}>
+          <Swipe {...swipeConfig} bind:this={SwipeComponent}>
+            {#each paths as path, index}
+              <SwipeItem>
+                <div class="image-container">
+                  <Lazypicture
+                    caption={picCaptions[index]}
+                    lazy={false}
+                    spinner={true}
+                    sources={{
+                      base: `${path}.jpg`,
+                      webp: `${path}_comp.webp`,
+                      avif: `${path}_comp.avif`,
+                    }}
+                  />
+                </div>
+              </SwipeItem>
+            {/each}
+          </Swipe>
+          {#if picNumber > 1}
+            <button
+              class="swipe-button button-prev"
+              on:click={() => {
+                SwipeComponent.prevItem();
+              }}>&lt;</button
+            >
+            <button
+              class="swipe-button button-next"
+              on:click={() => {
+                SwipeComponent.nextItem();
+              }}>&gt;</button
+            >
+          {/if}
+        </div>
+      </Card>
+    </div>
+  {/if}
   <slot name="markdown" />
   <slot />
 </div>

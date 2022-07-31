@@ -4,6 +4,8 @@
     webp?: string;
     avif?: string;
   }
+
+  export let width: number = 100;
   export let sources: picSources;
   export let spinner: boolean = true;
   export let lazy: boolean = false;
@@ -13,36 +15,43 @@
   let imgVisible: boolean = false;
 </script>
 
-<figure class="wrapper">
-  {#if spinner}
-    <div class="spinner" class:remove-spinner={imgVisible} />
-  {/if}
-
-  <picture>
-    {#if sources.avif}
-      <source srcset={sources.avif} type="image/avif" />
-    {/if}
-    {#if sources.webp}
-      <source srcset={sources.webp} type="image/webp" />
+<div class="flex-wrapper">
+  <figure class="wrapper" style="width:{width}%">
+    {#if spinner}
+      <div class="spinner" class:remove-spinner={imgVisible} />
     {/if}
 
-    <img
-      loading={lazy ? "lazy" : "eager"}
-      srcset={sources.base}
-      {alt}
-      class:imgVisible
-      on:load|once={() => (imgVisible = true)}
-    />
-  </picture>
-  {#if caption !== ""}
-    <figcaption class:imgVisible>{caption}</figcaption>
-  {/if}
-</figure>
+    <picture>
+      {#if sources.avif}
+        <source srcset={sources.avif} type="image/avif" />
+      {/if}
+      {#if sources.webp}
+        <source srcset={sources.webp} type="image/webp" />
+      {/if}
+
+      <img
+        loading={lazy ? "lazy" : "eager"}
+        srcset={sources.base}
+        {alt}
+        class:imgVisible
+        on:load|once={() => (imgVisible = true)}
+      />
+    </picture>
+    {#if caption !== ""}
+      <figcaption class:imgVisible>{caption}</figcaption>
+    {/if}
+  </figure>
+</div>
 
 <style>
+  .flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .wrapper {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
   }
 
   figcaption {

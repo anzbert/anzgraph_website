@@ -1,0 +1,19 @@
+<script context="module" lang="ts">
+  export const meta: postMeta = {
+    title: "Beat Pads App",
+    date: new Date("2022-07-19"),
+    tags: ["#flutter", "#ios", "#android"],
+  };
+</script>
+
+Hey, long time no post!
+
+Since I really seem to enjoy building Midi Controllers, I spent a few months learning Dart and Flutter to build yet another one. This time as an App for Android and iOS.
+
+It is called 'Beat Pads' and is an app particularly focused on finger drumming and note input for Ableton, etc. At this point, the app is on both app stores in its first release. I am particularly happy with the MPE feature, which hopefully sets it apart from other Midi controller apps out there.
+
+[Google Play](https://play.google.com/apps/internaltest/4700291633144323607)
+
+[Apple Store](https://apps.apple.com/au/app/beat-pads/id1633882803)
+
+It currently sells for 1 USD, but I am happy to hand out free promo codes for it. I have realised since release how hard it is to get noticed on these crowded stores. Also, I am not sure how good the app objectively is?! (Feedback is welcome...)

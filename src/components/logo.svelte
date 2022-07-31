@@ -1,5 +1,15 @@
 <script lang="ts" context="module">
   export const logos: { [key: string]: logo } = {
+    dart: {
+      name: "Dart",
+      path: "img/logos/dart.svg",
+      url: "https://dart.dev",
+    },
+    flutter: {
+      name: "Flutter",
+      path: "img/logos/flutter.svg",
+      url: "https://flutter.dev",
+    },
     mdsvex: {
       name: "mdsvex",
       path: "img/logos/mdsvex.png",

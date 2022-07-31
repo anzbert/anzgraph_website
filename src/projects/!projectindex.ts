@@ -47,7 +47,7 @@ export const projects: Array<category> = [
     ],
   },
   {
-    title: "Desktop",
+    title: "Applications",
     array: [
       {
         name: "Metronome",
@@ -56,6 +56,14 @@ export const projects: Array<category> = [
         },
         link: "deskmetro",
         logos: [logos.rpi, logos.rust],
+      },
+      {
+        name: "Beat Pads",
+        source: {
+          path: "img/projects/beatpads/beatpads1",
+        },
+        link: "beatpads",
+        logos: [logos.dart, logos.flutter],
       },
     ],
   },

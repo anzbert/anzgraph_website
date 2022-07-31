@@ -173,14 +173,14 @@
 
   .project-icons {
     position: absolute;
-    bottom: 8%;
-    left: 8%;
+    top: 9%;
+    left: 7%;
     pointer-events: none;
   }
 
   .icon {
     height: min(2.8vmin, 1.5rem);
     margin: 0 0.2em;
-    filter: drop-shadow(1px 1px 1px var(--gray2));
+    filter: drop-shadow(2px 2px 2px var(--gray2));
   }
 </style>

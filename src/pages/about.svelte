@@ -82,6 +82,12 @@
             <h3>Other tech I like:</h3>
             <ul>
               <li>
+                <Logo logo="dart" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="flutter" name={true} link={true} />
+              </li>
+              <li>
                 <Logo logo="js" name={true} link={true} />
               </li>
               <li>
