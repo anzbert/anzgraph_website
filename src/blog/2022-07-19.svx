@@ -10,7 +10,7 @@ Hey, long time no post!
 
 Since I really seem to enjoy building Midi Controllers, I spent a few months learning Dart and Flutter to build yet another one. This time as an App for Android and iOS.
 
-It is called 'Beat Pads' and is an app particularly focused on finger drumming and note input for Ableton, etc. At this point, the app is on both app stores in its first release. I am particularly happy with the MPE feature, which hopefully sets it apart from other Midi controller apps out there.
+It is called '[Beat Pads](/#projects/beatpads)' and is an app particularly focused on finger drumming and note input for Ableton, etc. At this point, the app is on both app stores in its first release. I am particularly happy with the MPE feature, which hopefully sets it apart from other Midi controller apps out there.
 
 [Google Play](https://play.google.com/apps/internaltest/4700291633144323607)
 

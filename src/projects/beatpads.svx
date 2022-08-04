@@ -1,31 +1,95 @@
 <script lang="ts">
   import Lazypicture from "../components/lazypicture.svelte";
-  const picPath: string = "img/projects/beatpads/beatpads1";
+  const picPath1: string = "img/projects/beatpads/beatpads1";
+  const picPath2: string = "img/projects/beatpads/beatpads2";
 </script>
 
-# Beat Pads 
-
----
+# Beat Pads
 
 ## Background
 
-Back when I was at uni studying nursing, I was often bored and wasted some time making beats on my laptop
+---
+
+Back when I was at uni studying nursing, I was often bored and wasting time making beats on my laptop at the uni library. I always wished I had an effective pad-based midi controller to input my drums and melodies, instead of using the keyboard and mouse. I settled on using 'TouchDAW' on my phone, which is a pretty versatile midi app, even if slightly convoluted for my purposes.
+
+Years later, after discovering coding as a fun hobby, I decided to create the app I wished existed when I needed it. And hopefully, I get to relaunch my library-based beat sessions some day!
 
 <Lazypicture
-  width=66
-  lazy={false}
-  spinner={true}
-  sources={{
-    base: `${picPath}.jpg`,
-    webp: `${picPath}_comp.webp`,
-    avif: `${picPath}_comp.avif`,
+width=66
+caption="The app's startup screen"
+lazy={false}
+spinner={true}
+sources={{
+    base: `${picPath1}.jpg`,
+    webp: `${picPath1}_comp.webp`,
+    avif: `${picPath1}_comp.avif`,
   }}
 />
 
+## Process
 
+---
 
-## Links 
+### Languages
 
-[Google Play](https://play.google.com/apps/internaltest/4700291633144323607) 
+First I decided on an app building environment. At the time of writing (August 2022), the most common options seem to be:
+
+- Write natively for [Android](https://developer.android.com/) (Kotlin) and [iOS](https://developer.apple.com/swift/) (Swift)
+- [React Native](https://reactnative.dev/) (Javascript / JSX)
+- [Flutter](https://flutter.dev) (Dart)
+
+Some of the reasons for why I chose **Flutter**:
+
+- There was no need to learn 2 different languages and APIs for each platform, when developing in native languages.
+- React Native may be great for some, but React, its sometimes intransparent state-management with hooks, JSX language mishmash and inelegant development environment doesn't appeal to me personally. Even if I could probably get used to it if necessary. There is a reason though for why I wrote this site with Svelte and Typescript.
+- Flutter uses Dart, which was **very** clean and easy to learn, without suffering from legacy hangovers, like React has the old Javascript-weirdness (for example prototypical inheritance, 'falsy' types and implicit conversions, undefined and null), or Kotlin has Java, for that matter. Just a modern language where things perform in expected ways.
+- Flutter compiles to native code and performs better than React Native.
+- Amazing IDE support, documentation and development tools, as well as overall coding experience. Very clean dependency management. Easy to test and fast to recompile on hardware and emulators.
+
+### Details
+
+The coding process until the initial release was a step by step process. Even if that sometimes meant to take 2 steps forward and 1 step back. Overall, it is probably a fairly standard Flutter app, except for some of the following noteworthy talking points.
+
+The title screen was made with a free SVG vector graphic of a cute dog. I made it more interesting by animating it with [Rive](https://rive.app), which can [easily be integrated](https://pub.dev/packages/rive) into Flutter.
+
+Connectivity implementation across platforms is one of the biggest headaches, usually because of how Google and Apple implement Midi. Some examples : iOS to non-Apple platforms is only possible via a hardware adapter, Android and Windows do not support Midi over Wifi or Bluetooth out of the box, some Android manufacturers put the USB Midi Settings in the hidden developer menu creating or don't implement Midi at all 🤦‍♂️, etc... It makes you wonder why such an old, simple and well-documented standard such as Midi can still create surprises like these.
+
+State management is of course a central part of any app. I started out with [Provider](https://pub.dev/packages/provider), but was later attracted to the new and shiny [Riverpod](https://riverpod.dev/). Refactoring took a lot longer than I wanted though, and I am not sure if there was an actual benefit to the migration 😅. I ended up preferring Riverpod eventually though! And as always, challenges are great teachers.
+
+Platform Midi support is provided by the excellent [FlutterMidiCommand](https://pub.dev/packages/flutter_midi_command). I spent a week finding and fixing a critical bug in that amazing library, which taught me some Kotlin as a side effect and made me a contributor. Very rewarding!
+
+I needed to implement custom Paint Components for the MPE modulation overlay, which went slightly beyond your regular Flutter app dev. The same goes for the custom hit detection for the pads, to allow sliding with a finger and triggering underlying pads. The built-in components like GestureDetector don't support that behaviour.
+
+Implementing MPE got me reading the official Midi Spec, which was another great learning experience. I am very happy with how it works now and it is one of the features that sets my app apart from others.
+
+I implemented feedback by my first internal tester, Andreas Samek, the creator of [XpressPads](https://www.xpresspads.com/). I really appreciate d his opinion as a professional and highly experienced finger drummer and his testing notes were one of the the most useful development resources. So big thanks to him!
+
+<Lazypicture
+width=66
+caption="One of many possible settings"
+lazy={false}
+spinner={true}
+sources={{
+    base: `${picPath2}.jpg`,
+    webp: `${picPath2}_comp.webp`,
+    avif: `${picPath2}_comp.avif`,
+  }}
+/>
+
+### App Stores
+
+Listing on both Stores was a lot more hassle than expected. Both Apple and Google require specifically sized screenshots, a **tonne** of Forms to be filled and conditions to be met before upload. Not to mention the **yearly** fee of 100 USD to enjoy the _privilege_ of being an Apple developer. Google's fee of a one-off payment of 25 USD seems almost reasonable in comparison; it was at least a lot more easily digestible. This is money I will most likely never recover in sales. Ah well... YOLO 😆!
+
+### Future Plans
+
+I have been taking a break from coding on the app to spend some time with other parts of life, but I am planning to get one day back to it to possibly implement a custom layout editor, chords among other things. I am happy to receive any suggestion you may have via [email](mailto:anzbert@gmail.com)!
+
+## Links
+
+---
+
+Here you get to try the app for yourself. If 1 USD is too high a price, just write me an [email](mailto:anzbert@gmail.com). I can easily be convinced to send you a promo code to get it for free 😉.
+
+[Google Play](https://play.google.com/apps/internaltest/4700291633144323607)
 
 [Apple Store](https://apps.apple.com/au/app/beat-pads/id1633882803)
