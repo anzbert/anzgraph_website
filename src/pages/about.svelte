@@ -54,6 +54,12 @@
               <li>
                 <Logo logo="svelte" name={true} link={true} />
               </li>
+              <li>
+                <Logo logo="vite" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="mdsvex" name={true} link={true} />
+              </li>
             </ul>
             <h3>Images from:</h3>
             <ul>
