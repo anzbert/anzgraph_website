@@ -1,6 +1,4 @@
 <script lang="ts">
-  import Lazypicture from "../components/lazypicture.svelte";
-
   import Markdown from "./beatpads.svx";
   const picPath: string = "img/projects/beatpads/beatpads1";
   const picNumber: number = 0;

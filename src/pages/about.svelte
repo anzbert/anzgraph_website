@@ -49,19 +49,10 @@
             <h3>Site made with:</h3>
             <ul>
               <li>
-                <Logo logo="vscode" name={true} link={true} />
-              </li>
-              <li>
-                <Logo logo="svelte" name={true} link={true} />
-              </li>
-              <li>
-                <Logo logo="vite" name={true} link={true} />
-              </li>
-              <li>
                 <Logo logo="ts" name={true} link={true} />
               </li>
               <li>
-                <Logo logo="mdsvex" name={true} link={true} />
+                <Logo logo="svelte" name={true} link={true} />
               </li>
             </ul>
             <h3>Images from:</h3>
@@ -79,8 +70,11 @@
           </div>
 
           <div class="card-elements">
-            <h3>Other tech I like:</h3>
+            <h3>I like to use:</h3>
             <ul>
+              <li>
+                <Logo logo="vscode" name={true} link={true} />
+              </li>
               <li>
                 <Logo logo="dart" name={true} link={true} />
               </li>
@@ -88,22 +82,25 @@
                 <Logo logo="flutter" name={true} link={true} />
               </li>
               <li>
-                <Logo logo="js" name={true} link={true} />
+                <Logo logo="ts" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="svelte" name={true} link={true} />
               </li>
               <li>
                 <Logo logo="node" name={true} link={true} />
-              </li>
-              <li>
-                <Logo logo="rust" name={true} link={true} />
-              </li>
-              <li>
-                <Logo logo="c" name={true} link={true} />
               </li>
               <li>
                 <Logo logo="arduino" name={true} link={true} />
               </li>
               <li>
                 <Logo logo="rpi" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="rust" name={true} link={true} />
+              </li>
+              <li>
+                <Logo logo="c" name={true} link={true} />
               </li>
             </ul>
           </div>
