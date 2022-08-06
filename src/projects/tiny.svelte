@@ -10,7 +10,7 @@
   import Projectpage from "../components/projectpage.svelte";
 </script>
 
-<Projectpage {picPath} {picNumber} {picCaptions} underConstruction={true}>
+<Projectpage {picPath} {picNumber} {picCaptions} underConstruction={false}>
   <div slot="markdown">
     <Markdown />
   </div>
