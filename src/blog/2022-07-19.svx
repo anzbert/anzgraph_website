@@ -17,3 +17,5 @@ It is called '[Beat Pads](/#projects/beatpads)' and is an app particularly focus
 [Apple Store](https://apps.apple.com/au/app/beat-pads/id1633882803)
 
 It currently sells for 1 USD, but I am happy to hand out free promo codes for it. I have realised since release how hard it is to get noticed on these crowded stores. Also, I am not sure how good the app objectively is?! (Feedback is welcome...)
+
+Edit: It's open source now. [Go to Github](https://github.com/anzbert/beat_pads)
