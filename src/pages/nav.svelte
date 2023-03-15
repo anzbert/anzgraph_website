@@ -9,7 +9,13 @@
 </script>
 
 <menu>
-  <h1 on:click={() => (location.hash = "about")} class="title">ANZ I/O</h1>
+  <h1
+    on:click={() => (location.hash = "about")}
+    on:keypress={() => (location.hash = "about")}
+    class="title"
+  >
+    ANZ I/O
+  </h1>
   <div class="buttons">
     <button
       class="menu-item text-button"
@@ -35,6 +41,9 @@
       on:click={() => {
         showMenu = true;
       }}
+      on:keypress={() => {
+        showMenu = true;
+      }}
     >
       <div class="burger" />
       <div class="burger" />
@@ -50,6 +59,9 @@
       <div
         class="menu-icon"
         on:click={() => {
+          showMenu = false;
+        }}
+        on:keypress={() => {
           showMenu = false;
         }}
       >

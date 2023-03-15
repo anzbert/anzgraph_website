@@ -61,6 +61,8 @@
                   class="image"
                   slot="thumbnail"
                   on:click={() => (location.hash = `projects/${project.link}`)}
+                  on:keypress={() =>
+                    (location.hash = `projects/${project.link}`)}
                 >
                   <Lazypicture
                     lazy={false}
