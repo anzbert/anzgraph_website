@@ -4,7 +4,7 @@
   import { fly } from "svelte/transition";
   import Card2 from "../components/card2.svelte";
   import MaskedHeading from "../components/maskedheading.svelte";
-  import type { SvelteComponent } from "svelte";
+  import type { ComponentType } from "svelte";
 
   // Constants:
   import { flyRight, flyLeft } from "../stores";
@@ -24,7 +24,7 @@
   }
 
   // dynamic component loading
-  async function asyncImportComponent(path: string): Promise<SvelteComponent> {
+  async function asyncImportComponent(path: string): Promise<ComponentType> {
     let comp = import(`../projects/${path}.svelte`).then((r) => r.default);
     return comp;
   }
