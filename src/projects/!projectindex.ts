@@ -47,15 +47,23 @@ export const projects: Array<category> = [
     ],
   },
   {
-    title: "Applications",
+    title: "Coding",
     array: [
+      // {
+      //   name: "Metronome",
+      //   source: {
+      //     path: "img/projects/deskmetro/deskmetro0",
+      //   },
+      //   link: "deskmetro",
+      //   logos: [logos.rpi, logos.rust],
+      // },
       {
-        name: "Metronome",
+        name: "Rusty Link",
         source: {
-          path: "img/projects/deskmetro/deskmetro0",
+          path: "img/projects/rusty_link/rusty_link0",
         },
-        link: "deskmetro",
-        logos: [logos.rpi, logos.rust],
+        link: "rusty_link",
+        logos: [logos.rust],
       },
       {
         name: "Beat Pads",

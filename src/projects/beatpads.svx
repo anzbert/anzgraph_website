@@ -21,8 +21,8 @@ lazy={false}
 spinner={true}
 sources={{
     base: `${picPath1}.jpg`,
-    webp: `${picPath1}_comp.webp`,
-    avif: `${picPath1}_comp.avif`,
+    webp: `${picPath1}.webp`,
+    avif: `${picPath1}.avif`,
   }}
 />
 
@@ -71,8 +71,8 @@ lazy={false}
 spinner={true}
 sources={{
     base: `${picPath2}.jpg`,
-    webp: `${picPath2}_comp.webp`,
-    avif: `${picPath2}_comp.avif`,
+    webp: `${picPath2}.webp`,
+    avif: `${picPath2}.avif`,
   }}
 />
 

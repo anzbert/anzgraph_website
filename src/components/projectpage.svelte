@@ -50,8 +50,8 @@
                     spinner={true}
                     sources={{
                       base: `${path}.jpg`,
-                      webp: `${path}_comp.webp`,
-                      avif: `${path}_comp.avif`,
+                      webp: `${path}.webp`,
+                      avif: `${path}.avif`,
                     }}
                   />
                 </div>

@@ -37,10 +37,10 @@ export async function getSuffix(
   let suffix = ".jpg"; // default
   if (modernFormats) {
     const avifSupport = await checkAvif();
-    if (avifSupport) suffix = "_comp.avif";
+    if (avifSupport) suffix = ".avif";
     else {
       const webpSupport = await checkWebp();
-      if (webpSupport) suffix = "_comp.webp";
+      if (webpSupport) suffix = ".webp";
     }
   }
   return suffix;

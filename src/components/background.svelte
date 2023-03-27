@@ -8,12 +8,12 @@
 </script>
 
 <picture>
-  <source srcset="{bg_path}_comp.avif" type="image/avif" />
-  <source srcset="{bg_path}_comp.webp" type="image/webp" />
+  <source srcset="{bg_path}.avif" type="image/avif" />
+  <source srcset="{bg_path}.webp" type="image/webp" />
   <img
     on:load|once={() => (imgVisible = true)}
     class:imgVisible
-    srcset="{bg_path}_comp.jpg"
+    srcset="{bg_path}.jpg"
     alt="Background"
   />
 </picture>

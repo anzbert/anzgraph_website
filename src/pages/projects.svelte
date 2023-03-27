@@ -69,8 +69,8 @@
                     spinner={true}
                     sources={{
                       base: `${project.source.path}.jpg`,
-                      webp: `${project.source.path}_comp.webp`,
-                      avif: `${project.source.path}_comp.avif`,
+                      webp: `${project.source.path}.webp`,
+                      avif: `${project.source.path}.avif`,
                     }}
                   />
                   <div id={project.link} class="project-icons">
