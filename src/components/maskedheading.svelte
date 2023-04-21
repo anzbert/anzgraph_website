@@ -10,8 +10,6 @@
 </div>
 
 <style>
-  .wrapper {
-  }
   .text {
     display: inline;
     background-clip: text;
