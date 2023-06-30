@@ -3,3 +3,21 @@
 ---
 
 ## Background
+
+A while back, I wanted to expand my Rust skills by writing a graphical metronome desktop app, which links with music software locally or over the network via [Ableton Link](https://www.ableton.com/en/link/).
+
+Since Link is natively written in C++, a wrapper is required to use its API in Rust. This wrapper library links the necessary C++ function to usable Rust functions.
+
+Under the hood, another wrapper is needed, which links the C++ to C functions, since C is typically used as a cross-language interface language and Rust can't map to C++ functions directly.
+
+At the time, there was already a link wrapper made by [Magnus Herold](https://crates.io/crates/ableton-link). This crate had unfortunately been abandoned for a while and it relied on a custom-made C++ to C mapping layer, while Ableton had since then written its own C interface for Link, called `abl_link`.
+
+## My Solution
+
+That is why I decided to write my own wrapper with an up-to-date version of Link, and by wrapping around `abl_link` directly. I also ported the official examples to Rust, to make the library more accessible. And as a bonus, I've ported the `HostTimeFilter`, which Ableton Link provides as a timing smoothing linear regression helper, from C++ to Rust.
+
+Overall, it was a really fun side project, which taught me loads about audio programming, FFI and Rust 😎👍. _And a tiny bit about (the, in my opinion, pretty weird and unintuitive) CMake 😬_.
+
+## Code
+
+Check the [repo](https://github.com/anzbert/rusty_link) and the [docs](https://docs.rs/rusty_link/latest/rusty_link/).

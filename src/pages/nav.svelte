@@ -9,6 +9,7 @@
 </script>
 
 <menu>
+  <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
   <h1
     on:click={() => (location.hash = "about")}
     on:keypress={() => (location.hash = "about")}
@@ -36,6 +37,7 @@
         alt="GitHub Logo"
       />
     </a>
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
       class="menu-icon"
       on:click={() => {
@@ -56,6 +58,7 @@
 {#if showMenu === true}
   <menu class="popup-menu">
     <div class="row">
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div
         class="menu-icon"
         on:click={() => {
@@ -71,21 +74,21 @@
 
     <div class="row row2">
       <button
-        class="menu-item "
+        class="menu-item"
         on:click={() => {
           showMenu = false;
           location.hash = "projects";
         }}>Projects</button
       >
       <button
-        class="menu-item "
+        class="menu-item"
         on:click={() => {
           showMenu = false;
           location.hash = "blog";
         }}>Blog</button
       >
       <button
-        class="menu-item "
+        class="menu-item"
         on:click={() => {
           showMenu = false;
           location.hash = "about";

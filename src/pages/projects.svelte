@@ -57,6 +57,7 @@
                   <h3 class="title">{project.name}</h3>
                 </div>
 
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
                 <div
                   class="image"
                   slot="thumbnail"
