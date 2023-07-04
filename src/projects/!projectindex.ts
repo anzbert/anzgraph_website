@@ -37,6 +37,14 @@ export const projects: Array<category> = [
         logos: [logos.arduino, logos.c, logos.rpi, logos.node],
       },
       {
+        name: "Breath Controller",
+        source: {
+          path: "img/projects/midi_blows/midi_blows_thumb",
+        },
+        link: "midi_blows",
+        logos: [logos.arduino, logos.c],
+      },
+      {
         name: "Bus Bell",
         source: {
           path: "img/projects/bell/bell_thumb",
