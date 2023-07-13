@@ -1,3 +1,20 @@
 # Multi Foot Switch
 
 ---
+
+## Short Description
+
+### A handy little Footswitch Box which can be used in 3 different ways
+
+- As a standard 2-Button Footswitch, which is connectable via a 6.35mm TRS cable and is switchable between Normally-Open or Normally-Closed mode.
+
+- As a USB Midi controller, which sends Button presses as Notes. It can be expanded with another 1 or 2-Button Footswitch via a TRS/TS Input port.
+  An Expression Pedal can also be connected, which is translated to Midi Control Change value. In the USB mode, 2 LEDs near the 2 main buttons indicate received notes.
+
+- As a standard Midi Controller connectable via the DIN5 Midi output port. This mode also supports external switches and the expression pedal, just like in USB mode.
+
+This little device may be one of niftiest things I've ever built. It's simple, but incredibly useful with the mobile devices, computers, guitar effects and other external gear to control looping and FX. Especially while playing my guitar. I would definitely recommend something like this in most guitarists toolboxes.
+
+## Links
+
+- Arduino Source Code on [Github](https://github.com/anzbert/multi_foot_switch)

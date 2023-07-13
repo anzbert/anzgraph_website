@@ -31,7 +31,7 @@ export const projects: Array<category> = [
       {
         name: "Foot Switch",
         source: {
-          path: "img/projects/multi_pedal/multi_pedal_thumb",
+          path: "img/projects/multi_pedal/multi_pedal0",
         },
         link: "multi_pedal",
         logos: [logos.arduino, logos.c],
