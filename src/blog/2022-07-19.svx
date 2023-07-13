@@ -18,4 +18,4 @@ It is called '[Beat Pads](/#projects/beatpads)' and is an app particularly focus
 
 It currently sells for 1 USD, but I am happy to hand out free promo codes for it. I have realised since release how hard it is to get noticed on these crowded stores. Also, I am not sure how good the app objectively is?! (Feedback is welcome...)
 
-Edit: It's open source now. [Go to Github](https://github.com/anzbert/beat_pads)
+_update July 2023: BeatPads is open source now and has been renamed to "Midi Poly Grid". [Go to Github](https://github.com/anzbert/beat_pads)_

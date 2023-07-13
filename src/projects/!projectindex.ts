@@ -29,6 +29,14 @@ export const projects: Array<category> = [
         logos: [logos.arduino, logos.c],
       },
       {
+        name: "Foot Switch",
+        source: {
+          path: "img/projects/multi_pedal/multi_pedal_thumb",
+        },
+        link: "multi_pedal",
+        logos: [logos.arduino, logos.c],
+      },
+      {
         name: "Dog Feeder",
         source: {
           path: "img/projects/feed/feed_thumb",
@@ -57,14 +65,14 @@ export const projects: Array<category> = [
   {
     title: "Coding",
     array: [
-      // {
-      //   name: "Metronome",
-      //   source: {
-      //     path: "img/projects/deskmetro/deskmetro0",
-      //   },
-      //   link: "deskmetro",
-      //   logos: [logos.rpi, logos.rust],
-      // },
+      {
+        name: "Midi Mute&Route",
+        source: {
+          path: "img/projects/midi_mute/midi_mute0",
+        },
+        link: "midi_mute",
+        logos: [logos.reaktor_white],
+      },
       {
         name: "Rusty Link",
         source: {

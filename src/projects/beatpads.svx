@@ -10,6 +10,8 @@
 
 ---
 
+_update July 2023: BeatPads is open source now and has been renamed to "Midi Poly Grid". [Go to Github](https://github.com/anzbert/beat_pads)_
+
 Back when I was at uni studying nursing, I was often bored and wasting time making beats on my laptop at the uni library. I always wished I had an effective pad-based midi controller to input my drums and melodies, instead of using the keyboard and mouse. I settled on using 'TouchDAW' on my phone, which is a pretty versatile midi app, even if slightly convoluted for my purposes.
 
 Years later, after discovering coding as a fun hobby, I decided to create the app I wished existed when I needed it. And hopefully, I get to relaunch my library-based beat sessions some day!
@@ -78,8 +80,6 @@ sources={{
 
 ### App Stores
 
-_update March 2023: BeatPads is open source now. [Go to Github](https://github.com/anzbert/beat_pads)_
-
 Listing on both Stores was a lot more hassle than expected. Both Apple and Google require specifically sized screenshots, a **tonne** of Forms to be filled and conditions to be met before upload. Not to mention the **yearly** fee of 100 USD to enjoy the _privilege_ of being an Apple developer. Google's fee of a one-off payment of 25 USD seems almost reasonable in comparison; it was at least a lot more easily digestible. This is money I will most likely never recover in sales. Ah well... YOLO 😆!
 
 ### Future Plans
@@ -90,7 +90,7 @@ I have been taking a break from coding on the app to spend some time with other 
 
 ---
 
-Here you get to try the app for yourself. If 1 USD is too high a price, just write me an [email](mailto:anzbert@gmail.com). I can easily be convinced to send you a promo code to get it for free 😉.
+Here you get to try the app for yourself. If the price on the store is too high, just write me an [email](mailto:anzbert@gmail.com). I can easily send you a promo code to get it for free 😉.
 
 [Google Play](https://play.google.com/apps/internaltest/4700291633144323607)
 

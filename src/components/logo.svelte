@@ -1,5 +1,15 @@
 <script lang="ts" context="module">
   export const logos: { [key: string]: logo } = {
+    reaktor: {
+      name: "Reaktor",
+      path: "img/logos/reaktor_black.svg",
+      url: "https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/",
+    },
+    reaktor_white: {
+      name: "Reaktor",
+      path: "img/logos/reaktor_white.svg",
+      url: "https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/",
+    },
     dart: {
       name: "Dart",
       path: "img/logos/dart.svg",
