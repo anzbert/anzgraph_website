@@ -82,7 +82,7 @@ export const projects: Array<category> = [
         logos: [logos.rust],
       },
       {
-        name: "Beat Pads",
+        name: "Midi Poly Grid",
         source: {
           path: "img/projects/beatpads/beatpads1",
         },

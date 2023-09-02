@@ -2,7 +2,7 @@
   export const meta: postMeta = {
     title: "Beat Pads App",
     date: new Date("2022-07-19"),
-    tags: ["#flutter", "#ios", "#android"],
+    tags: ["#flutter"],
   };
 </script>
 

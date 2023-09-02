@@ -2,7 +2,7 @@
   export const meta: postMeta = {
     title: "React with Cats 😺",
     date: new Date("2022-01-08"),
-    tags: ["#react", "#javascript"],
+    tags: ["#javascript"],
   };
 </script>
 
