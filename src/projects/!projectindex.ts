@@ -2,7 +2,7 @@ import { logos } from "../components/logo.svelte";
 
 export const projects: Array<category> = [
   {
-    title: "Embedded",
+    title: "Electronics",
     array: [
       {
         name: "Crossfader",
@@ -92,7 +92,7 @@ export const projects: Array<category> = [
     ],
   },
   {
-    title: "Build",
+    title: "Building",
     array: [
       {
         name: "Kolibri PC",

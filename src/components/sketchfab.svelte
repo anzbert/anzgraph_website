@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let caption: string = undefined;
+  export let caption: string = "";
   export let src: string; // embed link, such as: "https://sketchfab.com/models/21de728eda6e4cc795468fb3ccfe835b/embed?ui_theme=dark"
 </script>
 
@@ -9,13 +9,9 @@
     frameborder="0"
     allowfullscreen
     allow="autoplay; fullscreen; xr-spatial-tracking"
-    xr-spatial-tracking
-    execution-while-out-of-viewport
-    execution-while-not-rendered
-    web-share
     {src}
   />
-  {#if caption}
+  {#if caption.length > 0}
     <figcaption>
       {caption}
     </figcaption>

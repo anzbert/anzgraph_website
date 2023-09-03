@@ -17,7 +17,7 @@
   async function scrollTo(id: string) {
     location.hash = "projects";
     setTimeout(() => {
-      document.getElementById(`${id}`).scrollIntoView({
+      document.getElementById(`${id}`)?.scrollIntoView({
         behavior: "smooth",
       });
     }, 200);
