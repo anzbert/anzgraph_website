@@ -20,6 +20,6 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "svelte-swipe": "file:../svelte-swipe"
+    "svelte-swipe": "^2.0.0"
   }
 }
